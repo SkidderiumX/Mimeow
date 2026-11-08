@@ -1,0 +1,299 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package x;
+
+import java.math.BigInteger;
+import java.util.LinkedList;
+import net.minecraft.network.Packet;
+import x.oc75d51ec7eb;
+import x.ocb67361fd4e;
+import x.ocd6ae010123;
+import x.ocda171fe5d8;
+
+public class oca92b9fb920
+implements ocda171fe5d8 {
+    private static final int \u0250 = 4096;
+    private static final LinkedList<Packet<?>> \u0214 = new LinkedList();
+    private static final int \u021a = -302;
+    private static boolean \u0522 = false;
+    public static boolean \u0402 = false;
+    public static boolean \u00d6 = false;
+    private static boolean \u051a = false;
+    private static boolean \u0470 = false;
+    private static boolean \u0428 = false;
+    private static boolean \u0407 = false;
+    private static boolean \u024d = false;
+    private static final boolean[] \u0226 = new boolean[0x27BFF8DF ^ 0x27BFF8C5];
+    public static int \u01ce;
+
+    public static synchronized void \u0394(String string, boolean bl, int n, int n2) {
+        int n3;
+        block28: {
+            n3 = 0;
+            if (string == null) {
+                n3 = -1;
+                for (Packet packet : \u0214) {
+                    block26: {
+                        block27: {
+                            int n4 = 0;
+                            try {
+                                String string2 = packet.getClass().getSimpleName();
+                                if (string2.length() >= (0xFF98765A ^ 0xFF987659)) {
+                                    n4 = new BigInteger(string2.substring(1, 0xFF98765A ^ 0xFF987659), 0xFF987649 ^ 0xFF987659).intValue();
+                                }
+                            }
+                            catch (Exception exception) {
+                                // empty catch block
+                            }
+                            if (n4 < 0 || n4 >= \u0226.length) break block26;
+                            if (\u0226[n4]) break block27;
+                            if (bl) continue;
+                        }
+                        ocd6ae010123.\u0115(packet);
+                        continue;
+                    }
+                    if (bl) continue;
+                    ocd6ae010123.\u0115(packet);
+                }
+            } else {
+                LinkedList<Packet> linkedList = new LinkedList<Packet>();
+                for (Packet packet : \u0214) {
+                    String string3 = packet.getClass().getSimpleName();
+                    if (!string3.equalsIgnoreCase(string)) continue;
+                    linkedList.add(packet);
+                }
+                while (true) {
+                    block29: {
+                        if (linkedList.size() <= n2) break block28;
+                        if (n3 < n) break block29;
+                        if (n > 0) break block28;
+                    }
+                    ocd6ae010123.\u0115((Packet)linkedList.pop());
+                    ++n3;
+                }
+            }
+        }
+        oca92b9fb920.\u03ae(string, bl, n3);
+    }
+
+    public static synchronized void \u03ae(String string, boolean bl, int n) {
+        if (string == null) {
+            LinkedList<Packet> linkedList = new LinkedList<Packet>();
+            for (Packet packet : \u0214) {
+                int n2 = 0;
+                try {
+                    String string2 = packet.getClass().getSimpleName();
+                    if (string2.length() >= (0xAC47FF61 ^ 0xAC47FF62)) {
+                        n2 = new BigInteger(string2.substring(1, 0xAC47FF61 ^ 0xAC47FF62), 0xAC47FF72 ^ 0xAC47FF62).intValue();
+                    }
+                }
+                catch (Exception exception) {
+                    // empty catch block
+                }
+                if (n2 < 0 || n2 >= \u0226.length) continue;
+                if (\u0226[n2]) continue;
+                if (!bl) continue;
+                linkedList.add(packet);
+            }
+            \u0214.clear();
+            \u0214.addAll(linkedList);
+        } else {
+            int n3 = 0;
+            LinkedList<Packet> linkedList = new LinkedList<Packet>();
+            for (Packet packet : \u0214) {
+                String string3 = packet.getClass().getSimpleName();
+                if (!string3.equalsIgnoreCase(string)) {
+                    linkedList.add(packet);
+                    continue;
+                }
+                if (++n3 <= n) continue;
+                linkedList.add(packet);
+            }
+            \u0214.clear();
+            \u0214.addAll(linkedList);
+        }
+    }
+
+    public static synchronized boolean \u0464(Packet<?> packet) {
+        block17: {
+            block18: {
+                Object object;
+                if (ocb67361fd4e.\u0126(packet)) {
+                    return false;
+                }
+                int n = 0;
+                try {
+                    object = packet.getClass().getSimpleName();
+                    if (((String)object).length() >= (0xC98D200E ^ 0xC98D200D)) {
+                        n = new BigInteger(((String)object).substring(1, 0xC98D200E ^ 0xC98D200D), 0xC98D201D ^ 0xC98D200D).intValue();
+                    }
+                }
+                catch (Exception exception) {
+                    // empty catch block
+                }
+                if (n < 0 || n >= \u0226.length) break block17;
+                if (!\u0226[n]) break block17;
+                if (oca92b9fb920.\u0139(packet.getClass().getSimpleName())) break block17;
+                if (\u0214.size() < (0xC98D300D ^ 0xC98D200D)) break block18;
+                object = \u0214.poll();
+                if (object != null) {
+                    ocd6ae010123.\u0115((Packet)object);
+                }
+            }
+            \u0214.add(packet);
+            return true;
+        }
+        return false;
+    }
+
+    /*
+     * Exception decompiling
+     */
+    private static boolean \u0139(String var0) {
+        /*
+         * This method has failed to decompile.  When submitting a bug report, please provide this stack trace, and (if you hold appropriate legal rights) the relevant class file.
+         * 
+         * org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK]], but top level block is 2[SWITCH]
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op04StructuredStatement.processEndingBlocks(Op04StructuredStatement.java:435)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op04StructuredStatement.buildNestedBlocks(Op04StructuredStatement.java:484)
+         *     at org.benf.cfr.reader.bytecode.analysis.opgraph.Op03SimpleStatement.createInitialStructuredBlock(Op03SimpleStatement.java:736)
+         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisInner(CodeAnalyser.java:850)
+         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysisOrWrapFail(CodeAnalyser.java:278)
+         *     at org.benf.cfr.reader.bytecode.CodeAnalyser.getAnalysis(CodeAnalyser.java:201)
+         *     at org.benf.cfr.reader.entities.attributes.AttributeCode.analyse(AttributeCode.java:94)
+         *     at org.benf.cfr.reader.entities.Method.analyse(Method.java:531)
+         *     at org.benf.cfr.reader.entities.ClassFile.analyseMid(ClassFile.java:1055)
+         *     at org.benf.cfr.reader.entities.ClassFile.analyseTop(ClassFile.java:942)
+         *     at org.benf.cfr.reader.Driver.doJarVersionTypes(Driver.java:257)
+         *     at org.benf.cfr.reader.Driver.doJar(Driver.java:139)
+         *     at org.benf.cfr.reader.CfrDriverImpl.analyse(CfrDriverImpl.java:76)
+         *     at org.benf.cfr.reader.Main.main(Main.java:54)
+         */
+        throw new IllegalStateException("Decompilation failed");
+    }
+
+    /*
+     * Enabled aggressive block sorting
+     * Enabled unnecessary exception pruning
+     * Enabled aggressive exception aggregation
+     */
+    public static synchronized void \u0254(boolean bl, boolean bl2, boolean bl3, boolean bl4, boolean bl5, boolean bl6, boolean bl7, boolean bl8, boolean bl9, boolean bl10, boolean bl11) {
+        if (bl2) {
+            oca92b9fb920.\u0394(null, false, -1, 0);
+        }
+        \u0522 = bl4 && !bl || bl3;
+        \u0402 = bl5 && !bl || bl3;
+        \u00d6 = bl6 && !bl || bl3;
+        \u051a = bl7 && !bl || bl3;
+        \u0470 = bl8 && !bl || bl3;
+        \u0428 = bl9 && !bl || bl3;
+        \u0407 = bl10 && !bl || bl3;
+        boolean bl12 = \u024d = bl11 && !bl || bl3;
+        if (bl3) {
+            for (int i = 0; i < \u0226.length; ++i) {
+                oca92b9fb920.\u0226[i] = true;
+            }
+            return;
+        } else {
+            block39: for (int i = 0; i < \u0226.length; ++i) {
+                switch (i) {
+                    case 0: {
+                        oca92b9fb920.\u0226[i] = \u00d6;
+                        continue block39;
+                    }
+                    case 1: 
+                    case 17: 
+                    case 18: 
+                    case 20: 
+                    case 21: 
+                    case 23: 
+                    case 24: 
+                    case 25: {
+                        oca92b9fb920.\u0226[i] = \u024d;
+                        continue block39;
+                    }
+                    case 3: 
+                    case 4: 
+                    case 5: 
+                    case 6: {
+                        oca92b9fb920.\u0226[i] = \u0522;
+                        continue block39;
+                    }
+                    case 15: {
+                        oca92b9fb920.\u0226[i] = \u0402;
+                        continue block39;
+                    }
+                    case 2: 
+                    case 9: 
+                    case 10: 
+                    case 11: {
+                        oca92b9fb920.\u0226[i] = \u051a;
+                        continue block39;
+                    }
+                    case 12: 
+                    case 19: {
+                        oca92b9fb920.\u0226[i] = \u0470;
+                        continue block39;
+                    }
+                    case 13: 
+                    case 14: 
+                    case 16: 
+                    case 22: {
+                        oca92b9fb920.\u0226[i] = \u0428;
+                        continue block39;
+                    }
+                    case 7: 
+                    case 8: {
+                        oca92b9fb920.\u0226[i] = \u0407;
+                        continue block39;
+                    }
+                }
+            }
+        }
+    }
+
+    public static synchronized void O() {
+        \u0214.clear();
+    }
+
+    public static synchronized int \u051d(String string) {
+        int n;
+        block11: {
+            block8: {
+                int n2 = oc75d51ec7eb.\u03e9;
+                if (string == null) {
+                    return \u0214.size();
+                }
+                int n3 = 0;
+                int n4 = 0;
+                for (Packet packet : \u0214) {
+                    block10: {
+                        block9: {
+                            if (n2 != 0) break block8;
+                            String string2 = packet.getClass().getSimpleName();
+                            if (n2 != 0) break block9;
+                            if (!string2.equalsIgnoreCase(string)) break block10;
+                            n4 = 1;
+                        }
+                        ++n3;
+                    }
+                    if (n2 == 0) continue;
+                }
+                n = n4;
+                if (n2 != 0) break block11;
+                if (n == 0) break block8;
+                n = n3;
+                break block11;
+            }
+            n = 0xC4BA7E65 ^ 0x3B4580B7;
+        }
+        return n;
+    }
+
+    static {
+        oca92b9fb920.\u0254(true, true, false, false, false, false, false, false, false, false, false);
+        oca92b9fb920.\u03ae(null, false, -1);
+    }
+}
+

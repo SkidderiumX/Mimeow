@@ -1,0 +1,24 @@
+# Gradle
+.gradle/
+build/
+build-classes/
+sources.txt
+
+# Original container jars (extracted source tree is what matters)
+Miau-legal.jar
+Miau-renamed.jar
+
+# Large build logs
+build-errors*.txt
+
+# IDE
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Java
+*.class
+out/

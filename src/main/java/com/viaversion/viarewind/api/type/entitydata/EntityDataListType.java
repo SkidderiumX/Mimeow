@@ -1,0 +1,44 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.viaversion.viarewind.api.type.entitydata;
+
+import com.viaversion.viarewind.api.minecraft.entitydata.EntityDataTypes1_7_6_10;
+import com.viaversion.viaversion.api.minecraft.entitydata.EntityData;
+import com.viaversion.viaversion.api.type.Type;
+import com.viaversion.viaversion.api.type.types.entitydata.EntityDataListTypeTemplate;
+import io.netty.buffer.ByteBuf;
+import java.util.ArrayList;
+import java.util.List;
+
+public class EntityDataListType
+extends EntityDataListTypeTemplate {
+    private final Type<EntityData> type;
+
+    public EntityDataListType(Type<EntityData> type) {
+        this.type = type;
+    }
+
+    @Override
+    public List<EntityData> read(ByteBuf byteBuf) {
+        EntityData entityData;
+        ArrayList<EntityData> arrayList = new ArrayList<EntityData>();
+        do {
+            if ((entityData = (EntityData)this.type.read(byteBuf)) == null) continue;
+            arrayList.add(entityData);
+        } while (entityData != null);
+        return arrayList;
+    }
+
+    @Override
+    public void write(ByteBuf byteBuf, List<EntityData> list) {
+        for (EntityData entityData : list) {
+            this.type.write(byteBuf, entityData);
+        }
+        if (list.isEmpty()) {
+            this.type.write(byteBuf, new EntityData(0, EntityDataTypes1_7_6_10.BYTE, (byte)0));
+        }
+        byteBuf.writeByte(127);
+    }
+}
+

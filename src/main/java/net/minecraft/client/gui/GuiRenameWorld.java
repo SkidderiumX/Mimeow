@@ -1,0 +1,87 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package net.minecraft.client.gui;
+
+import java.io.IOException;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiTextField;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.world.storage.ISaveFormat;
+import net.minecraft.world.storage.WorldInfo;
+import org.lwjgl.input.Keyboard;
+
+public class GuiRenameWorld
+extends GuiScreen {
+    private GuiScreen parentScreen;
+    private GuiTextField field_146583_f;
+    private final String saveName;
+
+    public GuiRenameWorld(GuiScreen guiScreen, String string) {
+        this.parentScreen = guiScreen;
+        this.saveName = string;
+    }
+
+    @Override
+    public void updateScreen() {
+        this.field_146583_f.updateCursorCounter();
+    }
+
+    @Override
+    public void initGui() {
+        Keyboard.enableRepeatEvents(true);
+        this.buttonList.clear();
+        this.buttonList.add(new GuiButton(0, this.width / 2 - 100, this.height / 4 + 96 + 12, I18n.format("selectWorld.renameButton", new Object[0])));
+        this.buttonList.add(new GuiButton(1, this.width / 2 - 100, this.height / 4 + 120 + 12, I18n.format("gui.cancel", new Object[0])));
+        ISaveFormat iSaveFormat = this.mc.getSaveLoader();
+        WorldInfo worldInfo = iSaveFormat.getWorldInfo(this.saveName);
+        String string = worldInfo.getWorldName();
+        this.field_146583_f = new GuiTextField(2, this.fontRendererObj, this.width / 2 - 100, 60, 200, 20);
+        this.field_146583_f.setFocused(true);
+        this.field_146583_f.setText(string);
+    }
+
+    @Override
+    public void onGuiClosed() {
+        Keyboard.enableRepeatEvents(false);
+    }
+
+    @Override
+    protected void actionPerformed(GuiButton guiButton) throws IOException {
+        if (guiButton.enabled) {
+            if (guiButton.id == 1) {
+                this.mc.displayGuiScreen(this.parentScreen);
+            } else if (guiButton.id == 0) {
+                ISaveFormat iSaveFormat = this.mc.getSaveLoader();
+                iSaveFormat.renameWorld(this.saveName, this.field_146583_f.getText().trim());
+                this.mc.displayGuiScreen(this.parentScreen);
+            }
+        }
+    }
+
+    @Override
+    protected void keyTyped(char c, int n) throws IOException {
+        this.field_146583_f.textboxKeyTyped(c, n);
+        boolean bl = ((GuiButton)this.buttonList.get((int)0)).enabled = this.field_146583_f.getText().trim().length() > 0;
+        if (n == 28 || n == 156) {
+            this.actionPerformed((GuiButton)this.buttonList.get(0));
+        }
+    }
+
+    @Override
+    protected void mouseClicked(int n, int n2, int n3) throws IOException {
+        super.mouseClicked(n, n2, n3);
+        this.field_146583_f.mouseClicked(n, n2, n3);
+    }
+
+    @Override
+    public void drawScreen(int n, int n2, float f) {
+        this.drawDefaultBackground();
+        this.drawCenteredString(this.fontRendererObj, I18n.format("selectWorld.renameTitle", new Object[0]), this.width / 2, 20, 0xFFFFFF);
+        this.drawString(this.fontRendererObj, I18n.format("selectWorld.enterName", new Object[0]), this.width / 2 - 100, 47, 0xA0A0A0);
+        this.field_146583_f.drawTextBox();
+        super.drawScreen(n, n2, f);
+    }
+}
+

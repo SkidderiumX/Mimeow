@@ -1,0 +1,39 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.viaversion.viaversion.platform;
+
+import com.viaversion.viaversion.api.platform.ViaInjector;
+import com.viaversion.viaversion.api.protocol.version.ProtocolVersion;
+import com.viaversion.viaversion.libs.fastutil.objects.ObjectLinkedOpenHashSet;
+import com.viaversion.viaversion.libs.gson.JsonObject;
+import java.util.SortedSet;
+
+public class NoopInjector
+implements ViaInjector {
+    @Override
+    public void inject() {
+    }
+
+    @Override
+    public void uninject() {
+    }
+
+    @Override
+    public ProtocolVersion getServerProtocolVersion() throws Exception {
+        return this.getServerProtocolVersions().first();
+    }
+
+    @Override
+    public SortedSet<ProtocolVersion> getServerProtocolVersions() {
+        ObjectLinkedOpenHashSet<ProtocolVersion> objectLinkedOpenHashSet = new ObjectLinkedOpenHashSet<ProtocolVersion>();
+        objectLinkedOpenHashSet.addAll(ProtocolVersion.getProtocols());
+        return objectLinkedOpenHashSet;
+    }
+
+    @Override
+    public JsonObject getDump() {
+        return new JsonObject();
+    }
+}
+

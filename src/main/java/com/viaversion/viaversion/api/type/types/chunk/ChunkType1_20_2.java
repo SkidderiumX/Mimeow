@@ -1,0 +1,64 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.viaversion.viaversion.api.type.types.chunk;
+
+import com.google.common.base.Preconditions;
+import com.viaversion.nbt.tag.CompoundTag;
+import com.viaversion.viaversion.api.minecraft.blockentity.BlockEntity;
+import com.viaversion.viaversion.api.minecraft.chunks.Chunk;
+import com.viaversion.viaversion.api.minecraft.chunks.Chunk1_18;
+import com.viaversion.viaversion.api.minecraft.chunks.ChunkSection;
+import com.viaversion.viaversion.api.type.Type;
+import com.viaversion.viaversion.api.type.Types;
+import com.viaversion.viaversion.api.type.types.chunk.ChunkSectionType1_18;
+import io.netty.buffer.ByteBuf;
+import java.util.ArrayList;
+
+public class ChunkType1_20_2
+extends Type<Chunk> {
+    private final ChunkSectionType1_18 sectionType;
+    private final int ySectionCount;
+
+    public ChunkType1_20_2(int n, int n2, int n3) {
+        super(Chunk.class);
+        Preconditions.checkArgument(n > 0);
+        this.sectionType = new ChunkSectionType1_18(n2, n3);
+        this.ySectionCount = n;
+    }
+
+    @Override
+    public Chunk read(ByteBuf byteBuf) {
+        int n;
+        int n2 = byteBuf.readInt();
+        int n3 = byteBuf.readInt();
+        CompoundTag compoundTag = (CompoundTag)Types.COMPOUND_TAG.read(byteBuf);
+        ByteBuf byteBuf2 = byteBuf.readSlice(Types.VAR_INT.readPrimitive(byteBuf));
+        ChunkSection[] chunkSectionArray = new ChunkSection[this.ySectionCount];
+        for (n = 0; n < this.ySectionCount; ++n) {
+            chunkSectionArray[n] = this.sectionType.read(byteBuf2);
+        }
+        n = Types.VAR_INT.readPrimitive(byteBuf);
+        ArrayList<BlockEntity> arrayList = new ArrayList<BlockEntity>(n);
+        for (int i = 0; i < n; ++i) {
+            arrayList.add((BlockEntity)Types.BLOCK_ENTITY1_20_2.read(byteBuf));
+        }
+        return new Chunk1_18(n2, n3, chunkSectionArray, compoundTag, arrayList);
+    }
+
+    @Override
+    public void write(ByteBuf byteBuf, Chunk chunk) {
+        byteBuf.writeInt(chunk.getX());
+        byteBuf.writeInt(chunk.getZ());
+        Types.COMPOUND_TAG.write(byteBuf, chunk.getHeightMap());
+        Types.VAR_INT.writePrimitive(byteBuf, this.sectionType.serializedSize(chunk));
+        for (ChunkSection chunkSection : chunk.getSections()) {
+            this.sectionType.write(byteBuf, chunkSection);
+        }
+        Types.VAR_INT.writePrimitive(byteBuf, chunk.blockEntities().size());
+        for (BlockEntity blockEntity : chunk.blockEntities()) {
+            Types.BLOCK_ENTITY1_20_2.write(byteBuf, blockEntity);
+        }
+    }
+}
+
