@@ -4737,7 +4737,7 @@ public class oc865980c948 {
       // 9e: ireturn
    }
 
-   private WorldBorder ω() {
+   private WorldBorder borderW() {
       return this.î;
    }
 

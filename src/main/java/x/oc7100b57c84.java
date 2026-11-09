@@ -53,7 +53,7 @@ public class oc7100b57c84 {
       var1.z$1k81rl22ylo65(this.շ, "setting.034");
       var1.z$1k81rl22ylo65(this.ª, "setting.035");
       var1.z$1k81rl22ylo65(this.Ҽ, "setting.036");
-      this.ȷ();
+      this.minQ();
    }
 
    public void д(boolean param1) {
@@ -1146,7 +1146,7 @@ public class oc7100b57c84 {
       // 38: ladd
       // 39: putfield x/oc7100b57c84.Ȅ J
       // 3c: aload 0
-      // 3d: invokevirtual x/oc7100b57c84.ȷ ()V
+      // 3d: invokevirtual x/oc7100b57c84.minQ ()V
       // 40: return
    }
 
@@ -1872,7 +1872,7 @@ public class oc7100b57c84 {
       // 64: ireturn
    }
 
-   private void ȷ() {
+   private void minQ() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!
@@ -1930,7 +1930,7 @@ public class oc7100b57c84 {
       return this.ň;
    }
 
-   private double ȷ() {
+   private double minQd() {
       return Math.min(this.ԏ.Ӂ(), this.К.Ӂ());
    }
 

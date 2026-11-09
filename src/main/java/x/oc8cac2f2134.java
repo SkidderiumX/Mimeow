@@ -539,7 +539,7 @@ public class oc8cac2f2134 {
      * Enabled force condition propagation
      * Lifted jumps to return sites
      */
-    public int \u0240() {
+    public int \u0240Int() {
         WorldClient worldClient;
         block9: {
             block10: {

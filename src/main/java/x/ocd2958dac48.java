@@ -2211,7 +2211,7 @@ public class ocd2958dac48 extends oc69da1aa7f5 {
       return Math.max(0.0F, Math.min(1.0F, var0));
    }
 
-   public static int Է() {
+   public static int p537stateI() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!
@@ -2695,7 +2695,7 @@ public class ocd2958dac48 extends oc69da1aa7f5 {
       return è(2.0F);
    }
 
-   private static int ώ() {
+   private static int p3ceStateI() {
       return 0;
    }
 

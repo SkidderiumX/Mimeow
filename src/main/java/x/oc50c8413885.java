@@ -41,7 +41,7 @@ public class oc50c8413885 {
         }
     }
 
-    public void \u048c() {
+    public void popMark() {
         if (this.\u025d >= (0x7EA7ED54 ^ 0x7EA7ED56)) {
             --this.\u025d;
         }

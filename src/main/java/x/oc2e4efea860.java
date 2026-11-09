@@ -3,11 +3,8 @@
  */
 package x;
 
-import java.lang.invoke.MethodHandle;
-import java.lang.runtime.ObjectMethods;
-
 public class oc2e4efea860
-extends Record {
+{
     private final String \u057a;
     private final String \u04f7;
     private final byte[] \u0373;
@@ -18,21 +15,6 @@ extends Record {
         this.\u04f7 = string2;
         this.\u0373 = byArray;
         this.\u03f8 = byArray2;
-    }
-
-    @Override
-    public final String toString() {
-        return ObjectMethods.bootstrap("toString", new MethodHandle[]{oc2e4efea860.class, "\u057a;\u04f7;\u0373;\u03f8", "\u057a", "\u04f7", "\u0373", "\u03f8"}, this);
-    }
-
-    @Override
-    public final int hashCode() {
-        return (int)ObjectMethods.bootstrap("hashCode", new MethodHandle[]{oc2e4efea860.class, "\u057a;\u04f7;\u0373;\u03f8", "\u057a", "\u04f7", "\u0373", "\u03f8"}, this);
-    }
-
-    @Override
-    public final boolean equals(Object object) {
-        return (boolean)ObjectMethods.bootstrap("equals", new MethodHandle[]{oc2e4efea860.class, "\u057a;\u04f7;\u0373;\u03f8", "\u057a", "\u04f7", "\u0373", "\u03f8"}, this, object);
     }
 
     public String \u054a() {
@@ -49,6 +31,28 @@ extends Record {
 
     public byte[] \u03f7() {
         return this.\u03f8;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || this.getClass() != object.getClass()) {
+            return false;
+        }
+        oc2e4efea860 other = (oc2e4efea860)object;
+        return java.util.Arrays.deepEquals(new Object[]{this.\u057a, this.\u04f7, this.\u0373, this.\u03f8}, new Object[]{other.\u057a, other.\u04f7, other.\u0373, other.\u03f8});
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Arrays.deepHashCode(new Object[]{this.\u057a, this.\u04f7, this.\u0373, this.\u03f8});
+    }
+
+    @Override
+    public String toString() {
+        return "oc2e4efea860[\u057a" + java.util.Arrays.deepToString(new Object[]{this.\u057a}) + ", \u04f7" + java.util.Arrays.deepToString(new Object[]{this.\u04f7}) + ", \u0373" + java.util.Arrays.deepToString(new Object[]{this.\u0373}) + ", \u03f8" + java.util.Arrays.deepToString(new Object[]{this.\u03f8}) + "]";
     }
 }
 

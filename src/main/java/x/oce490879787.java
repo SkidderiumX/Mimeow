@@ -1348,7 +1348,7 @@ public class oce490879787 {
       // 4b: areturn
    }
 
-   private static boolean Ⱥ(String param0) {
+   private static boolean ircStatusBool(Stringtring param0) {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!

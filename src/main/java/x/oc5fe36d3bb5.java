@@ -882,7 +882,7 @@ public class oc5fe36d3bb5 {
         return bl;
     }
 
-    public float o() {
+    public float oFloat() {
         float f;
         block6: {
             block5: {
@@ -1441,7 +1441,7 @@ public class oc5fe36d3bb5 {
         return d;
     }
 
-    public boolean \u022d() {
+    public boolean \u022dBool() {
         boolean bl;
         block8: {
             block7: {
@@ -1725,7 +1725,7 @@ public class oc5fe36d3bb5 {
         return f;
     }
 
-    public boolean \u00e9() {
+    public boolean \u00e9Bool() {
         boolean bl;
         block8: {
             block7: {

@@ -266,9 +266,9 @@ public class ShaderManager {
             throw new JsonException("Invalid amount of values specified (expected " + n2 + ", found " + jsonArray.size() + ")");
         }
         int n3 = 0;
-        for (Object object2 : jsonArray) {
+        for (Object object2_r : jsonArray) {
             try {
-                fArray[n3] = JsonUtils.getFloat((JsonElement)object2, "value");
+                fArray[n3] = JsonUtils.getFloat((JsonElement)object2_r, "value");
             }
             catch (Exception exception) {
                 JsonException jsonException = JsonException.func_151379_a(exception);

@@ -212,8 +212,8 @@ extends oc69da1aa7f5 {
                                                             float f16 = oc1378bc114d2.z$1tqmx4tpnr6lq();
                                                             f16 = f4;
                                                             if (!bl) {
-                                                                float f16 = f15 + f16;
-                                                                f16 = this.\u04ad.\u01ed() ? 13.0f * f6 : 0.0f;
+                                                                float f16_r = f15 + f16_r;
+                                                                f16_r = this.\u04ad.\u01ed() ? 13.0f * f6 : 0.0f;
                                                             }
                                                             f9 = Math.max(f15, f16);
                                                             f3 = (float)oc1378bc114d3.z$3hte9fh87zo6x() + 5.0f * f6;

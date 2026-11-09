@@ -468,9 +468,9 @@ extends BreakIterator {
         if (n == Integer.MAX_VALUE || !this.fUseDictionary) {
             return null;
         }
-        for (LanguageBreakEngine languageBreakEngine2 : this.fBreakEngines) {
-            if (!languageBreakEngine2.handles(n, this.fBreakType)) continue;
-            return languageBreakEngine2;
+        for (LanguageBreakEngine languageBreakEngine2_r : this.fBreakEngines) {
+            if (!languageBreakEngine2_r.handles(n, this.fBreakType)) continue;
+            return languageBreakEngine2_r;
         }
         int n2 = UCharacter.getIntPropertyValue(n, 4106);
         languageBreakEngine2 = null;

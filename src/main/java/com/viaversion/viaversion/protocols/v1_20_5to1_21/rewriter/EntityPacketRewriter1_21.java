@@ -60,11 +60,11 @@ extends EntityRewriter<ClientboundPacket1_20_5, Protocol1_20_5To1_21> {
             RegistryEntry[] registryEntryArray2 = new RegistryEntry[Paintings1_20_5.PAINTINGS.length];
             for (int i = 0; i < Paintings1_20_5.PAINTINGS.length; ++i) {
                 registryEntryArray = Paintings1_20_5.PAINTINGS[i];
-                CompoundTag compoundTag = new CompoundTag();
-                compoundTag.putInt("width", registryEntryArray.width());
-                compoundTag.putInt("height", registryEntryArray.height());
-                compoundTag.putString("asset_id", registryEntryArray.assetId());
-                registryEntryArray2[i] = new RegistryEntry(registryEntryArray.assetId(), compoundTag);
+                CompoundTag compoundTag_r2 = new CompoundTag();
+                compoundTag_r2.putInt("width", registryEntryArray.width());
+                compoundTag_r2.putInt("height", registryEntryArray.height());
+                compoundTag_r2.putString("asset_id", registryEntryArray.assetId());
+                registryEntryArray2[i] = new RegistryEntry(registryEntryArray.assetId(), compoundTag_r2);
             }
             packetWrapper2.write(Types.REGISTRY_ENTRY_ARRAY, registryEntryArray2);
             packetWrapper2.send(Protocol1_20_5To1_21.class);
@@ -73,8 +73,8 @@ extends EntityRewriter<ClientboundPacket1_20_5, Protocol1_20_5To1_21> {
             registryEntryArray = new RegistryEntry[Enchantments1_20_5.ENCHANTMENTS.size()];
             for (int i = 0; i < Enchantments1_20_5.ENCHANTMENTS.size(); ++i) {
                 String string = Enchantments1_20_5.idToKey(i);
-                CompoundTag compoundTag = ((Protocol1_20_5To1_21)this.protocol).getMappingData().enchantment(i);
-                registryEntryArray[i] = new RegistryEntry(string, compoundTag);
+                CompoundTag compoundTag_r = ((Protocol1_20_5To1_21)this.protocol).getMappingData().enchantment(i);
+                registryEntryArray[i] = new RegistryEntry(string, compoundTag_r);
             }
             packetWrapper3.write(Types.REGISTRY_ENTRY_ARRAY, registryEntryArray);
             packetWrapper3.send(Protocol1_20_5To1_21.class);

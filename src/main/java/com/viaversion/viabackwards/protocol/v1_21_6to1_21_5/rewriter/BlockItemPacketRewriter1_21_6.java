@@ -81,9 +81,9 @@ extends BackwardsStructuredItemRewriter<ClientboundPacket1_21_6, ServerboundPack
             structuredDataContainer.replace(StructuredDataKey.ATTRIBUTE_MODIFIERS1_21_5, StructuredDataKey.ATTRIBUTE_MODIFIERS1_21_6, attributeModifiers1_21 -> {
                 AttributeModifiers1_21.AttributeModifier[] attributeModifierArray = new AttributeModifiers1_21.AttributeModifier[attributeModifiers1_21.modifiers().length];
                 for (int i = 0; i < attributeModifiers1_21.modifiers().length; ++i) {
-                    CompoundTag compoundTag = (CompoundTag)listTag.get(i);
-                    int n = compoundTag.getInt("id");
-                    AttributeModifiers1_21.Display display = n == 2 ? new AttributeModifiers1_21.OverrideText(compoundTag.get("text")) : new AttributeModifiers1_21.Display(n);
+                    CompoundTag compoundTag_r = (CompoundTag)listTag.get(i);
+                    int n = compoundTag_r.getInt("id");
+                    AttributeModifiers1_21.Display display = n == 2 ? new AttributeModifiers1_21.OverrideText(compoundTag_r.get("text")) : new AttributeModifiers1_21.Display(n);
                     AttributeModifiers1_21.AttributeModifier attributeModifier = attributeModifiers1_21.modifiers()[i];
                     attributeModifierArray[i] = new AttributeModifiers1_21.AttributeModifier(attributeModifier.attribute(), attributeModifier.modifier(), attributeModifier.slotType(), display);
                 }

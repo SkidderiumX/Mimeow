@@ -89,27 +89,27 @@ public class VirtualHologramEntity {
 
     public void syncState(EntityPacketRewriter1_8 entityPacketRewriter1_8, List<EntityData> list) {
         Object object2;
-        for (Object object2 : list) {
-            this.entityDataTracker.removeIf(arg_0 -> VirtualHologramEntity.lambda$syncState$0((EntityData)object2, arg_0));
-            this.entityDataTracker.add((EntityData)object2);
+        for (Object object2_r2 : list) {
+            this.entityDataTracker.removeIf(arg_0 -> VirtualHologramEntity.lambda$syncState$0((EntityData)object2_r2, arg_0));
+            this.entityDataTracker.add((EntityData)object2_r2);
         }
-        for (Object object2 : this.entityDataTracker) {
-            if (object2.id() == 0 && object2.dataType() == EntityDataTypes1_8.BYTE) {
-                this.flags = ((Number)object2.getValue()).byteValue();
+        for (Object object2_r : this.entityDataTracker) {
+            if (object2_r.id() == 0 && object2_r.dataType() == EntityDataTypes1_8.BYTE) {
+                this.flags = ((Number)object2_r.getValue()).byteValue();
                 continue;
             }
-            if (object2.id() == 2 && object2.dataType() == EntityDataTypes1_8.STRING) {
-                this.name = object2.getValue().toString();
+            if (object2_r.id() == 2 && object2_r.dataType() == EntityDataTypes1_8.STRING) {
+                this.name = object2_r.getValue().toString();
                 if (this.name == null || !this.name.isEmpty()) continue;
                 this.name = null;
                 continue;
             }
-            if (object2.id() == 3 && object2.dataType() == EntityDataTypes1_8.BYTE) {
-                this.alwaysShowNametag = ((Number)object2.getValue()).byteValue();
+            if (object2_r.id() == 3 && object2_r.dataType() == EntityDataTypes1_8.BYTE) {
+                this.alwaysShowNametag = ((Number)object2_r.getValue()).byteValue();
                 continue;
             }
-            if (object2.id() != 10 || object2.dataType() != EntityDataTypes1_8.BYTE) continue;
-            this.armorStandFlags = ((Number)object2.getValue()).byteValue();
+            if (object2_r.id() != 10 || object2_r.dataType() != EntityDataTypes1_8.BYTE) continue;
+            this.armorStandFlags = ((Number)object2_r.getValue()).byteValue();
         }
         boolean bl = (this.flags & 0x20) != 0;
         this.sneaking = (this.flags & 2) != 0;

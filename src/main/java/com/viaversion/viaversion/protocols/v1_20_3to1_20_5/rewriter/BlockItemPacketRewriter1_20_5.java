@@ -746,15 +746,15 @@ extends ItemRewriter<ClientboundPacket1_20_3, ServerboundPacket1_20_5, Protocol1
         PotionEffect[] potionEffectArray = null;
         if (listTag != null) {
             potionEffectArray = (PotionEffect[])listTag.stream().map(compoundTag -> {
-                String string = compoundTag.getString("id");
-                if (string == null) {
+                String string_r = compoundTag.getString("id");
+                if (string_r == null) {
                     return null;
                 }
-                int n = PotionEffects1_20_5.keyToId(string);
-                if (n == -1) {
+                int n_r = PotionEffects1_20_5.keyToId(string_r);
+                if (n_r == -1) {
                     return null;
                 }
-                return new PotionEffect(n, this.readPotionEffectData((CompoundTag)compoundTag));
+                return new PotionEffect(n_r, this.readPotionEffectData((CompoundTag)compoundTag));
             }).filter(Objects::nonNull).toArray(PotionEffect[]::new);
         }
         if (n2 != null || numberTag != null || potionEffectArray != null) {

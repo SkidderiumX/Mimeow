@@ -2,15 +2,12 @@
  * Decompiled with CFR 0.152.
  */
 package x;
-
-import java.lang.invoke.MethodHandle;
-import java.lang.runtime.ObjectMethods;
 import x.oc7ab2161b9f;
 import x.oc93499ec6de;
 import x.oce6044968f8;
 
 public class oc9cd81f0bf1
-extends Record {
+{
     private final float \u0239;
     private final int \u017a;
     private final boolean \u04ef;
@@ -60,21 +57,6 @@ extends Record {
         return new oc9cd81f0bf1(f, n, bl, 0xF3504CF3 ^ 0xF3504CF1, f2, bl2, 0xF3504CF3 ^ 0xF3504CF1, f3, -1);
     }
 
-    @Override
-    public final String toString() {
-        return ObjectMethods.bootstrap("toString", new MethodHandle[]{oc9cd81f0bf1.class, "\u0239;\u017a;\u04ef;\u0149;\u057e;\u0463;\u037c;\u00e3;\u022f", "\u0239", "\u017a", "\u04ef", "\u0149", "\u057e", "\u0463", "\u037c", "\u00e3", "\u022f"}, this);
-    }
-
-    @Override
-    public final int hashCode() {
-        return (int)ObjectMethods.bootstrap("hashCode", new MethodHandle[]{oc9cd81f0bf1.class, "\u0239;\u017a;\u04ef;\u0149;\u057e;\u0463;\u037c;\u00e3;\u022f", "\u0239", "\u017a", "\u04ef", "\u0149", "\u057e", "\u0463", "\u037c", "\u00e3", "\u022f"}, this);
-    }
-
-    @Override
-    public final boolean equals(Object object) {
-        return (boolean)ObjectMethods.bootstrap("equals", new MethodHandle[]{oc9cd81f0bf1.class, "\u0239;\u017a;\u04ef;\u0149;\u057e;\u0463;\u037c;\u00e3;\u022f", "\u0239", "\u017a", "\u04ef", "\u0149", "\u057e", "\u0463", "\u037c", "\u00e3", "\u022f"}, this, object);
-    }
-
     public float \u0239() {
         return this.\u0239;
     }
@@ -109,6 +91,28 @@ extends Record {
 
     public int \u022f() {
         return this.\u022f;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || this.getClass() != object.getClass()) {
+            return false;
+        }
+        oc9cd81f0bf1 other = (oc9cd81f0bf1)object;
+        return java.util.Arrays.deepEquals(new Object[]{this.\u0239, this.\u017a, this.\u04ef, this.\u0149, this.\u057e, this.\u0463, this.\u037c, this.\u00e3, this.\u022f}, new Object[]{other.\u0239, other.\u017a, other.\u04ef, other.\u0149, other.\u057e, other.\u0463, other.\u037c, other.\u00e3, other.\u022f});
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Arrays.deepHashCode(new Object[]{this.\u0239, this.\u017a, this.\u04ef, this.\u0149, this.\u057e, this.\u0463, this.\u037c, this.\u00e3, this.\u022f});
+    }
+
+    @Override
+    public String toString() {
+        return "oc9cd81f0bf1[\u0239" + java.util.Arrays.deepToString(new Object[]{this.\u0239}) + ", \u017a" + java.util.Arrays.deepToString(new Object[]{this.\u017a}) + ", \u04ef" + java.util.Arrays.deepToString(new Object[]{this.\u04ef}) + ", \u0149" + java.util.Arrays.deepToString(new Object[]{this.\u0149}) + ", \u057e" + java.util.Arrays.deepToString(new Object[]{this.\u057e}) + ", \u0463" + java.util.Arrays.deepToString(new Object[]{this.\u0463}) + ", \u037c" + java.util.Arrays.deepToString(new Object[]{this.\u037c}) + ", \u00e3" + java.util.Arrays.deepToString(new Object[]{this.\u00e3}) + ", \u022f" + java.util.Arrays.deepToString(new Object[]{this.\u022f}) + "]";
     }
 }
 

@@ -5,8 +5,6 @@ package x;
 
 public enum oc110d7f376c {
     START, END;
-    private static final oc110d7f376c[] $VALUES_REF;
-
 
     private static final oc110d7f376c[] $VALUES_REF = oc110d7f376c.$VALUES_REF();
     public static int \u049d;

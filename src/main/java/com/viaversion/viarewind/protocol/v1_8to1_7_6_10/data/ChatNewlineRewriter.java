@@ -64,8 +64,8 @@ public class ChatNewlineRewriter {
             arrayList3.add(jsonObject4.get("text"));
         }
         if (jsonObject4.has("extra") && jsonObject4.get("extra").isJsonArray()) {
-            for (Object object222 : jsonObject4.getAsJsonArray("extra")) {
-                arrayList3.add(object222);
+            for (Object object222_r : jsonObject4.getAsJsonArray("extra")) {
+                arrayList3.add(object222_r);
             }
         }
         if (arrayList3.isEmpty()) {

@@ -71,23 +71,7 @@ extends CollectionsKt__ReversedViewsKt {
 
     @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
-    @SinceKotlin(version="1.1")
-    public static final /* synthetic */ Double max(Iterable iterable) {
-        Intrinsics.checkNotNullParameter(iterable, "<this>");
-        return CollectionsKt.maxOrNull(iterable);
-    }
-
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
-    @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
-    @SinceKotlin(version="1.1")
-    public static final /* synthetic */ Float max(Iterable iterable) {
-        Intrinsics.checkNotNullParameter(iterable, "<this>");
-        return CollectionsKt.maxOrNull(iterable);
-    }
-
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
-    @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
-    public static final /* synthetic */ Comparable max(Iterable iterable) {
+    public static final /* synthetic */ <T extends Comparable<? super T>> T max(Iterable<? extends T> iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         return CollectionsKt.maxOrNull(iterable);
     }
@@ -133,23 +117,7 @@ extends CollectionsKt__ReversedViewsKt {
 
     @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
-    @SinceKotlin(version="1.1")
-    public static final /* synthetic */ Double min(Iterable iterable) {
-        Intrinsics.checkNotNullParameter(iterable, "<this>");
-        return CollectionsKt.minOrNull(iterable);
-    }
-
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
-    @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
-    @SinceKotlin(version="1.1")
-    public static final /* synthetic */ Float min(Iterable iterable) {
-        Intrinsics.checkNotNullParameter(iterable, "<this>");
-        return CollectionsKt.minOrNull(iterable);
-    }
-
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
-    @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
-    public static final /* synthetic */ Comparable min(Iterable iterable) {
+    public static final /* synthetic */ <T extends Comparable<? super T>> T min(Iterable<? extends T> iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         return CollectionsKt.minOrNull(iterable);
     }

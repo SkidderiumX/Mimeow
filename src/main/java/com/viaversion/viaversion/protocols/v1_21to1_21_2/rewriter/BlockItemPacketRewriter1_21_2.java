@@ -511,7 +511,7 @@ extends StructuredItemRewriter<ClientboundPacket1_21, ServerboundPacket1_21_2, P
         });
         structuredDataContainer.replace(StructuredDataKey.FOOD1_21_2, StructuredDataKey.FOOD1_21, foodProperties1_21_2 -> {
             Consumable1_21_2 consumable1_21_2 = structuredDataContainer.get(StructuredDataKey.CONSUMABLE1_21_2);
-            Item item = structuredDataContainer.get(StructuredDataKey.V1_21_2.useRemainder);
+            Item item_r = structuredDataContainer.get(StructuredDataKey.V1_21_2.useRemainder);
             float f = consumable1_21_2 != null ? consumable1_21_2.consumeSeconds() : 1.6f;
             ArrayList<FoodProperties1_20_5.FoodEffect> arrayList = new ArrayList<FoodProperties1_20_5.FoodEffect>();
             if (consumable1_21_2 != null) {
@@ -524,7 +524,7 @@ extends StructuredItemRewriter<ClientboundPacket1_21, ServerboundPacket1_21_2, P
                     }
                 }
             }
-            return new FoodProperties1_20_5(foodProperties1_21_2.nutrition(), foodProperties1_21_2.saturationModifier(), foodProperties1_21_2.canAlwaysEat(), f, item, arrayList.toArray(new FoodProperties1_20_5.FoodEffect[0]));
+            return new FoodProperties1_20_5(foodProperties1_21_2.nutrition(), foodProperties1_21_2.saturationModifier(), foodProperties1_21_2.canAlwaysEat(), f, item_r, arrayList.toArray(new FoodProperties1_20_5.FoodEffect[0]));
         });
         structuredDataContainer.replace(StructuredDataKey.TRIM1_21_2, StructuredDataKey.TRIM1_20_5, armorTrim -> {
             if (armorTrim.material().isDirect()) {

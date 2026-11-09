@@ -1949,7 +1949,7 @@ public class ocab17d58248 {
       // 25: return
    }
 
-   public float l() {
+   public float lFloat() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!

@@ -109,8 +109,8 @@ extends Type<Tag> {
         } else if (tag instanceof ListTag) {
             ListTag listTag = (ListTag)tag;
             ops.writeList(listSerializer -> {
-                for (Tag tag : listTag) {
-                    listSerializer.write(this, tag);
+                for (Tag tag_r : listTag) {
+                    listSerializer.write(this, tag_r);
                 }
             });
         } else if (tag instanceof IntArrayTag) {

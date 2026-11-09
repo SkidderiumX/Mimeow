@@ -2,16 +2,12 @@
  * Decompiled with CFR 0.152.
  */
 package x;
-
-import java.lang.invoke.MethodHandle;
-import java.lang.runtime.ObjectMethods;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.Arrays;
 import javax.net.ssl.X509TrustManager;
 
 public class ocfbe13520d7
-extends Record
 implements X509TrustManager {
     private final X509TrustManager \u01d0;
     private final X509TrustManager \u0561;
@@ -51,27 +47,34 @@ implements X509TrustManager {
         return x509CertificateArray3;
     }
 
-    @Override
-    public final String toString() {
-        return ObjectMethods.bootstrap("toString", new MethodHandle[]{ocfbe13520d7.class, "\u01d0;\u0561", "\u01d0", "\u0561"}, this);
-    }
-
-    @Override
-    public final int hashCode() {
-        return (int)ObjectMethods.bootstrap("hashCode", new MethodHandle[]{ocfbe13520d7.class, "\u01d0;\u0561", "\u01d0", "\u0561"}, this);
-    }
-
-    @Override
-    public final boolean equals(Object object) {
-        return (boolean)ObjectMethods.bootstrap("equals", new MethodHandle[]{ocfbe13520d7.class, "\u01d0;\u0561", "\u01d0", "\u0561"}, this, object);
-    }
-
     public X509TrustManager \u01cf() {
         return this.\u01d0;
     }
 
     public X509TrustManager \u0531() {
         return this.\u0561;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || this.getClass() != object.getClass()) {
+            return false;
+        }
+        ocfbe13520d7 other = (ocfbe13520d7)object;
+        return java.util.Arrays.deepEquals(new Object[]{this.\u01d0, this.\u0561}, new Object[]{other.\u01d0, other.\u0561});
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Arrays.deepHashCode(new Object[]{this.\u01d0, this.\u0561});
+    }
+
+    @Override
+    public String toString() {
+        return "ocfbe13520d7[\u01d0" + java.util.Arrays.deepToString(new Object[]{this.\u01d0}) + ", \u0561" + java.util.Arrays.deepToString(new Object[]{this.\u0561}) + "]";
     }
 }
 

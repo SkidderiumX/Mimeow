@@ -304,9 +304,9 @@ extends StructuredItemRewriter<C, S, T> {
 
     protected Holder<SoundEvent> restoreSoundEventHolder(CompoundTag compoundTag2, String string) {
         return this.restoreHolder(compoundTag2, string, compoundTag -> {
-            String string = compoundTag.getString("identifier");
+            String string_r = compoundTag.getString("identifier");
             FloatTag floatTag = compoundTag.getFloatTag("fixed_range");
-            return new SoundEvent(string, floatTag != null ? Float.valueOf(floatTag.asFloat()) : null);
+            return new SoundEvent(string_r, floatTag != null ? Float.valueOf(floatTag.asFloat()) : null);
         });
     }
 

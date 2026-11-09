@@ -60,10 +60,10 @@ public class SpawnerAnimals {
         if (bl4) {
             this.eligibleChunksForSpawning.clear();
             n3 = 0;
-            for (Object object22 : worldServer.playerEntities) {
-                if (((EntityPlayer)object22).isSpectator()) continue;
-                int n4 = MathHelper.floor_double(((EntityPlayer)object22).posX / 16.0);
-                int n5 = MathHelper.floor_double(((EntityPlayer)object22).posZ / 16.0);
+            for (Object object22_r : worldServer.playerEntities) {
+                if (((EntityPlayer)object22_r).isSpectator()) continue;
+                int n4 = MathHelper.floor_double(((EntityPlayer)object22_r).posX / 16.0);
+                int n5 = MathHelper.floor_double(((EntityPlayer)object22_r).posZ / 16.0);
                 int n6 = 8;
                 for (int i = -n6; i <= n6; ++i) {
                     for (n2 = -n6; n2 <= n6; ++n2) {

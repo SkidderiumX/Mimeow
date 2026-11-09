@@ -3,7 +3,7 @@
  */
 package com.viaversion.viarewind;
 
-import com.viaversion.viarewind.api.ViaRewindConfig;
+import com.viaversion.viarewind.api.ViaRewindConfig.CooldownIndicator;
 import com.viaversion.viaversion.util.Config;
 import java.io.File;
 import java.io.InputStream;
@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class ViaRewindConfig
 extends Config
 implements com.viaversion.viarewind.api.ViaRewindConfig {
-    private ViaRewindConfig.CooldownIndicator cooldownIndicator;
+    private CooldownIndicator cooldownIndicator;
     private boolean replaceAdventureMode;
     private boolean replaceParticles;
     private int maxBookPages;
@@ -40,7 +40,7 @@ implements com.viaversion.viarewind.api.ViaRewindConfig {
     }
 
     private void loadFields() {
-        this.cooldownIndicator = ViaRewindConfig.CooldownIndicator.valueOf(this.getString("cooldown-indicator", "TITLE").toUpperCase());
+        this.cooldownIndicator = CooldownIndicator.valueOf(this.getString("cooldown-indicator", "TITLE").toUpperCase());
         this.replaceAdventureMode = this.getBoolean("replace-adventure", false);
         this.replaceParticles = this.getBoolean("replace-particles", false);
         this.maxBookPages = this.getInt("max-book-pages", 100);
@@ -55,7 +55,7 @@ implements com.viaversion.viarewind.api.ViaRewindConfig {
     }
 
     @Override
-    public ViaRewindConfig.CooldownIndicator getCooldownIndicator() {
+    public CooldownIndicator getCooldownIndicator() {
         return this.cooldownIndicator;
     }
 

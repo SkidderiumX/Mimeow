@@ -26,13 +26,13 @@ public class Image {
         BufferedImage bufferedImage2 = bufferedImage = bl ? imageCache.get(string) : null;
         if (bufferedImage == null) {
             ScriptDefaults.client.async(() -> {
-                BufferedImage bufferedImage = oc3fe2a46456.\u0501(string);
-                if (bufferedImage != null) {
-                    this.bufferedImage = bufferedImage;
-                    this.height = bufferedImage.getHeight();
-                    this.width = bufferedImage.getWidth();
+                BufferedImage bufferedImage_r = oc3fe2a46456.\u0501(string);
+                if (bufferedImage_r != null) {
+                    this.bufferedImage = bufferedImage_r;
+                    this.height = bufferedImage_r.getHeight();
+                    this.width = bufferedImage_r.getWidth();
                     if (bl) {
-                        imageCache.put(string, bufferedImage);
+                        imageCache.put(string, bufferedImage_r);
                     }
                 }
             });

@@ -541,34 +541,34 @@ public class oc9755810e45 {
         // MONITOREXIT : list
         if (oc69da1aa7f52.\u044a() == oce4cea752dd.\u057c) {
             \u03fe.entrySet().removeIf(entry -> {
-                boolean bl = entry.getValue() == oc69da1aa7f52;
-                return bl;
+                boolean bl_r7 = entry.getValue() == oc69da1aa7f52;
+                return bl_r7;
             });
             \u01e3.entrySet().removeIf(entry -> {
-                boolean bl = entry.getValue() == oc69da1aa7f52;
-                return bl;
+                boolean bl_r6 = entry.getValue() == oc69da1aa7f52;
+                return bl_r6;
             });
             \u0371.entrySet().removeIf(entry -> {
-                boolean bl = entry.getValue() == oc69da1aa7f52;
-                return bl;
+                boolean bl_r5 = entry.getValue() == oc69da1aa7f52;
+                return bl_r5;
             });
             return true;
         }
         \u04ee.entrySet().removeIf(entry -> {
-            boolean bl = entry.getValue() == oc69da1aa7f52;
-            return bl;
+            boolean bl_r4 = entry.getValue() == oc69da1aa7f52;
+            return bl_r4;
         });
         \u0295.entrySet().removeIf(entry -> {
-            boolean bl = entry.getValue() == oc69da1aa7f52;
-            return bl;
+            boolean bl_r3 = entry.getValue() == oc69da1aa7f52;
+            return bl_r3;
         });
         \u0371.entrySet().removeIf(entry -> {
-            boolean bl = entry.getValue() == oc69da1aa7f52;
-            return bl;
+            boolean bl_r2 = entry.getValue() == oc69da1aa7f52;
+            return bl_r2;
         });
         \u056e.entrySet().removeIf(entry -> {
-            boolean bl = entry.getValue() == oc69da1aa7f52;
-            return bl;
+            boolean bl_r = entry.getValue() == oc69da1aa7f52;
+            return bl_r;
         });
         return true;
     }

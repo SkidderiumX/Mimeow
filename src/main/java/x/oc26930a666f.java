@@ -91,14 +91,14 @@ public class oc26930a666f {
             String string = this.\u0218.S(oc9e5a7eeec62, oc41720aed4a2.\u01d2());
             this.\u041f.addScheduledTask(() -> {
                 boolean bl;
-                Consumer consumer2;
+                Consumer consumer2_r;
                 block6: {
                     block5: {
                         oc7d9b6bd5c4 oc7d9b6bd5c42;
                         boolean bl2;
                         block4: {
                             bl2 = oc9e5a7eeec6.\u039d;
-                            consumer2 = consumer;
+                            consumer2_r = consumer;
                             oc7d9b6bd5c42 = oc2cf3d80e17.\u00c1;
                             if (l2 < 1L || bl2) break block4;
                             if (oc7d9b6bd5c42 == null) break block5;
@@ -112,7 +112,7 @@ public class oc26930a666f {
                     }
                     bl = false;
                 }
-                consumer2.accept(bl);
+                consumer2_r.accept(bl);
             });
         }
         catch (Exception exception) {

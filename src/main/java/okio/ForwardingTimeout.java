@@ -28,11 +28,6 @@ extends Timeout {
         return this.delegate;
     }
 
-    public final /* synthetic */ void setDelegate(Timeout timeout2) {
-        Intrinsics.checkNotNullParameter(timeout2, "<set-?>");
-        this.delegate = timeout2;
-    }
-
     @NotNull
     public final ForwardingTimeout setDelegate(@NotNull Timeout timeout2) {
         Intrinsics.checkNotNullParameter(timeout2, "delegate");

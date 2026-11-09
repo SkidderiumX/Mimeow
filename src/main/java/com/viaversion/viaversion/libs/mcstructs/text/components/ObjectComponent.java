@@ -127,8 +127,8 @@ extends TextComponent {
         @Override
         public String getDescription() {
             String string = this.profile.convert(NbtConverter_v1_21_5.INSTANCE).map(tag -> (CompoundTag)tag).mapResult(compoundTag -> {
-                String string = compoundTag.getString("name", null);
-                return string == null ? Result.error("No name in profile") : Result.success(string);
+                String string_r = compoundTag.getString("name", null);
+                return string_r == null ? Result.error("No name in profile") : Result.success(string_r);
             }).orElse(null);
             if (string == null) {
                 return "[unknown player head]";

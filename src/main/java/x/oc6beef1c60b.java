@@ -59,7 +59,7 @@ extends oc6c12eede72 {
         ocbd4917c4b1.\u04da(f, this.\u041b.\u02a4.\u0406() + this.\u0548 + 11.0f, f2, this.\u041b.\u02a4.\u0406() + this.\u0548 + 15.0f, 4.0f, Color.getHSBColor((float)(System.currentTimeMillis() % (0x29E81D9226214F7CL ^ 0x29E81D9226216584L)) / 11000.0f, 0.75f, 0.9f).getRGB());
         GL11.glPushMatrix();
         GL11.glScaled(0.5, 0.5, 0.5);
-        double d = this.\u04d0();
+        double d = this.\u04d0Value();
         Object object = this.\u050d.\u011c();
         if (d == -1.0 && this.\u050d.\u01fb) {
             string = "\u00a7cDisabled";
@@ -186,7 +186,7 @@ extends oc6c12eede72 {
         return this.\u041b.\u0523 instanceof oc6a43806f12 && this.\u050d == oc6a43806f12.\u0413;
     }
 
-    private double \u04d0() {
+    private double \u04d0Value() {
         return this.\u03b0() && this.\u0161 ? this.\u0464 : this.\u050d.\u04c1();
     }
 

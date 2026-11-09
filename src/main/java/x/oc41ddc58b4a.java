@@ -365,10 +365,10 @@ public class oc41ddc58b4a {
                                         }
                                         d8 = Math.max(0.026, (double)f);
                                         d7 = Math.hypot(d, d3);
-                                        double d9 = d7 + d8 + d4 - 0.268;
-                                        d9 = d9 == 0.0 ? 0 : (d9 > 0.0 ? 1 : -1);
+                                        double d9_r2 = d7 + d8 + d4 - 0.268;
+                                        d9_r2 = d9_r2 == 0.0 ? 0 : (d9_r2 > 0.0 ? 1 : -1);
                                         if (n3 != 0) break block62;
-                                        if (d9 <= 0) break block63;
+                                        if (d9_r2 <= 0) break block63;
                                         return false;
                                     }
                                     d9 = (double)bl;
@@ -380,8 +380,8 @@ public class oc41ddc58b4a {
                             }
                             d6 = d2;
                             if (n3 != 0) break block66;
-                            double d9 = Math.abs(d6) - 0.005;
-                            d9 = d9 == 0.0 ? 0 : (d9 < 0.0 ? -1 : 1);
+                            double d9_r = Math.abs(d6) - 0.005;
+                            d9_r = d9_r == 0.0 ? 0 : (d9_r < 0.0 ? -1 : 1);
                         }
                         d6 = d9 < 0 ? 0.0 : d2;
                     }
@@ -560,12 +560,12 @@ public class oc41ddc58b4a {
                             n3 = Float.isFinite(oc70db7057652.\u01f6()) ? 1 : 0;
                             if (n2 != 0) return n3 != 0;
                             if (n3 == 0) return 0 != 0;
-                            float f = oc70db7057652.\u0509();
-                            f = 0.0f;
+                            float f_r2 = oc70db7057652.\u0509();
+                            f_r2 = 0.0f;
                             if (n2 != 0) break block141;
-                            if (f2 != f) break block142;
-                            float f = oc70db7057652.\u01f6();
-                            f = 0.0f;
+                            if (f2 != f_r2) break block142;
+                            float f_r = oc70db7057652.\u01f6();
+                            f_r = 0.0f;
                         }
                         float f3 = f2 - f;
                         n3 = f3 == 0.0f ? 0 : (f3 > 0.0f ? 1 : -1);

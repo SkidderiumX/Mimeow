@@ -27,8 +27,6 @@ extends RegularImmutableTable<R, C, V> {
 
     SparseImmutableTable(ImmutableList<Table.Cell<R, C, V>> immutableList, ImmutableSet<R> immutableSet, ImmutableSet<C> immutableSet2) {
         ImmutableMap.Builder builder;
-        Object object32;
-        Object object222;
         HashMap hashMap = Maps.newHashMap();
         LinkedHashMap linkedHashMap = Maps.newLinkedHashMap();
         for (Object object222 : immutableSet) {
@@ -39,24 +37,24 @@ extends RegularImmutableTable<R, C, V> {
         for (Object object32 : immutableSet2) {
             linkedHashMap2.put(object32, new LinkedHashMap());
         }
-        object222 = new int[immutableList.size()];
-        object32 = new int[immutableList.size()];
+        int[] nArray = new int[immutableList.size()];
+        int[] nArray2 = new int[immutableList.size()];
         for (int i = 0; i < immutableList.size(); ++i) {
             builder = (Table.Cell)immutableList.get(i);
             Object object4 = builder.getRowKey();
             Object c = builder.getColumnKey();
             Object v = builder.getValue();
-            object222[i] = (Integer)hashMap.get(object4);
+            nArray[i] = (Integer)hashMap.get(object4);
             Map map = (Map)linkedHashMap.get(object4);
-            object32[i] = map.size();
+            nArray2[i] = map.size();
             Object v2 = map.put(c, v);
             if (v2 != null) {
                 throw new IllegalArgumentException("Duplicate value for row=" + object4 + ", column=" + c + ": " + v + ", " + v2);
             }
             ((Map)linkedHashMap2.get(c)).put(object4, v);
         }
-        this.iterationOrderRow = (int[])object222;
-        this.iterationOrderColumn = (int[])object32;
+        this.iterationOrderRow = nArray;
+        this.iterationOrderColumn = nArray2;
         ImmutableMap.Builder builder2 = ImmutableMap.builder();
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             builder2.put(entry.getKey(), ImmutableMap.copyOf((Map)entry.getValue()));

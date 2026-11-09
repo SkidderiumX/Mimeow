@@ -180,14 +180,14 @@ public class TextUtils {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
         Runnable runnable2 = () -> {
-            boolean bl = arrayList2.isEmpty();
+            boolean bl_r = arrayList2.isEmpty();
             arrayList2.removeIf(textComponent -> textComponent instanceof StringComponent && textComponent.asSingleString().isEmpty());
             if (arrayList2.size() == 1) {
                 arrayList.add(arrayList2.get(0));
-            } else if (!bl) {
+            } else if (!bl_r) {
                 StringComponent stringComponent = new StringComponent("");
-                for (TextComponent textComponent2 : arrayList2) {
-                    stringComponent.append(textComponent2);
+                for (TextComponent textComponent2_r2 : arrayList2) {
+                    stringComponent.append(textComponent2_r2);
                 }
                 arrayList.add(stringComponent);
             }
@@ -200,8 +200,8 @@ public class TextUtils {
                     String[] stringArray = string2.split(string, -1);
                     for (int i = 0; i < stringArray.length; ++i) {
                         String string3 = stringArray[i];
-                        TextComponent textComponent2 = new StringComponent(string3).setStyle(textComponent.getStyle().copy());
-                        arrayList2.add(textComponent2);
+                        TextComponent textComponent2_r = new StringComponent(string3).setStyle(textComponent.getStyle().copy());
+                        arrayList2.add(textComponent2_r);
                         if (i == stringArray.length - 1) continue;
                         runnable2.run();
                     }

@@ -7,9 +7,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.CookieManager;
-import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
@@ -64,7 +62,7 @@ extends RequestExecutor {
     }
 
     private java.net.http.HttpClient buildClient(net.lenni0451.commons.httpclient.requests.HttpRequest httpRequest, Executor executor) throws IOException {
-        HttpClient.Builder builder = java.net.http.HttpClient.newBuilder().executor(executor);
+        java.net.http.HttpClient.Builder builder = java.net.http.HttpClient.newBuilder().executor(executor);
         CookieManager cookieManager = this.getCookieManager(httpRequest);
         if (cookieManager != null) {
             builder.cookieHandler(cookieManager);
@@ -75,15 +73,15 @@ extends RequestExecutor {
         builder.connectTimeout(Duration.ofMillis(this.client.getConnectTimeout()));
         switch (httpRequest.getFollowRedirects()) {
             case NOT_SET: {
-                builder.followRedirects(this.client.isFollowRedirects() ? HttpClient.Redirect.NORMAL : HttpClient.Redirect.NEVER);
+                builder.followRedirects(this.client.isFollowRedirects() ? java.net.http.HttpClient.Redirect.NORMAL : java.net.http.HttpClient.Redirect.NEVER);
                 break;
             }
             case FOLLOW: {
-                builder.followRedirects(HttpClient.Redirect.NORMAL);
+                builder.followRedirects(java.net.http.HttpClient.Redirect.NORMAL);
                 break;
             }
             case IGNORE: {
-                builder.followRedirects(HttpClient.Redirect.NEVER);
+                builder.followRedirects(java.net.http.HttpClient.Redirect.NEVER);
             }
         }
         if (this.client.getProxyHandler().isProxySet()) {

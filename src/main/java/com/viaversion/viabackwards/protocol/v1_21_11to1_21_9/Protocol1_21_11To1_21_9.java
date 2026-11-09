@@ -113,8 +113,8 @@ extends BackwardsProtocol<ClientboundPacket1_21_11, ClientboundPacket1_21_9, Ser
             this.moveAttribute((CompoundTag)compoundTag, compoundTag2, "gameplay/piglins_zombify", "piglin_safe", tag -> ((NumberTag)tag).asBoolean() ? ByteTag.ZERO : byteTag, ByteTag.ZERO);
             this.moveAttribute((CompoundTag)compoundTag, compoundTag2, "gameplay/respawn_anchor_works", "respawn_anchor_works", Function.identity(), byteTag);
             this.moveAttribute((CompoundTag)compoundTag, compoundTag2, "gameplay/bed_rule", "bed_works", tag -> {
-                Object compoundTag = (CompoundTag)tag;
-                return compoundTag.getBoolean("can_sleep") || compoundTag.getBoolean("can_set_spawn") ? byteTag : ByteTag.ZERO;
+                Object compoundTag_r = (CompoundTag)tag;
+                return compoundTag_r.getBoolean("can_sleep") || compoundTag_r.getBoolean("can_set_spawn") ? byteTag : ByteTag.ZERO;
             }, byteTag);
             this.moveAttribute((CompoundTag)compoundTag, compoundTag2, "gameplay/fast_lava", "ultrawarm", Function.identity(), ByteTag.ZERO);
         });

@@ -323,9 +323,9 @@ extends BackwardsStructuredItemRewriter<ClientboundPacket1_21_5, ServerboundPack
                 compoundTag.putString("asset_name", armorTrimMaterial.assetName());
                 compoundTag.putInt("item_id", armorTrimMaterial.itemId());
                 compoundTag.putFloat("item_model_index", armorTrimMaterial.itemModelIndex());
-                CompoundTag compoundTag2 = new CompoundTag();
-                armorTrimMaterial.overrideArmorMaterials().forEach(compoundTag2::putString);
-                compoundTag.put("override_armor_materials", compoundTag2);
+                CompoundTag compoundTag2_r2 = new CompoundTag();
+                armorTrimMaterial.overrideArmorMaterials().forEach(compoundTag2_r2::putString);
+                compoundTag.put("override_armor_materials", compoundTag2_r2);
                 compoundTag.put("description", armorTrimMaterial.description());
             });
             compoundTag2.put("provides_trim_material", (Tag)object4);
@@ -454,13 +454,13 @@ extends BackwardsStructuredItemRewriter<ClientboundPacket1_21_5, ServerboundPack
                 String string = compoundTag.getString("asset_name");
                 int n = compoundTag.getInt("item_id");
                 float f = compoundTag.getFloat("item_model_index");
-                CompoundTag compoundTag2 = compoundTag.getCompoundTag("override_armor_materials");
+                CompoundTag compoundTag2_r = compoundTag.getCompoundTag("override_armor_materials");
                 HashMap<String, String> hashMap = new HashMap<String, String>();
-                for (String string2 : compoundTag2.keySet()) {
-                    hashMap.put(string2, compoundTag2.getString(string2));
+                for (String string2 : compoundTag2_r.keySet()) {
+                    hashMap.put(string2, compoundTag2_r.getString(string2));
                 }
-                Tag tag = compoundTag.get("description");
-                return new ArmorTrimMaterial(string, n, f, hashMap, tag);
+                Tag tag_r2 = compoundTag.get("description");
+                return new ArmorTrimMaterial(string, n, f, hashMap, tag_r2);
             })));
         }
         if ((compoundTag3 = compoundTag5.getCompoundTag("blocks_attack")) != null) {
@@ -520,9 +520,9 @@ extends BackwardsStructuredItemRewriter<ClientboundPacket1_21_5, ServerboundPack
             int n = compoundTag.getInt("width");
             int n2 = compoundTag.getInt("height");
             String string = compoundTag.getString("asset_id");
-            Tag tag = compoundTag.get("title");
-            Tag tag2 = compoundTag.get("author");
-            return new PaintingVariant(n, n2, string, tag, tag2);
+            Tag tag_r = compoundTag.get("title");
+            Tag tag2_r = compoundTag.get("author");
+            return new PaintingVariant(n, n2, string, tag_r, tag2_r);
         });
         this.removeCustomTag(structuredDataContainer, compoundTag2);
     }

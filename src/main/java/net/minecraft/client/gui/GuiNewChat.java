@@ -114,9 +114,9 @@ extends Gui {
                 ocbd4917c4b1.\u010e(2.0, (float)(new ScaledResolution(this.mc).getScaledHeight() - 28) - (float)(n3 * n2) * f2, (f5 + 4.0f) * f2, (float)(n3 * n2) * f2);
                 try {
                     for (VisibleLine visibleLine : arrayList) {
-                        int n3;
-                        if (visibleLine.top + (float)n2 <= (float)(-n3 * n2) || visibleLine.top >= 0.0f || (n3 = Math.round(visibleLine.alpha / f13 * 255.0f)) == 0) continue;
-                        oc1378bc114d2.z$ao2ykh4tuw6w(visibleLine.text, oce6044968f8.\u01c6() + visibleLine.slide, visibleLine.top + (float)(n2 - oc1378bc114d2.z$1tqmx4tpnr6lq()) / 2.0f, n3 << 24 | 0xFFFFFF, false);
+                        int n3_r;
+                        if (visibleLine.top + (float)n2 <= (float)(-n3_r * n2) || visibleLine.top >= 0.0f || (n3_r = Math.round(visibleLine.alpha / f13 * 255.0f)) == 0) continue;
+                        oc1378bc114d2.z$ao2ykh4tuw6w(visibleLine.text, oce6044968f8.\u01c6() + visibleLine.slide, visibleLine.top + (float)(n2 - oc1378bc114d2.z$1tqmx4tpnr6lq()) / 2.0f, n3_r << 24 | 0xFFFFFF, false);
                     }
                 }
                 finally {

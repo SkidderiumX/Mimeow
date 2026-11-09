@@ -198,8 +198,8 @@ implements com.viaversion.viaversion.api.rewriter.EntityRewriter<T> {
 
     public void registerBlockStateHandler(EntityType entityType, int n) {
         this.filter().type(entityType).index(n).handler((entityDataHandlerEvent, entityData) -> {
-            int n = (Integer)entityData.getValue();
-            entityData.setValue(this.protocol.getMappingData().getNewBlockStateId(n));
+            int n_r = (Integer)entityData.getValue();
+            entityData.setValue(this.protocol.getMappingData().getNewBlockStateId(n_r));
         });
     }
 

@@ -44,19 +44,19 @@ implements Codec<Map<K, V>> {
         return result.mapResult(map -> {
             HashMap hashMap = new HashMap();
             for (Map.Entry entry : map.entrySet()) {
-                Result result = this.keyCodec.deserialize(dataConverter, entry.getKey());
-                if (result.isError()) {
-                    return result.mapError();
+                Result result_r = this.keyCodec.deserialize(dataConverter, entry.getKey());
+                if (result_r.isError()) {
+                    return result_r.mapError();
                 }
-                Codec<V> codec = this.keyToValueCodec.apply(result.get());
+                Codec<V> codec = this.keyToValueCodec.apply(result_r.get());
                 if (codec == null) {
-                    return Result.error("No codec found for key: " + result.get());
+                    return Result.error("No codec found for key: " + result_r.get());
                 }
                 Result result2 = codec.deserialize(dataConverter, entry.getValue());
                 if (result2.isError()) {
                     return result2.mapError();
                 }
-                hashMap.put(result.get(), result2.get());
+                hashMap.put(result_r.get(), result2.get());
             }
             return Result.success(hashMap);
         });

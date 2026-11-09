@@ -901,7 +901,7 @@ public class oc8edd24b1ed extends oc69da1aa7f5 {
       // 12a: return
    }
 
-   private float Ɵ() {
+   private float floatOwing() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!
@@ -4120,7 +4120,7 @@ public class oc8edd24b1ed extends oc69da1aa7f5 {
       // 36: return
    }
 
-   private Color Ѯ() {
+   private Color colorGetterX() {
       return new Color(ocd2958dac48.ů(0.0));
    }
 
@@ -7109,7 +7109,7 @@ public class oc8edd24b1ed extends oc69da1aa7f5 {
    }
 
    public float Ђ() {
-      return this.Ɵ();
+      return this.floatOwing();
    }
 
    static {

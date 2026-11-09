@@ -204,9 +204,9 @@ extends EntityRewriter<ClientboundPackets1_19, Protocol1_19To1_18_2> {
                     }
                     EntityPacketRewriter1_19.this.tracker(packetWrapper.user()).setBiomesSent(listTag4.size());
                     ListTag<CompoundTag> listTag = TagUtil.removeRegistryEntries(compoundTag2, "chat_type");
-                    for (CompoundTag compoundTag3 : listTag) {
-                        NumberTag numberTag = compoundTag3.getNumberTag("id");
-                        dimensionRegistryStorage.addChatType(numberTag.asInt(), compoundTag3);
+                    for (CompoundTag compoundTag3_r : listTag) {
+                        NumberTag numberTag = compoundTag3_r.getNumberTag("id");
+                        dimensionRegistryStorage.addChatType(numberTag.asInt(), compoundTag3_r);
                     }
                 });
                 this.map(Types.STRING);

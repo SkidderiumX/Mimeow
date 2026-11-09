@@ -80,14 +80,6 @@ public enum ocb50cc94190 {
         $VALUES_REF = ocb50cc94190.\u056c();
     }
 
-    public static ocb50cc94190[] values() {
-        return (ocb50cc94190[])$VALUES_REF.clone();
-    }
-
-    public static ocb50cc94190 valueOf(String string) {
-        return Enum.valueOf(ocb50cc94190.class, string);
-    }
-
     private ocb50cc94190(String string2, String string3, ItemStack itemStack) {
         this.\u03d7 = string2;
         this.\u051b = string3;

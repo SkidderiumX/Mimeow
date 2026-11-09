@@ -245,10 +245,10 @@ extends BackwardsFullStructuredItemRewriter<ClientboundPacket1_21, ServerboundPa
             object = compoundTag3.getString("song_identifier");
             eitherHolder = object != null ? EitherHolder.of((String)object) : EitherHolder.of(this.restoreHolder((CompoundTag)tag, "song", compoundTag -> {
                 Holder<SoundEvent> holder = this.restoreSoundEventHolder((CompoundTag)compoundTag);
-                Tag tag = compoundTag.get("description");
+                Tag tag_r = compoundTag.get("description");
                 float f = compoundTag.getFloat("length_in_seconds");
                 int n = compoundTag.getInt("comparator_output");
-                return new JukeboxPlayable.JukeboxSong(holder, tag, f, n);
+                return new JukeboxPlayable.JukeboxSong(holder, tag_r, f, n);
             }));
             JukeboxPlayable jukeboxPlayable = new JukeboxPlayable(eitherHolder, compoundTag3.getBoolean("show_in_tooltip"));
             structuredDataContainer.set(StructuredDataKey.JUKEBOX_PLAYABLE1_21, jukeboxPlayable);

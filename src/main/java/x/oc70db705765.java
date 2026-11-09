@@ -85,12 +85,12 @@ extends oc68d6b191af {
                         if (movementInput2.jump != this.\u023d) break block15;
                         movementInput2 = movementInput;
                     }
-                    float f = movementInput2.forward;
-                    f = this.\u053d;
+                    float f_r2 = movementInput2.forward;
+                    f_r2 = this.\u053d;
                     if (n != 0) break block17;
-                    if (f2 != f) break block15;
-                    float f = movementInput.strafe;
-                    f = this.\u020d;
+                    if (f2 != f_r2) break block15;
+                    float f_r = movementInput.strafe;
+                    f_r = this.\u020d;
                 }
                 float f3 = f2 - f;
                 bl = f3 == 0.0f ? 0 : (f3 > 0.0f ? 1 : -1);

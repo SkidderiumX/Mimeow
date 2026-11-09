@@ -790,12 +790,12 @@ public class occ39d36078d extends oc69da1aa7f5 {
          throw var2;
       }
 
-      this.Ų();
+      this.u172sleep();
    }
 
    @oc66fa4f2195
    public void Ğ(ocbab3c9954b var1) {
-      this.Ų();
+      this.u172sleep();
    }
 
    @oc66fa4f2195
@@ -1571,7 +1571,7 @@ public class occ39d36078d extends oc69da1aa7f5 {
       return Math.max(0, Math.min(2086645014 ^ 2086645012, var1));
    }
 
-   private void Ų() {
+   private void u172sleep() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!

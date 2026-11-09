@@ -106,14 +106,14 @@ extends oc69da1aa7f5 {
                                                                                                     return;
                                                                                                 }
                                                                                                 oc7a57fbe3a8 oc7a57fbe3a86 = this;
-                                                                                                int n5 = 0xE67281D ^ 0x7198D7E2;
-                                                                                                n5 = this.\u03eb + 1;
+                                                                                                int n5_r2 = 0xE67281D ^ 0x7198D7E2;
+                                                                                                n5_r2 = this.\u03eb + 1;
                                                                                                 if (n2 != 0) break block57;
-                                                                                                oc7a57fbe3a86.\u03eb = Math.min(n6, n5);
+                                                                                                oc7a57fbe3a86.\u03eb = Math.min(n6, n5_r2);
                                                                                                 oc7a57fbe3a86 = this;
                                                                                                 if (!oc69da1aa7f5.\u0151.thePlayer.onGround) break block58;
-                                                                                                int n5 = 0xE67281D ^ 0x7198D7E2;
-                                                                                                n5 = this.\u0177 + 1;
+                                                                                                int n5_r = 0xE67281D ^ 0x7198D7E2;
+                                                                                                n5_r = this.\u0177 + 1;
                                                                                             }
                                                                                             n4 = Math.min(n6, n5);
                                                                                             break block78;

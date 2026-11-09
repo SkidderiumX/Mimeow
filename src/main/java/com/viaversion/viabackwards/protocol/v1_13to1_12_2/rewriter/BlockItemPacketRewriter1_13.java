@@ -696,8 +696,8 @@ extends BackwardsItemRewriter<ClientboundPackets1_13, ServerboundPackets1_12_1, 
         }
         tag3 = compoundTag.getListTag(this.extraNbtTag + "|Enchantments", CompoundTag.class);
         if (tag3 != null) {
-            for (Tag tag22 : tag3) {
-                listTag2.add((CompoundTag)tag22);
+            for (Tag tag22_r : tag3) {
+                listTag2.add((CompoundTag)tag22_r);
             }
             compoundTag.remove(this.extraNbtTag + "|Enchantments");
         }

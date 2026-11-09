@@ -66,10 +66,10 @@ extends EntityRewriter<ClientboundPackets1_19_4, Protocol1_19_4To1_20> {
                     int n = -1;
                     boolean bl = false;
                     boolean bl2 = false;
-                    for (CompoundTag compoundTag3 : listTag) {
-                        int n2 = compoundTag3.getInt("id");
+                    for (CompoundTag compoundTag3_r : listTag) {
+                        int n2 = compoundTag3_r.getInt("id");
                         n = Math.max(n, n2);
-                        String string = Key.namespaced(compoundTag3.getString("name"));
+                        String string = Key.namespaced(compoundTag3_r.getString("name"));
                         if (string.equals("minecraft:outside_border")) {
                             bl = true;
                             continue;

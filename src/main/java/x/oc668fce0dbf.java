@@ -8757,7 +8757,7 @@ public class oc668fce0dbf extends oc69da1aa7f5 {
       return this.ċ.ǭ();
    }
 
-   boolean ǭ() {
+   boolean eBool() {
       return this.Ɯ.ǭ();
    }
 
@@ -11242,7 +11242,7 @@ public class oc668fce0dbf extends oc69da1aa7f5 {
       return this.ҵ.ǭ();
    }
 
-   boolean ӌ() {
+   boolean lBool() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!
@@ -11275,7 +11275,7 @@ public class oc668fce0dbf extends oc69da1aa7f5 {
       // 2e: ireturn
    }
 
-   boolean ϝ() {
+   boolean qBool() {
       // $VF: Couldn't be decompiled
       // Please report this to the Vineflower issue tracker, at https://github.com/Vineflower/vineflower/issues with a copy of the class file (if you have the rights to distribute it!)
       // java.lang.RuntimeException: parsing failure!

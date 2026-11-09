@@ -64,9 +64,9 @@ public class Version {
             // empty catch block
         }
         object2 = new HashSet();
-        for (Object object3 : properties.keySet()) {
+        for (Object object3_r : properties.keySet()) {
             String string2;
-            string = (String)object3;
+            string = (String)object3_r;
             int n = string.indexOf(46);
             if (n <= 0 || !properties.containsKey((string2 = string.substring(0, n)) + PROP_VERSION) || !properties.containsKey(string2 + PROP_BUILD_DATE) || !properties.containsKey(string2 + PROP_COMMIT_DATE) || !properties.containsKey(string2 + PROP_SHORT_COMMIT_HASH) || !properties.containsKey(string2 + PROP_LONG_COMMIT_HASH) || !properties.containsKey(string2 + PROP_REPO_STATUS)) continue;
             object2.add(string2);
