@@ -436,130 +436,130 @@ public class HttpUrl {
         return Util.canParseAsIpAddress(this.host) ? null : PublicSuffixDatabase.Companion.get().getEffectiveTldPlusOne(this.host);
     }
 
-    @Deprecated(message="moved to toUrl()", replaceWith=@ReplaceWith(expression="toUrl()", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to toUrl()", replaceWith=@ReplaceWith(expression="toUrl()", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_url")
     @NotNull
     public final URL m289dde399c() {
         return this.url();
     }
 
-    @Deprecated(message="moved to toUri()", replaceWith=@ReplaceWith(expression="toUri()", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to toUri()", replaceWith=@ReplaceWith(expression="toUri()", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_uri")
     @NotNull
     public final URI m8ea086cd29() {
         return this.uri();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="scheme", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="scheme", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_scheme")
     @NotNull
     public final String mb5d37539d2() {
         return this.scheme;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedUsername", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedUsername", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_encodedUsername")
     @NotNull
     public final String mf132c7413b() {
         return this.encodedUsername();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="username", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="username", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_username")
     @NotNull
     public final String m86f5d7645c() {
         return this.username;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedPassword", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedPassword", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_encodedPassword")
     @NotNull
     public final String m8af58c2775() {
         return this.encodedPassword();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="password", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="password", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_password")
     @NotNull
     public final String m1692d58e9f() {
         return this.password;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="host", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="host", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_host")
     @NotNull
     public final String md9edae78d9() {
         return this.host;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="port", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="port", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_port")
     public final int m01723dede8() {
         return this.port;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="pathSize", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="pathSize", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_pathSize")
     public final int m491a7016de() {
         return this.pathSize();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedPath", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedPath", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_encodedPath")
     @NotNull
     public final String m0c6188453f() {
         return this.encodedPath();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedPathSegments", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedPathSegments", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_encodedPathSegments")
     @NotNull
     public final List<String> mb0fd571131() {
         return this.encodedPathSegments();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="pathSegments", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="pathSegments", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_pathSegments")
     @NotNull
     public final List<String> m4effc45145() {
         return this.pathSegments;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedQuery", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedQuery", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_encodedQuery")
     @Nullable
     public final String m9c25b62bae() {
         return this.encodedQuery();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="query", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="query", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_query")
     @Nullable
     public final String m936ab62e6c() {
         return this.query();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="querySize", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="querySize", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_querySize")
     public final int m0fb490d7e5() {
         return this.querySize();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="queryParameterNames", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="queryParameterNames", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_queryParameterNames")
     @NotNull
     public final Set<String> m88977f4e33() {
         return this.queryParameterNames();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedFragment", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="encodedFragment", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_encodedFragment")
     @Nullable
     public final String m1628a3883e() {
         return this.encodedFragment();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="fragment", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="fragment", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_fragment")
     @Nullable
     public final String m011d153d4e() {
@@ -1598,7 +1598,7 @@ public class HttpUrl {
             return this.parse(string);
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="url.toHttpUrl()", imports={"okhttp3.HttpUrl.Companion.toHttpUrl"}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="url.toHttpUrl()", imports={"okhttp3.HttpUrl.Companion.toHttpUrl"}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_get")
         @NotNull
         public final HttpUrl mb208bec41b(@NotNull String string) {
@@ -1606,7 +1606,7 @@ public class HttpUrl {
             return this.get(string);
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="url.toHttpUrlOrNull()", imports={"okhttp3.HttpUrl.Companion.toHttpUrlOrNull"}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="url.toHttpUrlOrNull()", imports={"okhttp3.HttpUrl.Companion.toHttpUrlOrNull"}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_parse")
         @Nullable
         public final HttpUrl m9c32784aca(@NotNull String string) {
@@ -1614,7 +1614,7 @@ public class HttpUrl {
             return this.parse(string);
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="url.toHttpUrlOrNull()", imports={"okhttp3.HttpUrl.Companion.toHttpUrlOrNull"}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="url.toHttpUrlOrNull()", imports={"okhttp3.HttpUrl.Companion.toHttpUrlOrNull"}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_get")
         @Nullable
         public final HttpUrl m921a3595ee(@NotNull URL uRL) {
@@ -1622,7 +1622,7 @@ public class HttpUrl {
             return this.get(uRL);
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="uri.toHttpUrlOrNull()", imports={"okhttp3.HttpUrl.Companion.toHttpUrlOrNull"}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="uri.toHttpUrlOrNull()", imports={"okhttp3.HttpUrl.Companion.toHttpUrlOrNull"}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_get")
         @Nullable
         public final HttpUrl m180bb46639(@NotNull URI uRI) {

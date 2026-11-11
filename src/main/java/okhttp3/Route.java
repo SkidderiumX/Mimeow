@@ -51,21 +51,21 @@ public class Route {
         return this.socketAddress;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="address", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="address", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_address")
     @NotNull
     public final Address m526ca40178() {
         return this.address;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxy", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxy", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_proxy")
     @NotNull
     public final Proxy m80a70b54eb() {
         return this.proxy;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="socketAddress", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="socketAddress", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_socketAddress")
     @NotNull
     public final InetSocketAddress me7297a07f9() {

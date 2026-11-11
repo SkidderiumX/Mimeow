@@ -918,7 +918,7 @@ implements Serializable {
          */
         private class WrappedListIterator
         extends WrappedCollection.WrappedIterator
-        implements ListIterator {
+        implements ListIterator<V> {
             WrappedListIterator() {
             }
 

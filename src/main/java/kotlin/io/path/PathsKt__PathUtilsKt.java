@@ -143,7 +143,7 @@ extends PathsKt__PathRecursiveFunctionsKt {
         return PathsKt.getInvariantSeparatorsPathString(path);
     }
 
-    @Deprecated(message="Use invariantSeparatorsPathString property instead.", replaceWith=@ReplaceWith(expression="invariantSeparatorsPathString", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="Use invariantSeparatorsPathString property instead.", replaceWith=@ReplaceWith(expression="invariantSeparatorsPathString", imports={}), level=DeprecationLevel.ERROR)
     @SinceKotlin(version="1.4")
     @ExperimentalPathApi
     @InlineOnly

@@ -110,27 +110,27 @@ extends RequestBody {
         return this.contentType;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="type", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="type", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_type")
     @NotNull
     public final MediaType ma5d13af633() {
         return this.type;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="boundary", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="boundary", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_boundary")
     @NotNull
     public final String m4a4650802e() {
         return this.boundary();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="size", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="size", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_size")
     public final int m1dc386ac6f() {
         return this.size();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="parts", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="parts", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_parts")
     @NotNull
     public final List<Part> m73512ab86b() {
@@ -391,14 +391,14 @@ extends RequestBody {
             return this.body;
         }
 
-        @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="headers", imports={}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="headers", imports={}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_headers")
         @Nullable
         public final Headers m89d78f2911() {
             return this.headers;
         }
 
-        @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="body", imports={}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="body", imports={}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_body")
         @NotNull
         public final RequestBody m025e6b223d() {

@@ -354,45 +354,6 @@ extends MapsKt___MapsJvmKt {
         return v0;
     }
 
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> double maxOf(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Double> function1) {
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            throw new NoSuchElementException();
-        }
-        double d = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-        while (iterator2.hasNext()) {
-            double d2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-            d = Math.max(d, d2);
-        }
-        return d;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> float maxOf(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Float> function1) {
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            throw new NoSuchElementException();
-        }
-        float f = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-        while (iterator2.hasNext()) {
-            float f2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-            f = Math.max(f, f2);
-        }
-        return f;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <K, V, R extends Comparable<? super R>> R maxOf(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(map, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -409,51 +370,6 @@ extends MapsKt___MapsJvmKt {
         return (R)comparable;
     }
 
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> Double maxOfOrNull(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Double> function1) {
-        Double d;
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            d = null;
-        } else {
-            double d2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-            while (iterator2.hasNext()) {
-                double d3 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-                d2 = Math.max(d2, d3);
-            }
-            d = d2;
-        }
-        return d;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> Float maxOfOrNull(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Float> function1) {
-        Float f;
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            f = null;
-        } else {
-            float f2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-            while (iterator2.hasNext()) {
-                float f3 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-                f2 = Math.max(f2, f3);
-            }
-            f = Float.valueOf(f2);
-        }
-        return f;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <K, V, R extends Comparable<? super R>> R maxOfOrNull(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, ? extends R> function1) {
         Comparable comparable;
         Intrinsics.checkNotNullParameter(map, "<this>");
@@ -593,45 +509,6 @@ extends MapsKt___MapsJvmKt {
         return v0;
     }
 
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> double minOf(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Double> function1) {
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            throw new NoSuchElementException();
-        }
-        double d = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-        while (iterator2.hasNext()) {
-            double d2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-            d = Math.min(d, d2);
-        }
-        return d;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> float minOf(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Float> function1) {
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            throw new NoSuchElementException();
-        }
-        float f = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-        while (iterator2.hasNext()) {
-            float f2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-            f = Math.min(f, f2);
-        }
-        return f;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <K, V, R extends Comparable<? super R>> R minOf(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(map, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -648,51 +525,6 @@ extends MapsKt___MapsJvmKt {
         return (R)comparable;
     }
 
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> Double minOfOrNull(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Double> function1) {
-        Double d;
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            d = null;
-        } else {
-            double d2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-            while (iterator2.hasNext()) {
-                double d3 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).doubleValue();
-                d2 = Math.min(d2, d3);
-            }
-            d = d2;
-        }
-        return d;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <K, V> Float minOfOrNull(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, Float> function1) {
-        Float f;
-        Intrinsics.checkNotNullParameter(map, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        Iterator iterator2 = ((Iterable)map.entrySet()).iterator();
-        if (!iterator2.hasNext()) {
-            f = null;
-        } else {
-            float f2 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-            while (iterator2.hasNext()) {
-                float f3 = ((Number)function1.invoke((Map.Entry<K, V>)iterator2.next())).floatValue();
-                f2 = Math.min(f2, f3);
-            }
-            f = Float.valueOf(f2);
-        }
-        return f;
-    }
-
-    @SinceKotlin(version="1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <K, V, R extends Comparable<? super R>> R minOfOrNull(Map<? extends K, ? extends V> map, Function1<? super Map.Entry<? extends K, ? extends V>, ? extends R> function1) {
         Comparable comparable;
         Intrinsics.checkNotNullParameter(map, "<this>");

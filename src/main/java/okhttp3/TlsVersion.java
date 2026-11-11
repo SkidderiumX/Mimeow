@@ -42,7 +42,7 @@ public enum TlsVersion {
         return this.javaName;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="javaName", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="javaName", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_javaName")
     @NotNull
     public final String m4c4b62e687() {

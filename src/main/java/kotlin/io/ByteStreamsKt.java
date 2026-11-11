@@ -247,7 +247,7 @@ public class ByteStreamsKt {
         return ByteStreamsKt.copyTo(inputStream2, outputStream2, n);
     }
 
-    @Deprecated(message="Use readBytes() overload without estimatedSize parameter", replaceWith=@ReplaceWith(expression="readBytes()", imports={}))
+    @kotlin.Deprecated(message="Use readBytes() overload without estimatedSize parameter", replaceWith=@ReplaceWith(expression="readBytes()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.5")
     @NotNull
     public static final byte[] readBytes(@NotNull InputStream inputStream2, int n) {

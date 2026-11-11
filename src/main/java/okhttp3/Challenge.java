@@ -111,28 +111,28 @@ public class Challenge {
         return new Challenge(this.scheme, map);
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="scheme", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="scheme", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_scheme")
     @NotNull
     public final String mf022a62dac() {
         return this.scheme;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="authParams", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="authParams", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_authParams")
     @NotNull
     public final Map<String, String> mb6b2acd29a() {
         return this.authParams;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="realm", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="realm", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_realm")
     @Nullable
     public final String me9b5c89889() {
         return this.realm();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="charset", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="charset", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_charset")
     @NotNull
     public final Charset me1027b0b2f() {

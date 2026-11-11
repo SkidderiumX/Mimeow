@@ -365,7 +365,7 @@ implements Serializable {
         }
 
         @Override
-        public <T> T[] toArray(T[] TArray) {
+        public Object[] toArray(Object[] TArray) {
             return this.snapshot().toArray(TArray);
         }
 

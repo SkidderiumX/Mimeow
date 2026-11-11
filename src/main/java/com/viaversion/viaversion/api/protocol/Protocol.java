@@ -41,7 +41,7 @@ public interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
         this.registerServerbound(state, n, n2, packetHandler, false);
     }
 
-    @Deprecated(forRemoval=true)
+    @kotlin.Deprecated(forRemoval=true)
     public void registerServerbound(State var1, int var2, int var3, @Nullable PacketHandler var4, boolean var5);
 
     public void cancelServerbound(State var1, int var2);
@@ -52,7 +52,7 @@ public interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
 
     public void cancelClientbound(State var1, int var2);
 
-    @Deprecated(forRemoval=true)
+    @kotlin.Deprecated(forRemoval=true)
     public void registerClientbound(State var1, int var2, int var3, @Nullable PacketHandler var4, boolean var5);
 
     public void registerClientbound(CU var1, @Nullable PacketHandler var2);
@@ -65,7 +65,7 @@ public interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
         this.registerClientbound(CU, CM, packetHandler, false);
     }
 
-    @Deprecated(forRemoval=true)
+    @kotlin.Deprecated(forRemoval=true)
     public void registerClientbound(CU var1, @Nullable CM var2, @Nullable PacketHandler var3, boolean var4);
 
     public void cancelClientbound(CU var1);
@@ -80,7 +80,7 @@ public interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
         this.registerServerbound(SU, SM2, packetHandler, false);
     }
 
-    @Deprecated(forRemoval=true)
+    @kotlin.Deprecated(forRemoval=true)
     public void registerServerbound(SU var1, @Nullable SM var2, @Nullable PacketHandler var3, boolean var4);
 
     public void cancelServerbound(SU var1);

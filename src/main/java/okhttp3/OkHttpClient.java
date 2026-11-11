@@ -483,175 +483,175 @@ WebSocket.Factory {
         return new Builder(this);
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="dispatcher", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="dispatcher", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_dispatcher")
     @NotNull
     public final Dispatcher me4967e5cc9() {
         return this.dispatcher;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="connectionPool", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="connectionPool", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_connectionPool")
     @NotNull
     public final ConnectionPool me3e45bbcf3() {
         return this.connectionPool;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="interceptors", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="interceptors", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_interceptors")
     @NotNull
     public final List<Interceptor> m1ed440b021() {
         return this.interceptors;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="networkInterceptors", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="networkInterceptors", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_networkInterceptors")
     @NotNull
     public final List<Interceptor> mcf483b5c55() {
         return this.networkInterceptors;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="eventListenerFactory", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="eventListenerFactory", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_eventListenerFactory")
     @NotNull
     public final EventListener.Factory mc97bd0815e() {
         return this.eventListenerFactory;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="retryOnConnectionFailure", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="retryOnConnectionFailure", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_retryOnConnectionFailure")
     public final boolean m058e026534() {
         return this.retryOnConnectionFailure;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="authenticator", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="authenticator", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_authenticator")
     @NotNull
     public final Authenticator ma39959b2bf() {
         return this.authenticator;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="followRedirects", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="followRedirects", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_followRedirects")
     public final boolean mf9fe060cf9() {
         return this.followRedirects;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="followSslRedirects", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="followSslRedirects", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_followSslRedirects")
     public final boolean m4a2fbe8f2c() {
         return this.followSslRedirects;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cookieJar", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cookieJar", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cookieJar")
     @NotNull
     public final CookieJar m995d9cac82() {
         return this.cookieJar;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cache", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cache", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cache")
     @Nullable
     public final Cache m4b9703f811() {
         return this.cache;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="dns", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="dns", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_dns")
     @NotNull
     public final Dns mb774968e23() {
         return this.dns;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxy", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxy", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_proxy")
     @Nullable
     public final Proxy m4cceb0ce77() {
         return this.proxy;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxySelector", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxySelector", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_proxySelector")
     @NotNull
     public final ProxySelector m1a760b1ddd() {
         return this.proxySelector;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxyAuthenticator", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="proxyAuthenticator", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_proxyAuthenticator")
     @NotNull
     public final Authenticator mcdfa38dd87() {
         return this.proxyAuthenticator;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="socketFactory", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="socketFactory", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_socketFactory")
     @NotNull
     public final SocketFactory md51c7f0460() {
         return this.socketFactory;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sslSocketFactory", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sslSocketFactory", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_sslSocketFactory")
     @NotNull
     public final SSLSocketFactory ma534589573() {
         return this.sslSocketFactory();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="connectionSpecs", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="connectionSpecs", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_connectionSpecs")
     @NotNull
     public final List<ConnectionSpec> m8a44722b1f() {
         return this.connectionSpecs;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="protocols", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="protocols", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_protocols")
     @NotNull
     public final List<Protocol> m7a2f471a74() {
         return this.protocols;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="hostnameVerifier", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="hostnameVerifier", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_hostnameVerifier")
     @NotNull
     public final HostnameVerifier mecb22a2dda() {
         return this.hostnameVerifier;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="certificatePinner", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="certificatePinner", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_certificatePinner")
     @NotNull
     public final CertificatePinner maff5fe2f3a() {
         return this.certificatePinner;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="callTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="callTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_callTimeoutMillis")
     public final int mcb3749442c() {
         return this.callTimeoutMillis;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="connectTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="connectTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_connectTimeoutMillis")
     public final int m2d183b19fa() {
         return this.connectTimeoutMillis;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="readTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="readTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_readTimeoutMillis")
     public final int mc4cae3a426() {
         return this.readTimeoutMillis;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="writeTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="writeTimeoutMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_writeTimeoutMillis")
     public final int m5ab5beec49() {
         return this.writeTimeoutMillis;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="pingIntervalMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="pingIntervalMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_pingIntervalMillis")
     public final int m2ca2d2e784() {
         return this.pingIntervalMillis;
@@ -1283,7 +1283,7 @@ WebSocket.Factory {
             return builder;
         }
 
-        @Deprecated(message="Use the sslSocketFactory overload that accepts a X509TrustManager.", level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="Use the sslSocketFactory overload that accepts a X509TrustManager.", level=DeprecationLevel.ERROR)
         @NotNull
         public final Builder sslSocketFactory(@NotNull SSLSocketFactory sSLSocketFactory) {
             Builder builder;

@@ -154,59 +154,59 @@ public class Cookie {
         return this.toString$okhttp(false);
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="name", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="name", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_name")
     @NotNull
     public final String m8c00cf3f52() {
         return this.name;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="value", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="value", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_value")
     @NotNull
     public final String m19666c51f2() {
         return this.value;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="persistent", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="persistent", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_persistent")
     public final boolean m1c8355e732() {
         return this.persistent;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="expiresAt", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="expiresAt", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_expiresAt")
     public final long m0e833ebb83() {
         return this.expiresAt;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="hostOnly", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="hostOnly", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_hostOnly")
     public final boolean m0740cbe6fe() {
         return this.hostOnly;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="domain", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="domain", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_domain")
     @NotNull
     public final String m194294586f() {
         return this.domain;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="path", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="path", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_path")
     @NotNull
     public final String mab7685afd4() {
         return this.path;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="httpOnly", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="httpOnly", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_httpOnly")
     public final boolean m79bb62ab59() {
         return this.httpOnly;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="secure", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="secure", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_secure")
     public final boolean m02c5f59f64() {
         return this.secure;

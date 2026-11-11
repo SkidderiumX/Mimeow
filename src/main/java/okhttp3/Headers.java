@@ -79,7 +79,7 @@ KMappedMarker {
         return this.namesAndValues.length / 2;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="size", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="size", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_size")
     public final int m3bc94960dd() {
         return this.size();
@@ -488,7 +488,7 @@ KMappedMarker {
             return new Headers(stringArray2, null);
         }
 
-        @Deprecated(message="function name changed", replaceWith=@ReplaceWith(expression="headersOf(*namesAndValues)", imports={}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="function name changed", replaceWith=@ReplaceWith(expression="headersOf(*namesAndValues)", imports={}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_of")
         @NotNull
         public final Headers m0760342908(String ... stringArray) {
@@ -517,7 +517,7 @@ KMappedMarker {
             return new Headers(stringArray, null);
         }
 
-        @Deprecated(message="function moved to extension", replaceWith=@ReplaceWith(expression="headers.toHeaders()", imports={}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="function moved to extension", replaceWith=@ReplaceWith(expression="headers.toHeaders()", imports={}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_of")
         @NotNull
         public final Headers m8d2cf2e3fc(@NotNull Map<String, String> map) {

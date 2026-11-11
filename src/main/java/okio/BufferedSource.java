@@ -23,7 +23,7 @@ import org.jetbrains.annotations.Nullable;
 public interface BufferedSource
 extends Source,
 ReadableByteChannel {
-    @Deprecated(message="moved to val: use getBuffer() instead", replaceWith=@ReplaceWith(expression="buffer", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="moved to val: use getBuffer() instead", replaceWith=@ReplaceWith(expression="buffer", imports={}), level=DeprecationLevel.WARNING)
     @NotNull
     public Buffer buffer();
 

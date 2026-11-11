@@ -286,7 +286,7 @@ extends RangesKt__RangesKt {
         return closedRange.contains((Short)((Comparable)Short.valueOf(by)));
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="doubleRangeContains")
     public static final /* synthetic */ boolean doubleRangeContains(ClosedRange closedRange, byte by) {
@@ -294,7 +294,7 @@ extends RangesKt__RangesKt {
         return closedRange.contains((Comparable)Double.valueOf(by));
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="floatRangeContains")
     public static final /* synthetic */ boolean floatRangeContains(ClosedRange closedRange, byte by) {
@@ -338,7 +338,7 @@ extends RangesKt__RangesKt {
         return RangesKt.longRangeContains((ClosedRange<Long>)longRange, by);
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="intRangeContains")
     public static final /* synthetic */ boolean intRangeContains(ClosedRange closedRange, double d) {
@@ -350,7 +350,7 @@ extends RangesKt__RangesKt {
         return n3 != null ? closedRange.contains((Comparable)n3) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="longRangeContains")
     public static final /* synthetic */ boolean longRangeContains(ClosedRange closedRange, double d) {
@@ -362,7 +362,7 @@ extends RangesKt__RangesKt {
         return l3 != null ? closedRange.contains((Comparable)l3) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="byteRangeContains")
     public static final /* synthetic */ boolean byteRangeContains(ClosedRange closedRange, double d) {
@@ -374,7 +374,7 @@ extends RangesKt__RangesKt {
         return by3 != null ? closedRange.contains((Comparable)by3) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="shortRangeContains")
     public static final /* synthetic */ boolean shortRangeContains(ClosedRange closedRange, double d) {
@@ -392,7 +392,7 @@ extends RangesKt__RangesKt {
         return closedRange.contains((Float)((Comparable)Float.valueOf((float)d)));
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="intRangeContains")
     public static final /* synthetic */ boolean intRangeContains(ClosedRange closedRange, float f) {
@@ -404,7 +404,7 @@ extends RangesKt__RangesKt {
         return n3 != null ? closedRange.contains((Comparable)n3) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="longRangeContains")
     public static final /* synthetic */ boolean longRangeContains(ClosedRange closedRange, float f) {
@@ -416,7 +416,7 @@ extends RangesKt__RangesKt {
         return l3 != null ? closedRange.contains((Comparable)l3) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="byteRangeContains")
     public static final /* synthetic */ boolean byteRangeContains(ClosedRange closedRange, float f) {
@@ -428,7 +428,7 @@ extends RangesKt__RangesKt {
         return by3 != null ? closedRange.contains((Comparable)by3) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="shortRangeContains")
     public static final /* synthetic */ boolean shortRangeContains(ClosedRange closedRange, float f) {
@@ -480,7 +480,7 @@ extends RangesKt__RangesKt {
         return s3 != null ? closedRange.contains((Short)((Comparable)s3)) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="doubleRangeContains")
     public static final /* synthetic */ boolean doubleRangeContains(ClosedRange closedRange, int n) {
@@ -488,7 +488,7 @@ extends RangesKt__RangesKt {
         return closedRange.contains((Comparable)Double.valueOf(n));
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="floatRangeContains")
     public static final /* synthetic */ boolean floatRangeContains(ClosedRange closedRange, int n) {
@@ -564,7 +564,7 @@ extends RangesKt__RangesKt {
         return s3 != null ? closedRange.contains((Short)((Comparable)s3)) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="doubleRangeContains")
     public static final /* synthetic */ boolean doubleRangeContains(ClosedRange closedRange, long l) {
@@ -572,7 +572,7 @@ extends RangesKt__RangesKt {
         return closedRange.contains((Comparable)Double.valueOf(l));
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="floatRangeContains")
     public static final /* synthetic */ boolean floatRangeContains(ClosedRange closedRange, long l) {
@@ -644,7 +644,7 @@ extends RangesKt__RangesKt {
         return by3 != null ? closedRange.contains((Byte)((Comparable)by3)) : false;
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="doubleRangeContains")
     public static final /* synthetic */ boolean doubleRangeContains(ClosedRange closedRange, short s) {
@@ -652,7 +652,7 @@ extends RangesKt__RangesKt {
         return closedRange.contains((Comparable)Double.valueOf(s));
     }
 
-    @Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
+    @kotlin.Deprecated(message="This `contains` operation mixing integer and floating point arguments has ambiguous semantics and is going to be removed.")
     @DeprecatedSinceKotlin(warningSince="1.3", errorSince="1.4", hiddenSince="1.5")
     @JvmName(name="floatRangeContains")
     public static final /* synthetic */ boolean floatRangeContains(ClosedRange closedRange, short s) {

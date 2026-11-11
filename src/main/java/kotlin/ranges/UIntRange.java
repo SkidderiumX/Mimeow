@@ -48,7 +48,7 @@ OpenEndRange<UInt> {
         return UInt.mb680b9b7ba(this.getLast$pVg5ArA() + 1);
     }
 
-    @Deprecated(message="Can throw an exception when it's impossible to represent the value with UInt type, for example, when the range includes MAX_VALUE. It's recommended to use 'endInclusive' property that doesn't throw.")
+    @kotlin.Deprecated(message="Can throw an exception when it's impossible to represent the value with UInt type, for example, when the range includes MAX_VALUE. It's recommended to use 'endInclusive' property that doesn't throw.")
     @SinceKotlin(version="1.9")
     @WasExperimental(markerClass={ExperimentalStdlibApi.class})
     public static /* synthetic */ void mf083b658de() {

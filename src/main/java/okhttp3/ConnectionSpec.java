@@ -96,7 +96,7 @@ public class ConnectionSpec {
         return list;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cipherSuites", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cipherSuites", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cipherSuites")
     @Nullable
     public final List<CipherSuite> m60b1c46c95() {
@@ -128,14 +128,14 @@ public class ConnectionSpec {
         return list;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="tlsVersions", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="tlsVersions", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_tlsVersions")
     @Nullable
     public final List<TlsVersion> mb059bfc0a9() {
         return this.tlsVersions();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="supportsTlsExtensions", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="supportsTlsExtensions", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_supportsTlsExtensions")
     public final boolean m651900360b() {
         return this.supportsTlsExtensions;
@@ -446,7 +446,7 @@ public class ConnectionSpec {
             return builder;
         }
 
-        @Deprecated(message="since OkHttp 3.13 all TLS-connections are expected to support TLS extensions.\nIn a future release setting this to true will be unnecessary and setting it to false\nwill have no effect.")
+        @kotlin.Deprecated(message="since OkHttp 3.13 all TLS-connections are expected to support TLS extensions.\nIn a future release setting this to true will be unnecessary and setting it to false\nwill have no effect.")
         @NotNull
         public final Builder supportsTlsExtensions(boolean bl) {
             Builder builder;

@@ -2336,7 +2336,7 @@ extends ArraysKt__ArraysKt {
         return (SortedSet)ArraysKt.toCollection(TArray, (Collection)new TreeSet<T>(comparator));
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     @SinceKotlin(version="1.1")
     public static final /* synthetic */ Double max(Double[] doubleArray) {
@@ -2344,7 +2344,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxOrNull(doubleArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     @SinceKotlin(version="1.1")
     public static final /* synthetic */ Float max(Float[] floatArray) {
@@ -2352,63 +2352,63 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxOrNull(floatArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Comparable max(Comparable[] comparableArray) {
         Intrinsics.checkNotNullParameter(comparableArray, "<this>");
         return ArraysKt.maxOrNull((Comparable[])comparableArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Byte max(byte[] byArray) {
         Intrinsics.checkNotNullParameter(byArray, "<this>");
         return ArraysKt.maxOrNull(byArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Short max(short[] sArray) {
         Intrinsics.checkNotNullParameter(sArray, "<this>");
         return ArraysKt.maxOrNull(sArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Integer max(int[] nArray) {
         Intrinsics.checkNotNullParameter(nArray, "<this>");
         return ArraysKt.maxOrNull(nArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Long max(long[] lArray) {
         Intrinsics.checkNotNullParameter(lArray, "<this>");
         return ArraysKt.maxOrNull(lArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Float max(float[] fArray) {
         Intrinsics.checkNotNullParameter(fArray, "<this>");
         return ArraysKt.maxOrNull(fArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Double max(double[] dArray) {
         Intrinsics.checkNotNullParameter(dArray, "<this>");
         return ArraysKt.maxOrNull(dArray);
     }
 
-    @Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use maxOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Character max(char[] cArray) {
         Intrinsics.checkNotNullParameter(cArray, "<this>");
         return ArraysKt.maxOrNull(cArray);
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <T, R extends Comparable<? super R>> T maxBy(T[] TArray, Function1<? super T, ? extends R> function1) {
         T t;
@@ -2441,7 +2441,7 @@ extends ArraysKt__ArraysKt {
         return t;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Byte maxBy(byte[] byArray, Function1<? super Byte, ? extends R> function1) {
         Byte by;
@@ -2474,7 +2474,7 @@ extends ArraysKt__ArraysKt {
         return by;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Short maxBy(short[] sArray, Function1<? super Short, ? extends R> function1) {
         Short s;
@@ -2507,7 +2507,7 @@ extends ArraysKt__ArraysKt {
         return s;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Integer maxBy(int[] nArray, Function1<? super Integer, ? extends R> function1) {
         Integer n;
@@ -2540,7 +2540,7 @@ extends ArraysKt__ArraysKt {
         return n;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Long maxBy(long[] lArray, Function1<? super Long, ? extends R> function1) {
         Long l;
@@ -2573,7 +2573,7 @@ extends ArraysKt__ArraysKt {
         return l;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Float maxBy(float[] fArray, Function1<? super Float, ? extends R> function1) {
         Float f;
@@ -2606,7 +2606,7 @@ extends ArraysKt__ArraysKt {
         return f;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Double maxBy(double[] dArray, Function1<? super Double, ? extends R> function1) {
         Double d;
@@ -2639,7 +2639,7 @@ extends ArraysKt__ArraysKt {
         return d;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Boolean maxBy(boolean[] blArray, Function1<? super Boolean, ? extends R> function1) {
         Boolean bl;
@@ -2672,7 +2672,7 @@ extends ArraysKt__ArraysKt {
         return bl;
     }
 
-    @Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use maxByOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Character maxBy(char[] cArray, Function1<? super Character, ? extends R> function1) {
         Character c;
@@ -2705,7 +2705,7 @@ extends ArraysKt__ArraysKt {
         return c;
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Object maxWith(Object[] objectArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(objectArray, "<this>");
@@ -2713,7 +2713,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(objectArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Byte maxWith(byte[] byArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(byArray, "<this>");
@@ -2721,7 +2721,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(byArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Short maxWith(short[] sArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(sArray, "<this>");
@@ -2729,7 +2729,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(sArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Integer maxWith(int[] nArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(nArray, "<this>");
@@ -2737,7 +2737,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(nArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Long maxWith(long[] lArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(lArray, "<this>");
@@ -2745,7 +2745,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(lArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Float maxWith(float[] fArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(fArray, "<this>");
@@ -2753,7 +2753,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(fArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Double maxWith(double[] dArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(dArray, "<this>");
@@ -2761,7 +2761,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(dArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Boolean maxWith(boolean[] blArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(blArray, "<this>");
@@ -2769,7 +2769,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(blArray, comparator);
     }
 
-    @Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use maxWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.maxWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Character maxWith(char[] cArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(cArray, "<this>");
@@ -2777,7 +2777,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.maxWithOrNull(cArray, comparator);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     @SinceKotlin(version="1.1")
     public static final /* synthetic */ Double min(Double[] doubleArray) {
@@ -2785,7 +2785,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minOrNull(doubleArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     @SinceKotlin(version="1.1")
     public static final /* synthetic */ Float min(Float[] floatArray) {
@@ -2793,63 +2793,63 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minOrNull(floatArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Comparable min(Comparable[] comparableArray) {
         Intrinsics.checkNotNullParameter(comparableArray, "<this>");
         return ArraysKt.minOrNull((Comparable[])comparableArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Byte min(byte[] byArray) {
         Intrinsics.checkNotNullParameter(byArray, "<this>");
         return ArraysKt.minOrNull(byArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Short min(short[] sArray) {
         Intrinsics.checkNotNullParameter(sArray, "<this>");
         return ArraysKt.minOrNull(sArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Integer min(int[] nArray) {
         Intrinsics.checkNotNullParameter(nArray, "<this>");
         return ArraysKt.minOrNull(nArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Long min(long[] lArray) {
         Intrinsics.checkNotNullParameter(lArray, "<this>");
         return ArraysKt.minOrNull(lArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Float min(float[] fArray) {
         Intrinsics.checkNotNullParameter(fArray, "<this>");
         return ArraysKt.minOrNull(fArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Double min(double[] dArray) {
         Intrinsics.checkNotNullParameter(dArray, "<this>");
         return ArraysKt.minOrNull(dArray);
     }
 
-    @Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
+    @kotlin.Deprecated(message="Use minOrNull instead.", replaceWith=@ReplaceWith(expression="this.minOrNull()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Character min(char[] cArray) {
         Intrinsics.checkNotNullParameter(cArray, "<this>");
         return ArraysKt.minOrNull(cArray);
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <T, R extends Comparable<? super R>> T minBy(T[] TArray, Function1<? super T, ? extends R> function1) {
         T t;
@@ -2882,7 +2882,7 @@ extends ArraysKt__ArraysKt {
         return t;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Byte minBy(byte[] byArray, Function1<? super Byte, ? extends R> function1) {
         Byte by;
@@ -2915,7 +2915,7 @@ extends ArraysKt__ArraysKt {
         return by;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Short minBy(short[] sArray, Function1<? super Short, ? extends R> function1) {
         Short s;
@@ -2948,7 +2948,7 @@ extends ArraysKt__ArraysKt {
         return s;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Integer minBy(int[] nArray, Function1<? super Integer, ? extends R> function1) {
         Integer n;
@@ -2981,7 +2981,7 @@ extends ArraysKt__ArraysKt {
         return n;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Long minBy(long[] lArray, Function1<? super Long, ? extends R> function1) {
         Long l;
@@ -3014,7 +3014,7 @@ extends ArraysKt__ArraysKt {
         return l;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Float minBy(float[] fArray, Function1<? super Float, ? extends R> function1) {
         Float f;
@@ -3047,7 +3047,7 @@ extends ArraysKt__ArraysKt {
         return f;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Double minBy(double[] dArray, Function1<? super Double, ? extends R> function1) {
         Double d;
@@ -3080,7 +3080,7 @@ extends ArraysKt__ArraysKt {
         return d;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Boolean minBy(boolean[] blArray, Function1<? super Boolean, ? extends R> function1) {
         Boolean bl;
@@ -3113,7 +3113,7 @@ extends ArraysKt__ArraysKt {
         return bl;
     }
 
-    @Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
+    @kotlin.Deprecated(message="Use minByOrNull instead.", replaceWith=@ReplaceWith(expression="this.minByOrNull(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ <R extends Comparable<? super R>> Character minBy(char[] cArray, Function1<? super Character, ? extends R> function1) {
         Character c;
@@ -3146,7 +3146,7 @@ extends ArraysKt__ArraysKt {
         return c;
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Object minWith(Object[] objectArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(objectArray, "<this>");
@@ -3154,7 +3154,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(objectArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Byte minWith(byte[] byArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(byArray, "<this>");
@@ -3162,7 +3162,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(byArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Short minWith(short[] sArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(sArray, "<this>");
@@ -3170,7 +3170,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(sArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Integer minWith(int[] nArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(nArray, "<this>");
@@ -3178,7 +3178,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(nArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Long minWith(long[] lArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(lArray, "<this>");
@@ -3186,7 +3186,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(lArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Float minWith(float[] fArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(fArray, "<this>");
@@ -3194,7 +3194,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(fArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Double minWith(double[] dArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(dArray, "<this>");
@@ -3202,7 +3202,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(dArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Boolean minWith(boolean[] blArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(blArray, "<this>");
@@ -3210,7 +3210,7 @@ extends ArraysKt__ArraysKt {
         return ArraysKt.minWithOrNull(blArray, comparator);
     }
 
-    @Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
+    @kotlin.Deprecated(message="Use minWithOrNull instead.", replaceWith=@ReplaceWith(expression="this.minWithOrNull(comparator)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.4", errorSince="1.5", hiddenSince="1.6")
     public static final /* synthetic */ Character minWith(char[] cArray, Comparator comparator) {
         Intrinsics.checkNotNullParameter(cArray, "<this>");

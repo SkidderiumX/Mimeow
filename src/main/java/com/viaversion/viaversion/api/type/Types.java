@@ -161,7 +161,7 @@ public class Types {
     public static final Type<Vector3f> VECTOR3F = new Vector3fType();
     public static final Type<Quaternion> QUATERNION = new QuaternionType();
     public static final Type<Vector3d> LOW_PRECISION_VECTOR = new LowPrecisionVectorType();
-    @Deprecated(forRemoval=true)
+    @kotlin.Deprecated(forRemoval=true)
     public static final Type<Vector3d> MOVEMENT_VECTOR = LOW_PRECISION_VECTOR;
     public static final Type<CompoundTag> NAMED_COMPOUND_TAG = new NamedCompoundTagType();
     public static final Type<CompoundTag> OPTIONAL_NAMED_COMPOUND_TAG = new NamedCompoundTagType.OptionalNamedCompoundTagType();

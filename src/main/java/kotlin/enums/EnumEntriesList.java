@@ -40,14 +40,14 @@ Serializable {
     }
 
     @Override
-    public boolean contains(@NotNull T t) {
+    public boolean contains(@NotNull Object t) {
         Intrinsics.checkNotNullParameter(t, "element");
         Enum enum_ = (Enum)ArraysKt.getOrNull(this.entries, ((Enum)t).ordinal());
         return enum_ == t;
     }
 
     @Override
-    public int indexOf(@NotNull T t) {
+    public int indexOf(@NotNull Object t) {
         Intrinsics.checkNotNullParameter(t, "element");
         int n = ((Enum)t).ordinal();
         Enum enum_ = (Enum)ArraysKt.getOrNull(this.entries, n);
@@ -55,7 +55,7 @@ Serializable {
     }
 
     @Override
-    public int lastIndexOf(@NotNull T t) {
+    public int lastIndexOf(@NotNull Object t) {
         Intrinsics.checkNotNullParameter(t, "element");
         return this.indexOf((Object)t);
     }

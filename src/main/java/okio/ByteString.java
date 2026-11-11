@@ -490,14 +490,14 @@ public class ByteString implements Serializable, Comparable<ByteString>
         objectOutputStream.write(this.data);
     }
     
-    @Deprecated(message = "moved to operator function", replaceWith = @ReplaceWith(expression = "this[index]", imports = {}), level = DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message = "moved to operator function", replaceWith = @ReplaceWith(expression = "this[index]", imports = {}), level = DeprecationLevel.ERROR)
     @JvmName(name = "-deprecated_getByte")
     @java.lang.Deprecated
     public final byte mb1e2a40866(final int n) {
         return this.getByte(n);
     }
     
-    @Deprecated(message = "moved to val", replaceWith = @ReplaceWith(expression = "size", imports = {}), level = DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message = "moved to val", replaceWith = @ReplaceWith(expression = "size", imports = {}), level = DeprecationLevel.ERROR)
     @JvmName(name = "-deprecated_size")
     @java.lang.Deprecated
     public final int m4747c82b0f() {
@@ -694,7 +694,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return new ByteString(b);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.decodeBase64()", imports = { "okio.ByteString.Companion.decodeBase64" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.decodeBase64()", imports = { "okio.ByteString.Companion.decodeBase64" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_decodeBase64")
         @Nullable
         @java.lang.Deprecated
@@ -703,7 +703,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return this.decodeBase64(s);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.decodeHex()", imports = { "okio.ByteString.Companion.decodeHex" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.decodeHex()", imports = { "okio.ByteString.Companion.decodeHex" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_decodeHex")
         @NotNull
         @java.lang.Deprecated
@@ -712,7 +712,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return this.decodeHex(s);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.encode(charset)", imports = { "okio.ByteString.Companion.encode" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.encode(charset)", imports = { "okio.ByteString.Companion.encode" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_encodeString")
         @NotNull
         @java.lang.Deprecated
@@ -722,7 +722,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return this.encodeString(s, charset);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.encodeUtf8()", imports = { "okio.ByteString.Companion.encodeUtf8" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "string.encodeUtf8()", imports = { "okio.ByteString.Companion.encodeUtf8" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_encodeUtf8")
         @NotNull
         @java.lang.Deprecated
@@ -731,7 +731,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return this.encodeUtf8(s);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "buffer.toByteString()", imports = { "okio.ByteString.Companion.toByteString" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "buffer.toByteString()", imports = { "okio.ByteString.Companion.toByteString" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_of")
         @NotNull
         @java.lang.Deprecated
@@ -740,7 +740,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return this.of(byteBuffer);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "array.toByteString(offset, byteCount)", imports = { "okio.ByteString.Companion.toByteString" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "array.toByteString(offset, byteCount)", imports = { "okio.ByteString.Companion.toByteString" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_of")
         @NotNull
         @java.lang.Deprecated
@@ -749,7 +749,7 @@ public class ByteString implements Serializable, Comparable<ByteString>
             return this.of(array, n, n2);
         }
         
-        @Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "inputstream.readByteString(byteCount)", imports = { "okio.ByteString.Companion.readByteString" }), level = DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message = "moved to extension function", replaceWith = @ReplaceWith(expression = "inputstream.readByteString(byteCount)", imports = { "okio.ByteString.Companion.readByteString" }), level = DeprecationLevel.ERROR)
         @JvmName(name = "-deprecated_read")
         @NotNull
         @java.lang.Deprecated

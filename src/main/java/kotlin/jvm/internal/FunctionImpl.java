@@ -32,7 +32,7 @@ import kotlin.jvm.functions.Function8;
 import kotlin.jvm.functions.Function9;
 
 @java.lang.Deprecated
-@Deprecated(message="This class is no longer supported, do not use it.", level=DeprecationLevel.ERROR)
+@kotlin.Deprecated(message="This class is no longer supported, do not use it.", level=DeprecationLevel.ERROR)
 public abstract class FunctionImpl
 implements Function,
 Serializable,

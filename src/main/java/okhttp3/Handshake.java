@@ -100,21 +100,21 @@ public class Handshake {
         return (List)lazy.getValue();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="tlsVersion", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="tlsVersion", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_tlsVersion")
     @NotNull
     public final TlsVersion m66ce96c517() {
         return this.tlsVersion;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cipherSuite", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cipherSuite", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cipherSuite")
     @NotNull
     public final CipherSuite md349564abc() {
         return this.cipherSuite;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="peerCertificates", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="peerCertificates", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_peerCertificates")
     @NotNull
     public final List<Certificate> m191d1c4509() {
@@ -129,14 +129,14 @@ public class Handshake {
         return x509Certificate != null ? x509Certificate.getSubjectX500Principal() : null;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="peerPrincipal", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="peerPrincipal", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_peerPrincipal")
     @Nullable
     public final Principal maa89b6fa6b() {
         return this.peerPrincipal();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="localCertificates", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="localCertificates", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_localCertificates")
     @NotNull
     public final List<Certificate> m25c67ff608() {
@@ -151,7 +151,7 @@ public class Handshake {
         return x509Certificate != null ? x509Certificate.getSubjectX500Principal() : null;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="localPrincipal", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="localPrincipal", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_localPrincipal")
     @Nullable
     public final Principal mdcf44060ec() {
@@ -288,7 +288,7 @@ public class Handshake {
             return certificateArray != null ? Util.immutableListOf(Arrays.copyOf(certificateArray, certificateArray.length)) : CollectionsKt.emptyList();
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="sslSession.handshake()", imports={}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="sslSession.handshake()", imports={}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_get")
         @NotNull
         public final Handshake m2ff7a0713d(@NotNull SSLSession sSLSession) throws IOException {

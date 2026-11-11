@@ -10488,7 +10488,7 @@ extends UArraysKt___UArraysJvmKt {
         return list;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10505,7 +10505,7 @@ extends UArraysKt___UArraysJvmKt {
         return n;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10522,7 +10522,7 @@ extends UArraysKt___UArraysJvmKt {
         return n;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10539,7 +10539,7 @@ extends UArraysKt___UArraysJvmKt {
         return n;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10556,7 +10556,7 @@ extends UArraysKt___UArraysJvmKt {
         return n;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10573,7 +10573,7 @@ extends UArraysKt___UArraysJvmKt {
         return d;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10590,7 +10590,7 @@ extends UArraysKt___UArraysJvmKt {
         return d;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes
@@ -10607,7 +10607,7 @@ extends UArraysKt___UArraysJvmKt {
         return d;
     }
 
-    @Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
+    @kotlin.Deprecated(message="Use sumOf instead.", replaceWith=@ReplaceWith(expression="this.sumOf(selector)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.3")
     @ExperimentalUnsignedTypes

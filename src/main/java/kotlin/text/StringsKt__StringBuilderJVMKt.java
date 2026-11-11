@@ -226,7 +226,7 @@ extends StringsKt__RegexExtensionsKt {
         return stringBuilder3;
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine()", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine()", imports={}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final Appendable appendln(@NotNull Appendable appendable) {
         Intrinsics.checkNotNullParameter(appendable, "<this>");
@@ -235,7 +235,7 @@ extends StringsKt__RegexExtensionsKt {
         return appendable2;
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final Appendable appendln(Appendable appendable, CharSequence charSequence) {
         Intrinsics.checkNotNullParameter(appendable, "<this>");
@@ -244,7 +244,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(appendable2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final Appendable appendln(Appendable appendable, char c) {
         Intrinsics.checkNotNullParameter(appendable, "<this>");
@@ -253,7 +253,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(appendable2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine()", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine()", imports={}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final StringBuilder appendln(@NotNull StringBuilder stringBuilder) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -262,7 +262,7 @@ extends StringsKt__RegexExtensionsKt {
         return stringBuilder2;
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, StringBuffer stringBuffer) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -271,7 +271,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, CharSequence charSequence) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -280,7 +280,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, String string) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -289,7 +289,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, Object object) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -298,7 +298,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, StringBuilder stringBuilder2) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -307,7 +307,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder3);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, char[] cArray) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -317,7 +317,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, char c) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -326,7 +326,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, boolean bl) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -335,7 +335,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, int n) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -344,7 +344,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, short s) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -353,7 +353,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, byte by) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -362,7 +362,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, long l) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -371,7 +371,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, float f) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");
@@ -380,7 +380,7 @@ extends StringsKt__RegexExtensionsKt {
         return StringsKt.appendln(stringBuilder2);
     }
 
-    @Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Use appendLine instead. Note that the new method always appends the line feed character '\\n' regardless of the system line separator.", replaceWith=@ReplaceWith(expression="appendLine(value)", imports={}), level=DeprecationLevel.WARNING)
     @InlineOnly
     private static final StringBuilder appendln(StringBuilder stringBuilder, double d) {
         Intrinsics.checkNotNullParameter(stringBuilder, "<this>");

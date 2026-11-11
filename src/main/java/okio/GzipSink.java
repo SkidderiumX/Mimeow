@@ -144,7 +144,7 @@ implements Sink {
         }
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="deflater", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="deflater", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_deflater")
     @NotNull
     public final Deflater mbd22fdcf99() {

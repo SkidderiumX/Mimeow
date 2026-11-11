@@ -49,7 +49,7 @@ extends RequestBody {
         return this.encodedNames.size();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="size", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="size", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_size")
     public final int mf1593665d6() {
         return this.size();

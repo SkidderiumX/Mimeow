@@ -199,7 +199,7 @@ extends StringsKt__StringNumberConversionsKt {
         return StringsKt.replaceFirst(string, string2, string3, bl);
     }
 
-    @Deprecated(message="Use uppercase() instead.", replaceWith=@ReplaceWith(expression="uppercase(Locale.getDefault())", imports={"java.util.Locale"}))
+    @kotlin.Deprecated(message="Use uppercase() instead.", replaceWith=@ReplaceWith(expression="uppercase(Locale.getDefault())", imports={"java.util.Locale"}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final String toUpperCase(String string) {
@@ -219,7 +219,7 @@ extends StringsKt__StringNumberConversionsKt {
         return string2;
     }
 
-    @Deprecated(message="Use lowercase() instead.", replaceWith=@ReplaceWith(expression="lowercase(Locale.getDefault())", imports={"java.util.Locale"}))
+    @kotlin.Deprecated(message="Use lowercase() instead.", replaceWith=@ReplaceWith(expression="lowercase(Locale.getDefault())", imports={"java.util.Locale"}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final String toLowerCase(String string) {
@@ -723,7 +723,7 @@ extends StringsKt__StringNumberConversionsKt {
         return StringsKt.regionMatches(string, n, string2, n2, n3, bl);
     }
 
-    @Deprecated(message="Use lowercase() instead.", replaceWith=@ReplaceWith(expression="lowercase(locale)", imports={}))
+    @kotlin.Deprecated(message="Use lowercase() instead.", replaceWith=@ReplaceWith(expression="lowercase(locale)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final String toLowerCase(String string, Locale locale) {
@@ -745,7 +745,7 @@ extends StringsKt__StringNumberConversionsKt {
         return string2;
     }
 
-    @Deprecated(message="Use uppercase() instead.", replaceWith=@ReplaceWith(expression="uppercase(locale)", imports={}))
+    @kotlin.Deprecated(message="Use uppercase() instead.", replaceWith=@ReplaceWith(expression="uppercase(locale)", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final String toUpperCase(String string, Locale locale) {
@@ -805,7 +805,7 @@ extends StringsKt__StringNumberConversionsKt {
         return pattern;
     }
 
-    @Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }", imports={"java.util.Locale"}))
+    @kotlin.Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }", imports={"java.util.Locale"}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @NotNull
     public static final String capitalize(@NotNull String string) {
@@ -815,7 +815,7 @@ extends StringsKt__StringNumberConversionsKt {
         return StringsKt.capitalize(string, locale);
     }
 
-    @Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { if (it.isLowerCase()) it.titlecase(locale) else it.toString() }", imports={}))
+    @kotlin.Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { if (it.isLowerCase()) it.titlecase(locale) else it.toString() }", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.4")
     @WasExperimental(markerClass={ExperimentalStdlibApi.class})
@@ -858,7 +858,7 @@ extends StringsKt__StringNumberConversionsKt {
         return string;
     }
 
-    @Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { it.lowercase(Locale.getDefault()) }", imports={"java.util.Locale"}))
+    @kotlin.Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { it.lowercase(Locale.getDefault()) }", imports={"java.util.Locale"}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @NotNull
     public static final String decapitalize(@NotNull String string) {
@@ -887,7 +887,7 @@ extends StringsKt__StringNumberConversionsKt {
         return string2;
     }
 
-    @Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { it.lowercase(locale) }", imports={}))
+    @kotlin.Deprecated(message="Use replaceFirstChar instead.", replaceWith=@ReplaceWith(expression="replaceFirstChar { it.lowercase(locale) }", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @SinceKotlin(version="1.4")
     @WasExperimental(markerClass={ExperimentalStdlibApi.class})

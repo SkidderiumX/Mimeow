@@ -596,7 +596,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
             return "";
         }
         final StringBuilder sb = new StringBuilder(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             sb.append(charSequence.charAt(((Number)iterator.next()).intValue()));
         }
@@ -1302,43 +1302,6 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
         return char1;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final CharSequence charSequence, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(charSequence.charAt(0)).doubleValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(charSequence.charAt(iterator.nextInt())).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final CharSequence charSequence, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(charSequence.charAt(0)).floatValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(charSequence.charAt(iterator.nextInt())).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <R extends Comparable<? super R>> R maxOf(final CharSequence charSequence, final Function1<? super Character, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(charSequence, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -1356,43 +1319,6 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
         return (R)comparable;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final CharSequence charSequence, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            return null;
-        }
-        double n = function1.invoke(charSequence.charAt(0)).doubleValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(charSequence.charAt(iterator.nextInt())).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final CharSequence charSequence, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            return null;
-        }
-        float n = function1.invoke(charSequence.charAt(0)).floatValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(charSequence.charAt(iterator.nextInt())).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <R extends Comparable<? super R>> R maxOfOrNull(final CharSequence charSequence, final Function1<? super Character, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(charSequence, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -1578,43 +1504,6 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
         return char1;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final CharSequence charSequence, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(charSequence.charAt(0)).doubleValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(charSequence.charAt(iterator.nextInt())).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final CharSequence charSequence, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(charSequence.charAt(0)).floatValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(charSequence.charAt(iterator.nextInt())).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <R extends Comparable<? super R>> R minOf(final CharSequence charSequence, final Function1<? super Character, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(charSequence, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -1632,43 +1521,6 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
         return (R)comparable;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final CharSequence charSequence, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            return null;
-        }
-        double n = function1.invoke(charSequence.charAt(0)).doubleValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(charSequence.charAt(iterator.nextInt())).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final CharSequence charSequence, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(charSequence, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (charSequence.length() == 0) {
-            return null;
-        }
-        float n = function1.invoke(charSequence.charAt(0)).floatValue();
-        final IntIterator iterator = new IntRange(1, StringsKt__StringsKt.getLastIndex(charSequence)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(charSequence.charAt(iterator.nextInt())).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <R extends Comparable<? super R>> R minOfOrNull(final CharSequence charSequence, final Function1<? super Character, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(charSequence, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -2067,7 +1919,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
         return list;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final CharSequence charSequence, @NotNull final Function1<? super Character, Integer> function1) {
@@ -2080,7 +1932,7 @@ public class StringsKt___StringsKt extends StringsKt___StringsJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final CharSequence charSequence, @NotNull final Function1<? super Character, Double> function1) {

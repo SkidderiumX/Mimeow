@@ -81,7 +81,7 @@ public class CharsKt__CharJVMKt {
         return Character.isLowerCase(c);
     }
 
-    @Deprecated(message="Use uppercaseChar() instead.", replaceWith=@ReplaceWith(expression="uppercaseChar()", imports={}))
+    @kotlin.Deprecated(message="Use uppercaseChar() instead.", replaceWith=@ReplaceWith(expression="uppercaseChar()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final char toUpperCase(char c) {
@@ -118,7 +118,7 @@ public class CharsKt__CharJVMKt {
         return string2;
     }
 
-    @Deprecated(message="Use lowercaseChar() instead.", replaceWith=@ReplaceWith(expression="lowercaseChar()", imports={}))
+    @kotlin.Deprecated(message="Use lowercaseChar() instead.", replaceWith=@ReplaceWith(expression="lowercaseChar()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final char toLowerCase(char c) {
@@ -160,7 +160,7 @@ public class CharsKt__CharJVMKt {
         return Character.isTitleCase(c);
     }
 
-    @Deprecated(message="Use titlecaseChar() instead.", replaceWith=@ReplaceWith(expression="titlecaseChar()", imports={}))
+    @kotlin.Deprecated(message="Use titlecaseChar() instead.", replaceWith=@ReplaceWith(expression="titlecaseChar()", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.5")
     @InlineOnly
     private static final char toTitleCase(char c) {

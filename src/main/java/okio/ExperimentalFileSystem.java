@@ -13,7 +13,7 @@ import kotlin.Metadata;
 import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 
-@Deprecated(message="This annotation is obsolete and should be removed.", level=DeprecationLevel.HIDDEN)
+@kotlin.Deprecated(message="This annotation is obsolete and should be removed.", level=DeprecationLevel.HIDDEN)
 @kotlin.annotation.Retention(value=AnnotationRetention.SOURCE)
 @kotlin.annotation.Target(allowedTargets={AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY})
 @Retention(value=RetentionPolicy.SOURCE)

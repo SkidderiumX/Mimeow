@@ -154,21 +154,21 @@ implements Closeable {
         return this.exchange;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="request", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="request", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_request")
     @NotNull
     public final Request m0180afde1c() {
         return this.request;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="protocol", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="protocol", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_protocol")
     @NotNull
     public final Protocol m6fe6ffd7f9() {
         return this.protocol;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="code", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="code", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_code")
     public final int m8c1c5fd8fa() {
         return this.code;
@@ -179,14 +179,14 @@ implements Closeable {
         return 200 <= n ? n < 300 : false;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="message", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="message", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_message")
     @NotNull
     public final String m4199f34a3c() {
         return this.message;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="handshake", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="handshake", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_handshake")
     @Nullable
     public final Handshake m63c6c15280() {
@@ -217,7 +217,7 @@ implements Closeable {
         return response.header(string, string2);
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="headers", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="headers", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_headers")
     @NotNull
     public final Headers m7349520215() {
@@ -246,7 +246,7 @@ implements Closeable {
         return ResponseBody.Companion.create(buffer, this.body.contentType(), buffer.size());
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="body", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="body", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_body")
     @Nullable
     public final ResponseBody m402dd87610() {
@@ -277,21 +277,21 @@ implements Closeable {
         return bl;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="networkResponse", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="networkResponse", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_networkResponse")
     @Nullable
     public final Response m1994f73403() {
         return this.networkResponse;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cacheResponse", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cacheResponse", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cacheResponse")
     @Nullable
     public final Response mc156f5d37f() {
         return this.cacheResponse;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="priorResponse", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="priorResponse", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_priorResponse")
     @Nullable
     public final Response m14792a9bff() {
@@ -327,20 +327,20 @@ implements Closeable {
         return cacheControl;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cacheControl", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cacheControl", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cacheControl")
     @NotNull
     public final CacheControl mafcf9029a5() {
         return this.cacheControl();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sentRequestAtMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sentRequestAtMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_sentRequestAtMillis")
     public final long m8767a9160a() {
         return this.sentRequestAtMillis;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="receivedResponseAtMillis", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="receivedResponseAtMillis", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_receivedResponseAtMillis")
     public final long m23e845b84e() {
         return this.receivedResponseAtMillis;

@@ -220,7 +220,7 @@ extends CollectionsKt__MutableCollectionsJVMKt {
         return bl2;
     }
 
-    @Deprecated(message="Use removeAt(index) instead.", replaceWith=@ReplaceWith(expression="removeAt(index)", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="Use removeAt(index) instead.", replaceWith=@ReplaceWith(expression="removeAt(index)", imports={}), level=DeprecationLevel.ERROR)
     @InlineOnly
     private static final <T> T remove(List<T> list, int n) {
         Intrinsics.checkNotNullParameter(list, "<this>");

@@ -343,7 +343,7 @@ Flushable {
         return this.cache.getDirectory();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="directory", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="directory", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_directory")
     @NotNull
     public final File mc706f20f3e() {

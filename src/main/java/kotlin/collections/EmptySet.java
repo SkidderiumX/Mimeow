@@ -103,7 +103,7 @@ KMappedMarker {
     }
 
     @Override
-    public <T> T[] toArray(T[] TArray) {
+    public Object[] toArray(Object[] TArray) {
         Intrinsics.checkNotNullParameter(TArray, "array");
         return CollectionToArray.toArray(this, TArray);
     }

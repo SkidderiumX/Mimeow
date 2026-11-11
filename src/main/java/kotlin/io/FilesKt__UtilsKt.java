@@ -14,7 +14,7 @@ import java.util.*;
 @SourceDebugExtension({ "SMAP\nUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Utils.kt\nkotlin/io/FilesKt__UtilsKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n*L\n1#1,473:1\n1#2:474\n1284#3,3:475\n*S KotlinDebug\n*F\n+ 1 Utils.kt\nkotlin/io/FilesKt__UtilsKt\n*L\n347#1:475,3\n*E\n" })
 public class FilesKt__UtilsKt extends FilesKt__FileTreeWalkKt
 {
-    @Deprecated(message = "Avoid creating temporary directories in the default temp location with this function due to too wide permissions on the newly created directory. Use kotlin.io.path.createTempDirectory instead.")
+    @kotlin.Deprecated(message = "Avoid creating temporary directories in the default temp location with this function due to too wide permissions on the newly created directory. Use kotlin.io.path.createTempDirectory instead.")
     @NotNull
     @java.lang.Deprecated
     public static final File createTempDir(@NotNull final String prefix, @Nullable final String suffix, @Nullable final File directory) {
@@ -28,7 +28,7 @@ public class FilesKt__UtilsKt extends FilesKt__FileTreeWalkKt
         throw new IOException("Unable to create temporary directory " + tempFile + '.');
     }
     
-    @Deprecated(message = "Avoid creating temporary files in the default temp location with this function due to too wide permissions on the newly created file. Use kotlin.io.path.createTempFile instead or resort to java.io.File.createTempFile.")
+    @kotlin.Deprecated(message = "Avoid creating temporary files in the default temp location with this function due to too wide permissions on the newly created file. Use kotlin.io.path.createTempFile instead or resort to java.io.File.createTempFile.")
     @NotNull
     @java.lang.Deprecated
     public static final File createTempFile(@NotNull final String prefix, @Nullable final String suffix, @Nullable final File directory) {

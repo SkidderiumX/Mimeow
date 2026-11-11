@@ -51,7 +51,7 @@ OpenEndRange<Character> {
         return Character.valueOf((char)(this.getLast() + '\u0001'));
     }
 
-    @Deprecated(message="Can throw an exception when it's impossible to represent the value with Char type, for example, when the range includes MAX_VALUE. It's recommended to use 'endInclusive' property that doesn't throw.")
+    @kotlin.Deprecated(message="Can throw an exception when it's impossible to represent the value with Char type, for example, when the range includes MAX_VALUE. It's recommended to use 'endInclusive' property that doesn't throw.")
     @SinceKotlin(version="1.9")
     @WasExperimental(markerClass={ExperimentalStdlibApi.class})
     public static /* synthetic */ void getEndExclusive$annotations() {

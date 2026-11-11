@@ -119,61 +119,61 @@ public class CacheControl {
         return this.immutable;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="noCache", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="noCache", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_noCache")
     public final boolean m89926e506d() {
         return this.noCache;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="noStore", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="noStore", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_noStore")
     public final boolean m4348ee3f32() {
         return this.noStore;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="maxAgeSeconds", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="maxAgeSeconds", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_maxAgeSeconds")
     public final int mf3c3e6abd1() {
         return this.maxAgeSeconds;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sMaxAgeSeconds", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sMaxAgeSeconds", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_sMaxAgeSeconds")
     public final int m866f69dffc() {
         return this.sMaxAgeSeconds;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="mustRevalidate", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="mustRevalidate", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_mustRevalidate")
     public final boolean me1345b6623() {
         return this.mustRevalidate;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="maxStaleSeconds", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="maxStaleSeconds", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_maxStaleSeconds")
     public final int m0b631d673e() {
         return this.maxStaleSeconds;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="minFreshSeconds", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="minFreshSeconds", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_minFreshSeconds")
     public final int m15dc2feeca() {
         return this.minFreshSeconds;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="onlyIfCached", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="onlyIfCached", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_onlyIfCached")
     public final boolean m1b1147a773() {
         return this.onlyIfCached;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="noTransform", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="noTransform", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_noTransform")
     public final boolean m41d89bdd48() {
         return this.noTransform;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="immutable", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="immutable", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_immutable")
     public final boolean m342b86c893() {
         return this.immutable;

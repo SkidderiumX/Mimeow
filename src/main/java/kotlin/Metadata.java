@@ -47,7 +47,7 @@ public @interface Metadata {
 
     @Metadata(mv={1, 9, 0}, k=3, xi=48)
     public static final class DefaultImpls {
-        @Deprecated(message="Bytecode version had no significant use in Kotlin metadata and it will be removed in a future version.", level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Bytecode version had no significant use in Kotlin metadata and it will be removed in a future version.", level=DeprecationLevel.WARNING)
         public static /* synthetic */ void bv$annotations() {
         }
 

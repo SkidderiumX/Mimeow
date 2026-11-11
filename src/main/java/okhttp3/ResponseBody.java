@@ -235,28 +235,28 @@ implements Closeable {
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final ResponseBody create(@Nullable MediaType mediaType, @NotNull String string) {
         return Companion.create(mediaType, string);
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final ResponseBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray) {
         return Companion.create(mediaType, byArray);
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final ResponseBody create(@Nullable MediaType mediaType, @NotNull ByteString byteString) {
         return Companion.create(mediaType, byteString);
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.asResponseBody(contentType, contentLength)", imports={"okhttp3.ResponseBody.Companion.asResponseBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.asResponseBody(contentType, contentLength)", imports={"okhttp3.ResponseBody.Companion.asResponseBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final ResponseBody create(@Nullable MediaType mediaType, long l, @NotNull BufferedSource bufferedSource) {
         return Companion.create(mediaType, l, bufferedSource);
@@ -424,7 +424,7 @@ implements Closeable {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final ResponseBody create(@Nullable MediaType mediaType, @NotNull String string) {
             Intrinsics.checkNotNullParameter(string, "content");
@@ -432,7 +432,7 @@ implements Closeable {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final ResponseBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray) {
             Intrinsics.checkNotNullParameter(byArray, "content");
@@ -440,7 +440,7 @@ implements Closeable {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toResponseBody(contentType)", imports={"okhttp3.ResponseBody.Companion.toResponseBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final ResponseBody create(@Nullable MediaType mediaType, @NotNull ByteString byteString) {
             Intrinsics.checkNotNullParameter(byteString, "content");
@@ -448,7 +448,7 @@ implements Closeable {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.asResponseBody(contentType, contentLength)", imports={"okhttp3.ResponseBody.Companion.asResponseBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.asResponseBody(contentType, contentLength)", imports={"okhttp3.ResponseBody.Companion.asResponseBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final ResponseBody create(@Nullable MediaType mediaType, long l, @NotNull BufferedSource bufferedSource) {
             Intrinsics.checkNotNullParameter(bufferedSource, "content");

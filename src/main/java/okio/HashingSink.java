@@ -133,7 +133,7 @@ implements Sink {
         return new ByteString(byArray2);
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="hash", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="hash", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_hash")
     @NotNull
     public final ByteString m6cd92ffa4d() {

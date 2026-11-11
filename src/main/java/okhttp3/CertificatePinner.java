@@ -157,7 +157,7 @@ public class CertificatePinner {
         throw new SSLPeerUnverifiedException(string4);
     }
 
-    @Deprecated(message="replaced with {@link #check(String, List)}.", replaceWith=@ReplaceWith(expression="check(hostname, peerCertificates.toList())", imports={}))
+    @kotlin.Deprecated(message="replaced with {@link #check(String, List)}.", replaceWith=@ReplaceWith(expression="check(hostname, peerCertificates.toList())", imports={}))
     public final void check(@NotNull String string, Certificate ... certificateArray) throws SSLPeerUnverifiedException {
         Intrinsics.checkNotNullParameter(string, "hostname");
         Intrinsics.checkNotNullParameter(certificateArray, "peerCertificates");

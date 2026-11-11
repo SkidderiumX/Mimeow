@@ -146,7 +146,7 @@ KMappedMarker {
 
     @Override
     @Nullable
-    public Object yieldAll(@NotNull Iterator<? extends T> iterator2, @NotNull Continuation<? super Unit> continuation) {
+    public Object yieldAll(@NotNull Iterator<?> iterator2, @NotNull Continuation<? super Unit> continuation) {
         if (!iterator2.hasNext()) {
             return Unit.INSTANCE;
         }

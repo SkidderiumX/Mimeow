@@ -50,7 +50,7 @@ OpenEndRange<ULong> {
         return ULong.mc76128828a(l + ULong.mc76128828a((long)n & 0xFFFFFFFFL));
     }
 
-    @Deprecated(message="Can throw an exception when it's impossible to represent the value with ULong type, for example, when the range includes MAX_VALUE. It's recommended to use 'endInclusive' property that doesn't throw.")
+    @kotlin.Deprecated(message="Can throw an exception when it's impossible to represent the value with ULong type, for example, when the range includes MAX_VALUE. It's recommended to use 'endInclusive' property that doesn't throw.")
     @SinceKotlin(version="1.9")
     @WasExperimental(markerClass={ExperimentalStdlibApi.class})
     public static /* synthetic */ void m285750290a() {

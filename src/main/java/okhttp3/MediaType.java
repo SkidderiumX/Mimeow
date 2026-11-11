@@ -105,14 +105,14 @@ public class MediaType {
         return null;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="type", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="type", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_type")
     @NotNull
     public final String m2d04312f50() {
         return this.type;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="subtype", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="subtype", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_subtype")
     @NotNull
     public final String m36da2d06c7() {
@@ -247,7 +247,7 @@ public class MediaType {
             return mediaType;
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="mediaType.toMediaType()", imports={"okhttp3.MediaType.Companion.toMediaType"}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="mediaType.toMediaType()", imports={"okhttp3.MediaType.Companion.toMediaType"}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_get")
         @NotNull
         public final MediaType m41380b40ca(@NotNull String string) {
@@ -255,7 +255,7 @@ public class MediaType {
             return this.get(string);
         }
 
-        @Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="mediaType.toMediaTypeOrNull()", imports={"okhttp3.MediaType.Companion.toMediaTypeOrNull"}), level=DeprecationLevel.ERROR)
+        @kotlin.Deprecated(message="moved to extension function", replaceWith=@ReplaceWith(expression="mediaType.toMediaTypeOrNull()", imports={"okhttp3.MediaType.Companion.toMediaTypeOrNull"}), level=DeprecationLevel.ERROR)
         @JvmName(name="-deprecated_parse")
         @Nullable
         public final MediaType m44dc6f128e(@NotNull String string) {

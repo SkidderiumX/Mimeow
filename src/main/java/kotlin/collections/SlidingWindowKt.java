@@ -31,7 +31,7 @@ public class SlidingWindowKt
     }
     
     @NotNull
-    public static final <T> Iterator<List<T>> windowedIterator(@NotNull final Iterator<? extends T> iterator, final int n, final int n2, final boolean b, final boolean b2) {
+    public static final <T> Iterator<List<T>> windowedIterator(@NotNull final Iterator<?> iterator, final int n, final int n2, final boolean b, final boolean b2) {
         Intrinsics.checkNotNullParameter(iterator, "iterator");
         if (!iterator.hasNext()) {
             return EmptyIterator.INSTANCE;

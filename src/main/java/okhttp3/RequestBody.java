@@ -79,21 +79,21 @@ public abstract class RequestBody {
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final RequestBody create(@Nullable MediaType mediaType, @NotNull String string) {
         return Companion.create(mediaType, string);
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final RequestBody create(@Nullable MediaType mediaType, @NotNull ByteString byteString) {
         return Companion.create(mediaType, byteString);
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
     @JvmOverloads
     @NotNull
     public static final RequestBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray, int n, int n2) {
@@ -101,7 +101,7 @@ public abstract class RequestBody {
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'file' argument first to fix Java", replaceWith=@ReplaceWith(expression="file.asRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.asRequestBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'file' argument first to fix Java", replaceWith=@ReplaceWith(expression="file.asRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.asRequestBody"}), level=DeprecationLevel.WARNING)
     @NotNull
     public static final RequestBody create(@Nullable MediaType mediaType, @NotNull File file) {
         return Companion.create(mediaType, file);
@@ -132,7 +132,7 @@ public abstract class RequestBody {
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
     @JvmOverloads
     @NotNull
     public static final RequestBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray, int n) {
@@ -140,7 +140,7 @@ public abstract class RequestBody {
     }
 
     @JvmStatic
-    @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
     @JvmOverloads
     @NotNull
     public static final RequestBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray) {
@@ -319,7 +319,7 @@ public abstract class RequestBody {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final RequestBody create(@Nullable MediaType mediaType, @NotNull String string) {
             Intrinsics.checkNotNullParameter(string, "content");
@@ -327,7 +327,7 @@ public abstract class RequestBody {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final RequestBody create(@Nullable MediaType mediaType, @NotNull ByteString byteString) {
             Intrinsics.checkNotNullParameter(byteString, "content");
@@ -335,7 +335,7 @@ public abstract class RequestBody {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
         @JvmOverloads
         @NotNull
         public final RequestBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray, int n, int n2) {
@@ -354,7 +354,7 @@ public abstract class RequestBody {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'file' argument first to fix Java", replaceWith=@ReplaceWith(expression="file.asRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.asRequestBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'file' argument first to fix Java", replaceWith=@ReplaceWith(expression="file.asRequestBody(contentType)", imports={"okhttp3.RequestBody.Companion.asRequestBody"}), level=DeprecationLevel.WARNING)
         @NotNull
         public final RequestBody create(@Nullable MediaType mediaType, @NotNull File file) {
             Intrinsics.checkNotNullParameter(file, "file");
@@ -389,7 +389,7 @@ public abstract class RequestBody {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
         @JvmOverloads
         @NotNull
         public final RequestBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray, int n) {
@@ -398,7 +398,7 @@ public abstract class RequestBody {
         }
 
         @JvmStatic
-        @Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
+        @kotlin.Deprecated(message="Moved to extension function. Put the 'content' argument first to fix Java", replaceWith=@ReplaceWith(expression="content.toRequestBody(contentType, offset, byteCount)", imports={"okhttp3.RequestBody.Companion.toRequestBody"}), level=DeprecationLevel.WARNING)
         @JvmOverloads
         @NotNull
         public final RequestBody create(@Nullable MediaType mediaType, @NotNull byte[] byArray) {

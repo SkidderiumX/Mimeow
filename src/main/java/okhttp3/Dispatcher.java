@@ -286,7 +286,7 @@ public class Dispatcher {
         return this.runningAsyncCalls.size() + this.runningSyncCalls.size();
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="executorService", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="executorService", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_executorService")
     @NotNull
     public final ExecutorService m82fe501275() {

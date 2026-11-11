@@ -82,7 +82,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.NANOSECONDS);
     }
 
-    @Deprecated(message="Use 'Int.nanoseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.nanoseconds", imports={"kotlin.time.Duration.Companion.nanoseconds"}))
+    @kotlin.Deprecated(message="Use 'Int.nanoseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.nanoseconds", imports={"kotlin.time.Duration.Companion.nanoseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -93,7 +93,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.NANOSECONDS);
     }
 
-    @Deprecated(message="Use 'Long.nanoseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.nanoseconds", imports={"kotlin.time.Duration.Companion.nanoseconds"}))
+    @kotlin.Deprecated(message="Use 'Long.nanoseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.nanoseconds", imports={"kotlin.time.Duration.Companion.nanoseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -104,7 +104,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.NANOSECONDS);
     }
 
-    @Deprecated(message="Use 'Double.nanoseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.nanoseconds", imports={"kotlin.time.Duration.Companion.nanoseconds"}))
+    @kotlin.Deprecated(message="Use 'Double.nanoseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.nanoseconds", imports={"kotlin.time.Duration.Companion.nanoseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -115,7 +115,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.MICROSECONDS);
     }
 
-    @Deprecated(message="Use 'Int.microseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.microseconds", imports={"kotlin.time.Duration.Companion.microseconds"}))
+    @kotlin.Deprecated(message="Use 'Int.microseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.microseconds", imports={"kotlin.time.Duration.Companion.microseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -126,7 +126,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.MICROSECONDS);
     }
 
-    @Deprecated(message="Use 'Long.microseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.microseconds", imports={"kotlin.time.Duration.Companion.microseconds"}))
+    @kotlin.Deprecated(message="Use 'Long.microseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.microseconds", imports={"kotlin.time.Duration.Companion.microseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -137,7 +137,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.MICROSECONDS);
     }
 
-    @Deprecated(message="Use 'Double.microseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.microseconds", imports={"kotlin.time.Duration.Companion.microseconds"}))
+    @kotlin.Deprecated(message="Use 'Double.microseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.microseconds", imports={"kotlin.time.Duration.Companion.microseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -148,7 +148,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.MILLISECONDS);
     }
 
-    @Deprecated(message="Use 'Int.milliseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.milliseconds", imports={"kotlin.time.Duration.Companion.milliseconds"}))
+    @kotlin.Deprecated(message="Use 'Int.milliseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.milliseconds", imports={"kotlin.time.Duration.Companion.milliseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -159,7 +159,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.MILLISECONDS);
     }
 
-    @Deprecated(message="Use 'Long.milliseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.milliseconds", imports={"kotlin.time.Duration.Companion.milliseconds"}))
+    @kotlin.Deprecated(message="Use 'Long.milliseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.milliseconds", imports={"kotlin.time.Duration.Companion.milliseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -170,7 +170,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.MILLISECONDS);
     }
 
-    @Deprecated(message="Use 'Double.milliseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.milliseconds", imports={"kotlin.time.Duration.Companion.milliseconds"}))
+    @kotlin.Deprecated(message="Use 'Double.milliseconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.milliseconds", imports={"kotlin.time.Duration.Companion.milliseconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -181,7 +181,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.SECONDS);
     }
 
-    @Deprecated(message="Use 'Int.seconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.seconds", imports={"kotlin.time.Duration.Companion.seconds"}))
+    @kotlin.Deprecated(message="Use 'Int.seconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.seconds", imports={"kotlin.time.Duration.Companion.seconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -192,7 +192,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.SECONDS);
     }
 
-    @Deprecated(message="Use 'Long.seconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.seconds", imports={"kotlin.time.Duration.Companion.seconds"}))
+    @kotlin.Deprecated(message="Use 'Long.seconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.seconds", imports={"kotlin.time.Duration.Companion.seconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -203,7 +203,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.SECONDS);
     }
 
-    @Deprecated(message="Use 'Double.seconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.seconds", imports={"kotlin.time.Duration.Companion.seconds"}))
+    @kotlin.Deprecated(message="Use 'Double.seconds' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.seconds", imports={"kotlin.time.Duration.Companion.seconds"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -214,7 +214,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.MINUTES);
     }
 
-    @Deprecated(message="Use 'Int.minutes' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.minutes", imports={"kotlin.time.Duration.Companion.minutes"}))
+    @kotlin.Deprecated(message="Use 'Int.minutes' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.minutes", imports={"kotlin.time.Duration.Companion.minutes"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -225,7 +225,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.MINUTES);
     }
 
-    @Deprecated(message="Use 'Long.minutes' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.minutes", imports={"kotlin.time.Duration.Companion.minutes"}))
+    @kotlin.Deprecated(message="Use 'Long.minutes' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.minutes", imports={"kotlin.time.Duration.Companion.minutes"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -236,7 +236,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.MINUTES);
     }
 
-    @Deprecated(message="Use 'Double.minutes' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.minutes", imports={"kotlin.time.Duration.Companion.minutes"}))
+    @kotlin.Deprecated(message="Use 'Double.minutes' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.minutes", imports={"kotlin.time.Duration.Companion.minutes"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -247,7 +247,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.HOURS);
     }
 
-    @Deprecated(message="Use 'Int.hours' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.hours", imports={"kotlin.time.Duration.Companion.hours"}))
+    @kotlin.Deprecated(message="Use 'Int.hours' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.hours", imports={"kotlin.time.Duration.Companion.hours"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -258,7 +258,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.HOURS);
     }
 
-    @Deprecated(message="Use 'Long.hours' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.hours", imports={"kotlin.time.Duration.Companion.hours"}))
+    @kotlin.Deprecated(message="Use 'Long.hours' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.hours", imports={"kotlin.time.Duration.Companion.hours"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -269,7 +269,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.HOURS);
     }
 
-    @Deprecated(message="Use 'Double.hours' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.hours", imports={"kotlin.time.Duration.Companion.hours"}))
+    @kotlin.Deprecated(message="Use 'Double.hours' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.hours", imports={"kotlin.time.Duration.Companion.hours"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -280,7 +280,7 @@ public class DurationKt {
         return DurationKt.toDuration(n, DurationUnit.DAYS);
     }
 
-    @Deprecated(message="Use 'Int.days' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.days", imports={"kotlin.time.Duration.Companion.days"}))
+    @kotlin.Deprecated(message="Use 'Int.days' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.days", imports={"kotlin.time.Duration.Companion.days"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -291,7 +291,7 @@ public class DurationKt {
         return DurationKt.toDuration(l, DurationUnit.DAYS);
     }
 
-    @Deprecated(message="Use 'Long.days' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.days", imports={"kotlin.time.Duration.Companion.days"}))
+    @kotlin.Deprecated(message="Use 'Long.days' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.days", imports={"kotlin.time.Duration.Companion.days"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime
@@ -302,7 +302,7 @@ public class DurationKt {
         return DurationKt.toDuration(d, DurationUnit.DAYS);
     }
 
-    @Deprecated(message="Use 'Double.days' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.days", imports={"kotlin.time.Duration.Companion.days"}))
+    @kotlin.Deprecated(message="Use 'Double.days' extension property from Duration.Companion instead.", replaceWith=@ReplaceWith(expression="this.days", imports={"kotlin.time.Duration.Companion.days"}))
     @DeprecatedSinceKotlin(warningSince="1.5", errorSince="1.8", hiddenSince="1.9")
     @SinceKotlin(version="1.3")
     @ExperimentalTime

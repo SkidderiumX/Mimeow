@@ -31,7 +31,7 @@ KMappedMarker {
     public abstract Iterator<E> iterator();
 
     @Override
-    public boolean contains(E e) {
+    public boolean contains(Object e) {
         boolean bl;
         block3: {
             Iterable iterable = this;

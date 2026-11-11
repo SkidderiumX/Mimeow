@@ -107,7 +107,7 @@ extends StandardRowSortedTable<R, C, V> {
     }
 
     private class TreeRow
-    extends StandardTable.Row
+    extends StandardTable<R, C, V>.Row
     implements SortedMap<C, V> {
         @Nullable
         final C lowerBound;

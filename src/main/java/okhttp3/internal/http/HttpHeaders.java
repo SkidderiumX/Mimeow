@@ -196,7 +196,7 @@ public class HttpHeaders {
         return Util.headersContentLength(response) != -1L || StringsKt.equals("chunked", Response.header$default(response, "Transfer-Encoding", null, 2, null), true);
     }
 
-    @Deprecated(message="No longer supported", replaceWith=@ReplaceWith(expression="response.promisesBody()", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="No longer supported", replaceWith=@ReplaceWith(expression="response.promisesBody()", imports={}), level=DeprecationLevel.ERROR)
     public static final boolean hasBody(@NotNull Response response) {
         Intrinsics.checkNotNullParameter(response, "response");
         return HttpHeaders.promisesBody(response);

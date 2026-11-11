@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 public interface BufferedSink
 extends Sink,
 WritableByteChannel {
-    @Deprecated(message="moved to val: use getBuffer() instead", replaceWith=@ReplaceWith(expression="buffer", imports={}), level=DeprecationLevel.WARNING)
+    @kotlin.Deprecated(message="moved to val: use getBuffer() instead", replaceWith=@ReplaceWith(expression="buffer", imports={}), level=DeprecationLevel.WARNING)
     @NotNull
     public Buffer buffer();
 

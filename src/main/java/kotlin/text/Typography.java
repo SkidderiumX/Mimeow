@@ -67,12 +67,12 @@ public class Typography {
     public static /* synthetic */ void getRightGuillemet$annotations() {
     }
 
-    @Deprecated(message="This constant has a typo in the name. Use leftGuillemet instead.", replaceWith=@ReplaceWith(expression="Typography.leftGuillemet", imports={}))
+    @kotlin.Deprecated(message="This constant has a typo in the name. Use leftGuillemet instead.", replaceWith=@ReplaceWith(expression="Typography.leftGuillemet", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.6")
     public static /* synthetic */ void getLeftGuillemete$annotations() {
     }
 
-    @Deprecated(message="This constant has a typo in the name. Use rightGuillemet instead.", replaceWith=@ReplaceWith(expression="Typography.rightGuillemet", imports={}))
+    @kotlin.Deprecated(message="This constant has a typo in the name. Use rightGuillemet instead.", replaceWith=@ReplaceWith(expression="Typography.rightGuillemet", imports={}))
     @DeprecatedSinceKotlin(warningSince="1.6")
     public static /* synthetic */ void getRightGuillemete$annotations() {
     }

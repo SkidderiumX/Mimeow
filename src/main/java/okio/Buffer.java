@@ -2027,14 +2027,14 @@ public class Buffer implements BufferedSource, BufferedSink, Cloneable, ByteChan
         return buffer.readAndWriteUnsafe(default__new_UnsafeCursor);
     }
     
-    @Deprecated(message = "moved to operator function", replaceWith = @ReplaceWith(expression = "this[index]", imports = {}), level = DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message = "moved to operator function", replaceWith = @ReplaceWith(expression = "this[index]", imports = {}), level = DeprecationLevel.ERROR)
     @JvmName(name = "-deprecated_getByte")
     @java.lang.Deprecated
     public final byte m0377f75dac(final long n) {
         return this.getByte(n);
     }
     
-    @Deprecated(message = "moved to val", replaceWith = @ReplaceWith(expression = "size", imports = {}), level = DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message = "moved to val", replaceWith = @ReplaceWith(expression = "size", imports = {}), level = DeprecationLevel.ERROR)
     @JvmName(name = "-deprecated_size")
     @java.lang.Deprecated
     public final long mfd88fdb958() {

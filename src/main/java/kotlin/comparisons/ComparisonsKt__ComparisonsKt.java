@@ -81,12 +81,9 @@ public class ComparisonsKt__ComparisonsKt {
     @InlineOnly
     private static final <T> Comparator<T> compareBy(Function1<? super T, ? extends Comparable<?>> function1) {
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(function1){
-            final /* synthetic */ Function1<T, Comparable<?>> $selector;
-            {
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Function1<T, Comparable<?>> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 Function1<T, Comparable<?>> function1 = this.$selector;
                 return ComparisonsKt.compareValues(function1.invoke(t), function1.invoke(t2));
@@ -98,14 +95,10 @@ public class ComparisonsKt__ComparisonsKt {
     private static final <T, K> Comparator<T> compareBy(Comparator<? super K> comparator, Function1<? super T, ? extends K> function1) {
         Intrinsics.checkNotNullParameter(comparator, "comparator");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(comparator, function1){
-            final /* synthetic */ Comparator<? super K> $comparator;
-            final /* synthetic */ Function1<T, K> $selector;
-            {
-                this.$comparator = comparator;
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<? super K> $comparator = comparator;
+            final Function1<T, K> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 Comparator<K> comparator = this.$comparator;
                 Function1<T, K> function1 = this.$selector;
@@ -117,12 +110,9 @@ public class ComparisonsKt__ComparisonsKt {
     @InlineOnly
     private static final <T> Comparator<T> compareByDescending(Function1<? super T, ? extends Comparable<?>> function1) {
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(function1){
-            final /* synthetic */ Function1<T, Comparable<?>> $selector;
-            {
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Function1<T, Comparable<?>> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 Function1<T, Comparable<?>> function1 = this.$selector;
                 return ComparisonsKt.compareValues(function1.invoke(t2), function1.invoke(t));
@@ -134,14 +124,10 @@ public class ComparisonsKt__ComparisonsKt {
     private static final <T, K> Comparator<T> compareByDescending(Comparator<? super K> comparator, Function1<? super T, ? extends K> function1) {
         Intrinsics.checkNotNullParameter(comparator, "comparator");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(comparator, function1){
-            final /* synthetic */ Comparator<? super K> $comparator;
-            final /* synthetic */ Function1<T, K> $selector;
-            {
-                this.$comparator = comparator;
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<? super K> $comparator = comparator;
+            final Function1<T, K> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 Comparator<K> comparator = this.$comparator;
                 Function1<T, K> function1 = this.$selector;
@@ -154,14 +140,10 @@ public class ComparisonsKt__ComparisonsKt {
     private static final <T> Comparator<T> thenBy(Comparator<T> comparator, Function1<? super T, ? extends Comparable<?>> function1) {
         Intrinsics.checkNotNullParameter(comparator, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(comparator, function1){
-            final /* synthetic */ Comparator<T> $this_thenBy;
-            final /* synthetic */ Function1<T, Comparable<?>> $selector;
-            {
-                this.$this_thenBy = comparator;
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<T> $this_thenBy = comparator;
+            final Function1<T, Comparable<?>> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 int n;
                 int n2 = this.$this_thenBy.compare(t, t2);
@@ -181,16 +163,11 @@ public class ComparisonsKt__ComparisonsKt {
         Intrinsics.checkNotNullParameter(comparator, "<this>");
         Intrinsics.checkNotNullParameter(comparator2, "comparator");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(comparator, comparator2, function1){
-            final /* synthetic */ Comparator<T> $this_thenBy;
-            final /* synthetic */ Comparator<? super K> $comparator;
-            final /* synthetic */ Function1<T, K> $selector;
-            {
-                this.$this_thenBy = comparator;
-                this.$comparator = comparator2;
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<T> $this_thenBy = comparator;
+            final Comparator<? super K> $comparator = comparator2;
+            final Function1<T, K> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 int n;
                 int n2 = this.$this_thenBy.compare(t, t2);
@@ -210,14 +187,10 @@ public class ComparisonsKt__ComparisonsKt {
     private static final <T> Comparator<T> thenByDescending(Comparator<T> comparator, Function1<? super T, ? extends Comparable<?>> function1) {
         Intrinsics.checkNotNullParameter(comparator, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(comparator, function1){
-            final /* synthetic */ Comparator<T> $this_thenByDescending;
-            final /* synthetic */ Function1<T, Comparable<?>> $selector;
-            {
-                this.$this_thenByDescending = comparator;
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<T> $this_thenByDescending = comparator;
+            final Function1<T, Comparable<?>> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 int n;
                 int n2 = this.$this_thenByDescending.compare(t, t2);
@@ -237,16 +210,11 @@ public class ComparisonsKt__ComparisonsKt {
         Intrinsics.checkNotNullParameter(comparator, "<this>");
         Intrinsics.checkNotNullParameter(comparator2, "comparator");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return new Comparator(comparator, comparator2, function1){
-            final /* synthetic */ Comparator<T> $this_thenByDescending;
-            final /* synthetic */ Comparator<? super K> $comparator;
-            final /* synthetic */ Function1<T, K> $selector;
-            {
-                this.$this_thenByDescending = comparator;
-                this.$comparator = comparator2;
-                this.$selector = function1;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<T> $this_thenByDescending = comparator;
+            final Comparator<? super K> $comparator = comparator2;
+            final Function1<T, K> $selector = function1;
+            
             public final int compare(T t, T t2) {
                 int n;
                 int n2 = this.$this_thenByDescending.compare(t, t2);
@@ -266,14 +234,10 @@ public class ComparisonsKt__ComparisonsKt {
     private static final <T> Comparator<T> thenComparator(Comparator<T> comparator, Function2<? super T, ? super T, Integer> function2) {
         Intrinsics.checkNotNullParameter(comparator, "<this>");
         Intrinsics.checkNotNullParameter(function2, "comparison");
-        return new Comparator(comparator, function2){
-            final /* synthetic */ Comparator<T> $this_thenComparator;
-            final /* synthetic */ Function2<T, T, Integer> $comparison;
-            {
-                this.$this_thenComparator = comparator;
-                this.$comparison = function2;
-            }
-
+        return new Comparator<T>(){
+            final Comparator<T> $this_thenComparator = comparator;
+            final Function2<T, T, Integer> $comparison = function2;
+            
             public final int compare(T t, T t2) {
                 int n = this.$this_thenComparator.compare(t, t2);
                 return n != 0 ? n : ((Number)this.$comparison.invoke(t, t2)).intValue();

@@ -127,35 +127,35 @@ public class Request {
         return cacheControl;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="url", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="url", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_url")
     @NotNull
     public final HttpUrl m2b1bddf75f() {
         return this.url;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="method", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="method", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_method")
     @NotNull
     public final String m343772206f() {
         return this.method;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="headers", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="headers", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_headers")
     @NotNull
     public final Headers mfceeab854c() {
         return this.headers;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="body", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="body", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_body")
     @Nullable
     public final RequestBody mefe2f3fa0d() {
         return this.body;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cacheControl", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="cacheControl", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_cacheControl")
     @NotNull
     public final CacheControl mfee8d09217() {

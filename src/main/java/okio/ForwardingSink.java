@@ -59,7 +59,7 @@ implements Sink {
         return this.getClass().getSimpleName() + '(' + this.delegate + ')';
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="delegate", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="delegate", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_delegate")
     @NotNull
     public final Sink m9d9bd72a59() {

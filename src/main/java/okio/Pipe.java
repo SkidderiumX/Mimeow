@@ -576,14 +576,14 @@ public class Pipe {
         }
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sink", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="sink", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_sink")
     @NotNull
     public final Sink m74f7b86f9c() {
         return this.sink;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="source", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="source", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_source")
     @NotNull
     public final Source m4dee6b53ab() {

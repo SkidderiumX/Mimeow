@@ -45,7 +45,7 @@ KMappedMarker {
     }
 
     @Override
-    public int indexOf(E e) {
+    public int indexOf(Object e) {
         int n;
         block2: {
             List list = this;
@@ -68,7 +68,7 @@ KMappedMarker {
     }
 
     @Override
-    public int lastIndexOf(E e) {
+    public int lastIndexOf(Object e) {
         int n;
         block1: {
             List list = this;

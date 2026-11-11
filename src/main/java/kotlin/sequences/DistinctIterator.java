@@ -21,7 +21,7 @@ extends AbstractIterator<T> {
     @NotNull
     private final HashSet<K> observed;
 
-    public DistinctIterator(@NotNull Iterator<? extends T> iterator2, @NotNull Function1<? super T, ? extends K> function1) {
+    public DistinctIterator(@NotNull Iterator<?> iterator2, @NotNull Function1<? super T, ? extends K> function1) {
         Intrinsics.checkNotNullParameter(iterator2, "source");
         Intrinsics.checkNotNullParameter(function1, "keySelector");
         this.source = iterator2;

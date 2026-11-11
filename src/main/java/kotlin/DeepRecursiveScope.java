@@ -32,7 +32,7 @@ public abstract class DeepRecursiveScope<T, R> {
     @Nullable
     public abstract <U, S> Object callRecursive(@NotNull DeepRecursiveFunction<U, S> var1, U var2, @NotNull Continuation<? super S> var3);
 
-    @Deprecated(message="'invoke' should not be called from DeepRecursiveScope. Use 'callRecursive' to do recursion in the heap instead of the call stack.", replaceWith=@ReplaceWith(expression="this.callRecursive(value)", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="'invoke' should not be called from DeepRecursiveScope. Use 'callRecursive' to do recursion in the heap instead of the call stack.", replaceWith=@ReplaceWith(expression="this.callRecursive(value)", imports={}), level=DeprecationLevel.ERROR)
     @NotNull
     public final Void invoke(@NotNull DeepRecursiveFunction<?, ?> deepRecursiveFunction, @Nullable Object object) {
         Intrinsics.checkNotNullParameter(deepRecursiveFunction, "<this>");

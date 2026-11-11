@@ -4403,7 +4403,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<T>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4419,7 +4419,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Byte>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4435,7 +4435,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Short>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4451,7 +4451,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Integer>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4467,7 +4467,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Long>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4483,7 +4483,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Float>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4499,7 +4499,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Double>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4515,7 +4515,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Boolean>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -4531,7 +4531,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
             return CollectionsKt__CollectionsKt.emptyList();
         }
         final ArrayList list = new ArrayList<Character>(collectionSizeOrDefault);
-        final Iterator<? extends T> iterator = iterable.iterator();
+        final Iterator<?> iterator = iterable.iterator();
         while (iterator.hasNext()) {
             list.add(array[((Number)iterator.next()).intValue()]);
         }
@@ -6144,11 +6144,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
         if (array.length > 1) {
-            ArraysKt___ArraysJvmKt.sortWith(array, new Comparator<Object>(function1) {
+            ArraysKt___ArraysJvmKt.sortWith(array, new Comparator<Object>() {
                 @Override
-                public final int compare(final T t, final T t2) {
-                    final Function1 $selector = this.$selector;
-                    return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+                public final int compare(final Object t, final Object t2) {
+                    final Function1 $selector = function1;
+                    return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
                 }
             });
         }
@@ -6158,11 +6158,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
         if (array.length > 1) {
-            ArraysKt___ArraysJvmKt.sortWith(array, new Comparator<Object>(function1) {
+            ArraysKt___ArraysJvmKt.sortWith(array, new Comparator<Object>() {
                 @Override
-                public final int compare(final T t, final T t2) {
-                    final Function1 $selector = this.$selector;
-                    return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+                public final int compare(final Object t, final Object t2) {
+                    final Function1 $selector = function1;
+                    return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
                 }
             });
         }
@@ -6517,11 +6517,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <T, R extends Comparable<? super R>> List<T> sortedBy(@NotNull final T[] array, @NotNull final Function1<? super T, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6530,11 +6530,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Byte> sortedBy(@NotNull final byte[] array, @NotNull final Function1<? super Byte, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6543,11 +6543,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Short> sortedBy(@NotNull final short[] array, @NotNull final Function1<? super Short, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6556,11 +6556,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Integer> sortedBy(@NotNull final int[] array, @NotNull final Function1<? super Integer, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6569,11 +6569,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Long> sortedBy(@NotNull final long[] array, @NotNull final Function1<? super Long, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6582,11 +6582,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Float> sortedBy(@NotNull final float[] array, @NotNull final Function1<? super Float, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6595,11 +6595,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Double> sortedBy(@NotNull final double[] array, @NotNull final Function1<? super Double, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6608,11 +6608,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Boolean> sortedBy(@NotNull final boolean[] array, @NotNull final Function1<? super Boolean, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6621,11 +6621,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Character> sortedBy(@NotNull final char[] array, @NotNull final Function1<? super Character, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t), $selector.invoke(t2));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t), (Comparable)$selector.invoke(t2));
             }
         });
     }
@@ -6634,11 +6634,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <T, R extends Comparable<? super R>> List<T> sortedByDescending(@NotNull final T[] array, @NotNull final Function1<? super T, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6647,11 +6647,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Byte> sortedByDescending(@NotNull final byte[] array, @NotNull final Function1<? super Byte, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6660,11 +6660,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Short> sortedByDescending(@NotNull final short[] array, @NotNull final Function1<? super Short, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6673,11 +6673,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Integer> sortedByDescending(@NotNull final int[] array, @NotNull final Function1<? super Integer, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6686,11 +6686,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Long> sortedByDescending(@NotNull final long[] array, @NotNull final Function1<? super Long, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6699,11 +6699,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Float> sortedByDescending(@NotNull final float[] array, @NotNull final Function1<? super Float, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6712,11 +6712,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Double> sortedByDescending(@NotNull final double[] array, @NotNull final Function1<? super Double, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6725,11 +6725,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Boolean> sortedByDescending(@NotNull final boolean[] array, @NotNull final Function1<? super Boolean, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -6738,11 +6738,11 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     public static final <R extends Comparable<? super R>> List<Character> sortedByDescending(@NotNull final char[] array, @NotNull final Function1<? super Character, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
-        return sortedWith(array, new Comparator<Object>(function1) {
+        return sortedWith(array, new Comparator<Object>() {
             @Override
-            public final int compare(final T t, final T t2) {
-                final Function1 $selector = this.$selector;
-                return ComparisonsKt__ComparisonsKt.compareValues($selector.invoke(t2), $selector.invoke(t));
+            public final int compare(final Object t, final Object t2) {
+                final Function1 $selector = function1;
+                return ComparisonsKt__ComparisonsKt.compareValues((Comparable)$selector.invoke(t2), (Comparable)$selector.invoke(t));
             }
         });
     }
@@ -11952,33 +11952,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
-    public static final double maxOrThrow(@NotNull final Double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, array[iterator.nextInt()]);
-        }
-        return a;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
-    public static final float maxOrThrow(@NotNull final Float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, array[iterator.nextInt()]);
-        }
-        return a;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
@@ -12073,33 +12049,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
-    public static final float maxOrThrow(@NotNull final float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float max = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            max = Math.max(max, array[iterator.nextInt()]);
-        }
-        return max;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
-    public static final double maxOrThrow(@NotNull final double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double max = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            max = Math.max(max, array[iterator.nextInt()]);
-        }
-        return max;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
@@ -12587,315 +12539,6 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return c;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> double maxOf(final T[] array, final Function1<? super T, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final byte[] array, final Function1<? super Byte, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final short[] array, final Function1<? super Short, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final int[] array, final Function1<? super Integer, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final long[] array, final Function1<? super Long, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final float[] array, final Function1<? super Float, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final double[] array, final Function1<? super Double, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final boolean[] array, final Function1<? super Boolean, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double maxOf(final char[] array, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> float maxOf(final T[] array, final Function1<? super T, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final byte[] array, final Function1<? super Byte, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final short[] array, final Function1<? super Short, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final int[] array, final Function1<? super Integer, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final long[] array, final Function1<? super Long, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final float[] array, final Function1<? super Float, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final double[] array, final Function1<? super Double, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final boolean[] array, final Function1<? super Boolean, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float maxOf(final char[] array, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.max(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <T, R extends Comparable<? super R>> R maxOf(final T[] array, final Function1<? super T, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -13073,315 +12716,6 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return (R)comparable;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> Double maxOfOrNull(final T[] array, final Function1<? super T, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final byte[] array, final Function1<? super Byte, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final short[] array, final Function1<? super Short, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final int[] array, final Function1<? super Integer, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final long[] array, final Function1<? super Long, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final float[] array, final Function1<? super Float, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final double[] array, final Function1<? super Double, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final boolean[] array, final Function1<? super Boolean, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double maxOfOrNull(final char[] array, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> Float maxOfOrNull(final T[] array, final Function1<? super T, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final byte[] array, final Function1<? super Byte, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final short[] array, final Function1<? super Short, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final int[] array, final Function1<? super Integer, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final long[] array, final Function1<? super Long, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final float[] array, final Function1<? super Float, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final double[] array, final Function1<? super Double, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final boolean[] array, final Function1<? super Boolean, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float maxOfOrNull(final char[] array, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <T, R extends Comparable<? super R>> R maxOfOrNull(final T[] array, final Function1<? super T, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -13939,33 +13273,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Double maxOrNull(@NotNull final Double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, array[iterator.nextInt()]);
-        }
-        return n;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Float maxOrNull(@NotNull final Float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.max(n, array[iterator.nextInt()]);
-        }
-        return n;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
@@ -14059,33 +13369,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Float maxOrNull(@NotNull final float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        float max = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            max = Math.max(max, array[iterator.nextInt()]);
-        }
-        return max;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Double maxOrNull(@NotNull final double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        double max = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            max = Math.max(max, array[iterator.nextInt()]);
-        }
-        return max;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
@@ -14449,33 +13735,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
-    public static final double minOrThrow(@NotNull final Double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, array[iterator.nextInt()]);
-        }
-        return a;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
-    public static final float minOrThrow(@NotNull final Float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, array[iterator.nextInt()]);
-        }
-        return a;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
@@ -14570,33 +13832,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
-    public static final float minOrThrow(@NotNull final float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float min = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            min = Math.min(min, array[iterator.nextInt()]);
-        }
-        return min;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
-    public static final double minOrThrow(@NotNull final double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double min = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            min = Math.min(min, array[iterator.nextInt()]);
-        }
-        return min;
-    }
     
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
@@ -15084,315 +14322,6 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return c;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> double minOf(final T[] array, final Function1<? super T, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final byte[] array, final Function1<? super Byte, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final short[] array, final Function1<? super Short, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final int[] array, final Function1<? super Integer, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final long[] array, final Function1<? super Long, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final float[] array, final Function1<? super Float, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final double[] array, final Function1<? super Double, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final boolean[] array, final Function1<? super Boolean, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final double minOf(final char[] array, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        double a = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> float minOf(final T[] array, final Function1<? super T, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final byte[] array, final Function1<? super Byte, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final short[] array, final Function1<? super Short, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final int[] array, final Function1<? super Integer, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final long[] array, final Function1<? super Long, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final float[] array, final Function1<? super Float, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final double[] array, final Function1<? super Double, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final boolean[] array, final Function1<? super Boolean, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final float minOf(final char[] array, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            throw new NoSuchElementException();
-        }
-        float a = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            a = Math.min(a, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return a;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <T, R extends Comparable<? super R>> R minOf(final T[] array, final Function1<? super T, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -15570,315 +14499,6 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return (R)comparable;
     }
     
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> Double minOfOrNull(final T[] array, final Function1<? super T, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final byte[] array, final Function1<? super Byte, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final short[] array, final Function1<? super Short, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final int[] array, final Function1<? super Integer, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final long[] array, final Function1<? super Long, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final float[] array, final Function1<? super Float, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final double[] array, final Function1<? super Double, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final boolean[] array, final Function1<? super Boolean, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Double minOfOrNull(final char[] array, final Function1<? super Character, Double> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = function1.invoke(array[0]).doubleValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).doubleValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final <T> Float minOfOrNull(final T[] array, final Function1<? super T, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final byte[] array, final Function1<? super Byte, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final short[] array, final Function1<? super Short, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final int[] array, final Function1<? super Integer, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final long[] array, final Function1<? super Long, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final float[] array, final Function1<? super Float, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final double[] array, final Function1<? super Double, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final boolean[] array, final Function1<? super Boolean, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
-    private static final Float minOfOrNull(final char[] array, final Function1<? super Character, Float> function1) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        Intrinsics.checkNotNullParameter(function1, "selector");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = function1.invoke(array[0]).floatValue();
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, function1.invoke(array[iterator.nextInt()]).floatValue());
-        }
-        return n;
-    }
-    
-    @SinceKotlin(version = "1.4")
-    @OverloadResolutionByLambdaReturnType
-    @InlineOnly
     private static final <T, R extends Comparable<? super R>> R minOfOrNull(final T[] array, final Function1<? super T, ? extends R> function1) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         Intrinsics.checkNotNullParameter(function1, "selector");
@@ -16436,33 +15056,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Double minOrNull(@NotNull final Double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        double n = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, array[iterator.nextInt()]);
-        }
-        return n;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Float minOrNull(@NotNull final Float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        float n = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            n = Math.min(n, array[iterator.nextInt()]);
-        }
-        return n;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
@@ -16556,33 +15152,9 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Float minOrNull(@NotNull final float[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        float min = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            min = Math.min(min, array[iterator.nextInt()]);
-        }
-        return min;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
-    public static final Double minOrNull(@NotNull final double[] array) {
-        Intrinsics.checkNotNullParameter(array, "<this>");
-        if (array.length == 0) {
-            return null;
-        }
-        double min = array[0];
-        final IntIterator iterator = new IntRange(1, getLastIndex(array)).iterator();
-        while (iterator.hasNext()) {
-            min = Math.min(min, array[iterator.nextInt()]);
-        }
-        return min;
-    }
     
     @SinceKotlin(version = "1.4")
     @Nullable
@@ -19492,7 +18064,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return list;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final <T> int sumBy(@NotNull final T[] array, @NotNull final Function1<? super T, Integer> function1) {
@@ -19505,7 +18077,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final byte[] array, @NotNull final Function1<? super Byte, Integer> function1) {
@@ -19518,7 +18090,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final short[] array, @NotNull final Function1<? super Short, Integer> function1) {
@@ -19531,7 +18103,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final int[] array, @NotNull final Function1<? super Integer, Integer> function1) {
@@ -19544,7 +18116,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final long[] array, @NotNull final Function1<? super Long, Integer> function1) {
@@ -19557,7 +18129,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final float[] array, @NotNull final Function1<? super Float, Integer> function1) {
@@ -19570,7 +18142,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final double[] array, @NotNull final Function1<? super Double, Integer> function1) {
@@ -19583,7 +18155,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final boolean[] array, @NotNull final Function1<? super Boolean, Integer> function1) {
@@ -19596,7 +18168,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final int sumBy(@NotNull final char[] array, @NotNull final Function1<? super Character, Integer> function1) {
@@ -19609,7 +18181,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final <T> double sumByDouble(@NotNull final T[] array, @NotNull final Function1<? super T, Double> function1) {
@@ -19622,7 +18194,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final byte[] array, @NotNull final Function1<? super Byte, Double> function1) {
@@ -19635,7 +18207,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final short[] array, @NotNull final Function1<? super Short, Double> function1) {
@@ -19648,7 +18220,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final int[] array, @NotNull final Function1<? super Integer, Double> function1) {
@@ -19661,7 +18233,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final long[] array, @NotNull final Function1<? super Long, Double> function1) {
@@ -19674,7 +18246,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final float[] array, @NotNull final Function1<? super Float, Double> function1) {
@@ -19687,7 +18259,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final double[] array, @NotNull final Function1<? super Double, Double> function1) {
@@ -19700,7 +18272,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final boolean[] array, @NotNull final Function1<? super Boolean, Double> function1) {
@@ -19713,7 +18285,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
         return n;
     }
     
-    @Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
+    @kotlin.Deprecated(message = "Use sumOf instead.", replaceWith = @ReplaceWith(expression = "this.sumOf(selector)", imports = {}))
     @DeprecatedSinceKotlin(warningSince = "1.5")
     @java.lang.Deprecated
     public static final double sumByDouble(@NotNull final char[] array, @NotNull final Function1<? super Character, Double> function1) {

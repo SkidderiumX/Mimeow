@@ -21,7 +21,7 @@ public class SequencesKt__SequencesKt extends SequencesKt__SequencesJVMKt
     }
     
     @NotNull
-    public static final <T> Sequence<T> asSequence(@NotNull final Iterator<? extends T> iterator) {
+    public static final <T> Sequence<T> asSequence(@NotNull final Iterator<?> iterator) {
         Intrinsics.checkNotNullParameter(iterator, "<this>");
         return constrainOnce((Sequence<? extends T>)new Sequence<T>(iterator) {
             @NotNull

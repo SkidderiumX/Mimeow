@@ -190,7 +190,7 @@ implements Protocol<CU, CM, SM, SU> {
         userConnection.addItemHasher(this.getClass(), new ItemHasherBase(this, userConnection));
     }
 
-    @Deprecated(forRemoval=true)
+    @kotlin.Deprecated(forRemoval=true)
     protected void addItemHasher(UserConnection userConnection, ItemHasher itemHasher) {
         userConnection.addItemHasher(this.getClass(), itemHasher);
     }

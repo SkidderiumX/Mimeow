@@ -18,18 +18,18 @@ import org.jetbrains.annotations.NotNull;
 public class CollectionsKt__IteratorsKt
 extends CollectionsKt__IteratorsJVMKt {
     @InlineOnly
-    private static final <T> Iterator<T> iterator(Iterator<? extends T> iterator2) {
+    private static final <T> Iterator<T> iterator(Iterator<?> iterator2) {
         Intrinsics.checkNotNullParameter(iterator2, "<this>");
         return iterator2;
     }
 
     @NotNull
-    public static final <T> Iterator<IndexedValue<T>> withIndex(@NotNull Iterator<? extends T> iterator2) {
+    public static final <T> Iterator<IndexedValue<T>> withIndex(@NotNull Iterator<?> iterator2) {
         Intrinsics.checkNotNullParameter(iterator2, "<this>");
         return new IndexingIterator<T>(iterator2);
     }
 
-    public static final <T> void forEach(@NotNull Iterator<? extends T> iterator2, @NotNull Function1<? super T, Unit> function1) {
+    public static final <T> void forEach(@NotNull Iterator<?> iterator2, @NotNull Function1<? super T, Unit> function1) {
         Intrinsics.checkNotNullParameter(iterator2, "<this>");
         Intrinsics.checkNotNullParameter(function1, "operation");
         boolean bl = false;

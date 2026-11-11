@@ -415,7 +415,7 @@ public class CipherSuite {
         return this.javaName;
     }
 
-    @Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="javaName", imports={}), level=DeprecationLevel.ERROR)
+    @kotlin.Deprecated(message="moved to val", replaceWith=@ReplaceWith(expression="javaName", imports={}), level=DeprecationLevel.ERROR)
     @JvmName(name="-deprecated_javaName")
     @NotNull
     public final String ma641b17238() {

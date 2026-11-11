@@ -595,7 +595,7 @@ extends StringsKt__StringsJVMKt {
         return charSequence.subSequence(intRange.getStart(), intRange.getEndInclusive() + 1);
     }
 
-    @Deprecated(message="Use parameters named startIndex and endIndex.", replaceWith=@ReplaceWith(expression="subSequence(startIndex = start, endIndex = end)", imports={}))
+    @kotlin.Deprecated(message="Use parameters named startIndex and endIndex.", replaceWith=@ReplaceWith(expression="subSequence(startIndex = start, endIndex = end)", imports={}))
     @InlineOnly
     private static final CharSequence subSequence(String string, int n, int n2) {
         Intrinsics.checkNotNullParameter(string, "<this>");
