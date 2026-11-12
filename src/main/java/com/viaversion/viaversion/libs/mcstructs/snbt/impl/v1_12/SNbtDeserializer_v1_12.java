@@ -175,10 +175,10 @@ implements SNbtDeserializer<CompoundTag> {
 
     protected Tag readPrimitive(String string) {
         if (string.equalsIgnoreCase("false")) {
-            return new ByteTag(0);
+            return new ByteTag((byte)0);
         }
         if (string.equalsIgnoreCase("true")) {
-            return new ByteTag(1);
+            return new ByteTag((byte)1);
         }
         return this.readNumber(string);
     }

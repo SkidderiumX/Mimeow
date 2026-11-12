@@ -24,7 +24,7 @@ implements Comparable<ProtocolVersion> {
     private static final Map<VersionType, Int2ObjectMap<ProtocolVersion>> VERSIONS = new EnumMap<VersionType, Int2ObjectMap<ProtocolVersion>>(VersionType.class);
     private static final List<ProtocolVersion> VERSION_LIST = new ArrayList<ProtocolVersion>();
     public static final ProtocolVersion v1_7_2;
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public static final ProtocolVersion v1_7_1;
     public static final ProtocolVersion v1_7_6;
     public static final ProtocolVersion v1_8;
@@ -135,7 +135,7 @@ implements Comparable<ProtocolVersion> {
         return ProtocolVersion.getProtocol(VersionType.RELEASE, n);
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public static int getIndex(ProtocolVersion protocolVersion) {
         return VERSION_LIST.indexOf(protocolVersion);
     }

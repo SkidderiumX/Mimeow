@@ -38,9 +38,9 @@ implements StorableObject {
             return Optional.empty();
         }
         compoundTag = compoundTag.copy();
-        compoundTag.put("powered", new ByteTag(0));
-        compoundTag.put("auto", new ByteTag(0));
-        compoundTag.put("conditionMet", new ByteTag(0));
+        compoundTag.put("powered", new ByteTag((byte)0));
+        compoundTag.put("auto", new ByteTag((byte)0));
+        compoundTag.put("conditionMet", new ByteTag((byte)0));
         return Optional.of(compoundTag);
     }
 

@@ -24,7 +24,7 @@ extends Config {
 
     public boolean logEntityDataErrors();
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public boolean isSuppressMetadataErrors() {
         return !this.logEntityDataErrors();
     }
@@ -47,32 +47,32 @@ extends Config {
 
     public boolean isAutoTeam();
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public int getMaxPPS() {
         return this.getPacketTrackerConfig().maxRate();
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public String getMaxPPSKickMessage() {
         return this.getPacketTrackerConfig().maxRateKickMessage();
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public int getTrackingPeriod() {
         return (int)TimeUnit.NANOSECONDS.toSeconds(this.getPacketTrackerConfig().trackingPeriodNanos());
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public int getWarningPPS() {
         return this.getPacketTrackerConfig().warningRate();
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public int getMaxWarnings() {
         return this.getPacketTrackerConfig().maxWarnings();
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public String getMaxWarningsKickMessage() {
         return this.getPacketTrackerConfig().warningKickMessage();
     }
@@ -115,12 +115,12 @@ extends Config {
 
     public boolean logTextComponentConversionErrors();
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public boolean isSuppressConversionWarnings() {
         return !this.logOtherConversionWarnings();
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public boolean isSuppressTextComponentConversionWarnings() {
         return !this.logTextComponentConversionErrors();
     }

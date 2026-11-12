@@ -100,7 +100,7 @@ extends AbstractProtocol<ClientboundPacket1_21_9, ClientboundPacket1_21_11, Serv
         this.registryDataRewriter.addHandler("dimension_type", (string, compoundTag) -> {
             CompoundTag compoundTag2;
             Tag tag2;
-            ByteTag byteTag = new ByteTag(1);
+            ByteTag byteTag = new ByteTag((byte)1);
             CompoundTag compoundTag3 = new CompoundTag();
             compoundTag.put("attributes", compoundTag3);
             if (Key.equals(string, "the_nether")) {

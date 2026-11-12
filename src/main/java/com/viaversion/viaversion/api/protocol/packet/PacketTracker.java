@@ -28,7 +28,7 @@ public class PacketTracker {
         ++this.sentPacketsTotal;
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public boolean incrementReceived() {
         return this.incrementReceived(0);
     }
@@ -71,7 +71,7 @@ public class PacketTracker {
         return this.sentPacketsTotal;
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public void setSentPackets(long l) {
         this.sentPacketsTotal = l;
     }
@@ -80,7 +80,7 @@ public class PacketTracker {
         return this.receivedPacketsTotal;
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public void setReceivedPackets(long l) {
         this.receivedPacketsTotal = l;
     }
@@ -106,7 +106,7 @@ public class PacketTracker {
         this.packetLimiterEnabled = bl;
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public void setWarnings(int n) {
         this.packetTracker.warnings = n;
     }

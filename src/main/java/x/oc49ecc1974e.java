@@ -4,20 +4,9 @@
 package x;
 
 public enum oc49ecc1974e {
-    M;
+    \u04b5, \u0373, \u00eb, \u03b4, \u0289, \u0214, \u0183, \u0102, \u00d5, M, \u040e, \u0403;
     private static final oc49ecc1974e[] $VALUES_REF;
-    public static final /* enum */ oc49ecc1974e \u04b5 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u0373 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u00eb = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u03b4 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u0289 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u0214 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u0183 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u0102 = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u00d5 = new oc49ecc1974e();
 
-    public static final /* enum */ oc49ecc1974e \u040e = new oc49ecc1974e();
-    public static final /* enum */ oc49ecc1974e \u0403 = new oc49ecc1974e();
     private static final oc49ecc1974e[] \u0539 = oc49ecc1974e.\u01db();
 
 

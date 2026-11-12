@@ -15,7 +15,7 @@ public enum ClientboundLoginPackets implements BaseClientboundPacket
     CUSTOM_QUERY,
     COOKIE_REQUEST;
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     public static final ClientboundLoginPackets GAME_PROFILE;
 
     @Override

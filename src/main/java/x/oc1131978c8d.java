@@ -4,22 +4,11 @@
 package x;
 
 public enum oc1131978c8d {
-    C, c, s;
+    C, \u01e1, \u025d, \u0192, \u01fb, \u028f, \u0423, \u050f, \u0565, \u0255, c, s, \u0201, \u0490;
     private static final oc1131978c8d[] $VALUES_REF;
 
-    public static final /* enum */ oc1131978c8d \u01e1 = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u025d = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u0192 = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u01fb = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u028f = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u0423 = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u050f = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u0565 = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u0255 = new oc1131978c8d();
 
 
-    public static final /* enum */ oc1131978c8d \u0201 = new oc1131978c8d();
-    public static final /* enum */ oc1131978c8d \u0490 = new oc1131978c8d();
     private static final /* synthetic */ oc1131978c8d[] \u039e;
     public static boolean \u0531;
 

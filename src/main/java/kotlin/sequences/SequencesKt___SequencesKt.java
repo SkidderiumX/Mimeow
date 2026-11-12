@@ -1105,11 +1105,7 @@ public class SequencesKt___SequencesKt extends SequencesKt___SequencesJvmKt
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     @NotNull
     public static final <T extends Comparable<? super T>> T maxOrThrow(@NotNull final Sequence<? extends T> sequence) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
@@ -1256,11 +1252,7 @@ public class SequencesKt___SequencesKt extends SequencesKt___SequencesJvmKt
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final <T extends Comparable<? super T>> T maxOrNull(@NotNull final Sequence<? extends T> sequence) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
         final Iterator<?> iterator = sequence.iterator();
@@ -1318,11 +1310,7 @@ public class SequencesKt___SequencesKt extends SequencesKt___SequencesJvmKt
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     @NotNull
     public static final <T extends Comparable<? super T>> T minOrThrow(@NotNull final Sequence<? extends T> sequence) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
@@ -1469,11 +1457,7 @@ public class SequencesKt___SequencesKt extends SequencesKt___SequencesJvmKt
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final <T extends Comparable<? super T>> T minOrNull(@NotNull final Sequence<? extends T> sequence) {
         Intrinsics.checkNotNullParameter(sequence, "<this>");
         final Iterator<?> iterator = sequence.iterator();

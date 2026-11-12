@@ -1,6 +1,7 @@
 /*
  * Decompiled with CFR 0.152.
  */
+  //AutoEnder
 package x;
 
 import net.minecraft.client.Minecraft;

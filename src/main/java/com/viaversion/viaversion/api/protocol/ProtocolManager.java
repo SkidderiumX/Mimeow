@@ -35,7 +35,7 @@ public interface ProtocolManager {
 
     public Collection<Protocol<?, ?, ?, ?>> getProtocols();
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public boolean isBaseProtocol(Protocol protocol) {
         return protocol.isBaseProtocol();
     }

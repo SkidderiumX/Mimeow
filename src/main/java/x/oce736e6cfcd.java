@@ -4,11 +4,9 @@
 package x;
 
 public enum oce736e6cfcd {
-    l;
+    \u0241, l, \u029f;
     private static final oce736e6cfcd[] $VALUES_REF;
-    public static final /* enum */ oce736e6cfcd \u0241 = new oce736e6cfcd();
 
-    public static final /* enum */ oce736e6cfcd \u029f = new oce736e6cfcd();
     private static final oce736e6cfcd[] \u0199 = oce736e6cfcd.\u0429();
     public static boolean \u03ba;
 

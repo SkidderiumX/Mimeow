@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ByteTag
 implements NumberTag {
     public static final int ID = 1;
-    public static final ByteTag ZERO = new ByteTag(0);
+    public static final ByteTag ZERO = new ByteTag((byte)0);
     private final byte value;
 
     public ByteTag(byte by) {

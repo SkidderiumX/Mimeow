@@ -4,11 +4,9 @@
 package x;
 
 public enum oc12021474b0 {
-    g;
+    \u01ef, g, \u04dc;
     private static final oc12021474b0[] $VALUES_REF;
-    public static final /* enum */ oc12021474b0 \u01ef = new oc12021474b0();
 
-    public static final /* enum */ oc12021474b0 \u04dc = new oc12021474b0();
     private static final oc12021474b0[] \u029c = oc12021474b0.\u01d0();
     public static int \u0473;
 

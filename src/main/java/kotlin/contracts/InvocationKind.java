@@ -20,11 +20,8 @@ public enum InvocationKind {
     private static final InvocationKind[] $VALUES_REF;
     @ContractsDsl
 
-    @ContractsDsl
 
-    @ContractsDsl
 
-    @ContractsDsl
     
     private static final /* synthetic */ EnumEntries $ENTRIES;
 

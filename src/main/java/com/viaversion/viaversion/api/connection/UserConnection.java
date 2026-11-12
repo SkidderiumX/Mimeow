@@ -61,7 +61,7 @@ public interface UserConnection {
 
     public boolean checkServerboundPacket(int var1);
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public boolean checkServerboundPacket() {
         return this.checkServerboundPacket(0);
     }
@@ -72,7 +72,7 @@ public interface UserConnection {
         return this.isClientSide() ? this.checkClientboundPacket() : this.checkServerboundPacket(n);
     }
 
-    @kotlin.Deprecated(forRemoval=true)
+    @java.lang.Deprecated(forRemoval=true)
     default public boolean checkIncomingPacket() {
         return this.isClientSide() ? this.checkClientboundPacket() : this.checkServerboundPacket();
     }

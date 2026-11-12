@@ -106,7 +106,7 @@ extends BackwardsProtocol<ClientboundPacket1_21_11, ClientboundPacket1_21_9, Ser
                 compoundTag.putString("effects", "minecraft:overworld");
                 compoundTag.putBoolean("natural", true);
             }
-            ByteTag byteTag = new ByteTag(1);
+            ByteTag byteTag = new ByteTag((byte)1);
             CompoundTag compoundTag2 = compoundTag.getCompoundTag("attributes");
             this.moveAttribute((CompoundTag)compoundTag, compoundTag2, "visual/cloud_height", "cloud_height", Function.identity(), null);
             this.moveAttribute((CompoundTag)compoundTag, compoundTag2, "gameplay/can_start_raid", "has_raids", Function.identity(), byteTag);

@@ -1889,11 +1889,7 @@ public class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     @NotNull
     public static final <T extends Comparable<? super T>> T maxOrThrow(@NotNull final Iterable<? extends T> iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
@@ -2040,11 +2036,7 @@ public class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final <T extends Comparable<? super T>> T maxOrNull(@NotNull final Iterable<? extends T> iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         final Iterator<?> iterator = iterable.iterator();
@@ -2102,11 +2094,7 @@ public class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     @NotNull
     public static final <T extends Comparable<? super T>> T minOrThrow(@NotNull final Iterable<? extends T> iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
@@ -2253,11 +2241,7 @@ public class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final <T extends Comparable<? super T>> T minOrNull(@NotNull final Iterable<? extends T> iterable) {
         Intrinsics.checkNotNullParameter(iterable, "<this>");
         final Iterator<?> iterator = iterable.iterator();

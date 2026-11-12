@@ -283,10 +283,10 @@ public class TagStringReader {
             }
         }
         if (string.equalsIgnoreCase("true")) {
-            return new ByteTag(1);
+            return new ByteTag((byte)1);
         }
         if (string.equalsIgnoreCase("false")) {
-            return new ByteTag(0);
+            return new ByteTag((byte)0);
         }
         return new StringTag(string);
     }

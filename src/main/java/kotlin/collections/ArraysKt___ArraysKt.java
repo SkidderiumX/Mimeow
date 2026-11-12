@@ -11953,11 +11953,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     @NotNull
     public static final <T extends Comparable<? super T>> T maxOrThrow(@NotNull final T[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
@@ -12050,11 +12046,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.7")
     @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "maxOrThrow")
     public static final char maxOrThrow(@NotNull final char[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         if (array.length == 0) {
@@ -13274,11 +13266,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final <T extends Comparable<? super T>> T maxOrNull(@NotNull final T[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         if (array.length == 0) {
@@ -13370,11 +13358,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final Character maxOrNull(@NotNull final char[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         if (array.length == 0) {
@@ -13736,11 +13720,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     @NotNull
     public static final <T extends Comparable<? super T>> T minOrThrow(@NotNull final T[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
@@ -13833,11 +13813,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.7")
     @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     
-    @SinceKotlin(version = "1.7")
-    @JvmName(name = "minOrThrow")
     public static final char minOrThrow(@NotNull final char[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         if (array.length == 0) {
@@ -15057,11 +15033,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final <T extends Comparable<? super T>> T minOrNull(@NotNull final T[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         if (array.length == 0) {
@@ -15153,11 +15125,7 @@ public class ArraysKt___ArraysKt extends ArraysKt___ArraysJvmKt
     @SinceKotlin(version = "1.4")
     @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     
-    @SinceKotlin(version = "1.4")
-    @Nullable
     public static final Character minOrNull(@NotNull final char[] array) {
         Intrinsics.checkNotNullParameter(array, "<this>");
         if (array.length == 0) {
