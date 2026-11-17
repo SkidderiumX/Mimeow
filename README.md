@@ -68,13 +68,13 @@ Build diagnostics (error dumps, intermediate decompile passes) live in
 cd C:\Users\dinhv\IdeaProjects\stuff\MyauDump
 
 # 1. decrypt container (container jar from the launcher)
-java -cp "..\Java Deobf Tools\deobfuscator.jar;." DumpMyau "C:\Users\dinhv\AppData\Roaming\MiauLauncher\client\Miau.jar"
+java -cp "..\Java Deobf Tools\deobfuscator.jar;." DumpMyau "%appdata%\MiauLauncher\client\Miau.jar"
 
 # 2. resolve indy obfuscation
-java -cp "..\Java Deobf Tools\deobfuscator.jar;." EvalIndy "C:\Users\dinhv\AppData\Roaming\MiauLauncher\client\Miau-dump\Miau-full.jar" "C:\Users\dinhv\AppData\Roaming\MiauLauncher\client\Miau-dump\Miau-indy.jar"
+java -cp "..\Java Deobf Tools\deobfuscator.jar;." EvalIndy "%appdata%\MiauLauncher\client\Miau-dump\Miau-full.jar" "C:\Users\dinhv\AppData\Roaming\MiauLauncher\client\Miau-dump\Miau-indy.jar"
 
 # 3. legalize names
-java -cp "..\Java Deobf Tools\deobfuscator.jar;." RestoreNames "C:\Users\dinhv\AppData\Roaming\MiauLauncher\client\Miau-dump\Miau-indy.jar" ".\Miau-renamed.jar" ".\rename-map.txt"
+java -cp "..\Java Deobf Tools\deobfuscator.jar;." RestoreNames "%appdata%\MiauLauncher\client\Miau-dump\Miau-indy.jar" ".\Miau-renamed.jar" ".\rename-map.txt"
 
 # 4. decompile \Miau-renamed.jar with your decompiler of choice → src/main/java
 # 5. build
